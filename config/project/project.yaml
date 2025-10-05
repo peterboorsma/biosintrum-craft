@@ -1,4 +1,4 @@
-dateModified: 1759670886
+dateModified: 1759691541
 elementSources:
   craft\elements\Entry:
     -
@@ -86,8 +86,8 @@ meta:
     92f1bb18-bfa6-4a06-8a97-4d082ea82fe6: Projecten # Projecten
     208c80f3-341d-4a5b-9070-3fa5f9c2152d: Tarievenlijst # Tarievenlijst
     233fda5c-b05d-4f02-99af-20045ba42e31: Prijs # Prijs
+    541f273a-fe62-42d9-8ee8-b04fcb32e786: Tarievenlijst # Tarievenlijst
     601fba76-351e-4ee9-b9a9-5b49523baf37: Partnerlink # Partnerlink
-    624bd073-3012-447a-a4ca-0846cd976cc0: 'Blok Reserveren' # Blok Reserveren
     793dad19-c178-4275-b20d-08a0d2653b03: Actueel # Actueel
     884dd8a2-8ede-4a60-af46-769c69dfa8d4: 'Externe URL' # Externe URL
     926b61e9-462a-408c-ad86-aed1b332d5b5: 'Button Group' # Button Group

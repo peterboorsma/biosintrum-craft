@@ -35,8 +35,18 @@
                 {% include '_components/_article_ruimtes' %}
             {% endif %}
 
-
             {% include '_macros/_contentstream' %}
+
+            {% if entry.slug == 'reserveren' %}
+            {% include '_components/_article_addressBlock' %}
+
+            {% include '_components/_block_tarievenlijst' %}
+
+            {% set ruimtes = craft.entries.section('watwedoen').type('ruimtes').all() %}
+            {% include '_components/_article_ruimtes' with { ruimtesChildren: ruimtes } %}
+            {% endif %}
+
+            
         </article>
     </div>
 </div>

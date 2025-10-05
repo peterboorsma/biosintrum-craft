@@ -117,7 +117,6 @@
 
 }
 
-
 ////////////////////////////////////////////////////
 // CARDS KLEUREN
 ////////////////////////////////////////////////////
@@ -140,7 +139,6 @@
     }
 
 }
-
 
 ////////////////////////////////////////////////////
 // CARDS ELEMENTEN
@@ -192,7 +190,6 @@
         
     }
 }
-
 
 ////////////////////////////////////////////////////
 // CARDS GRIDS 
@@ -252,7 +249,7 @@
     }
 }
 
-// nog utizoeken waar dit gebruikt wordt
+// o.a. nieuwsoverzicht, ruimtes overzicht
 .cardsGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
@@ -280,6 +277,7 @@
 // CARDS TYPOGRAPHY
 ////////////////////////////////////////////////////
 
+.card__footer__text p,
 .card__main__text {
     font-size:clamp(0.875rem, 0.8214rem + 0.2381vw, 1rem);
     line-height: 1.25;

@@ -12,10 +12,10 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
-            handle: description
+            handle: ruimteName
             includeInCards: false
             instructions: null
-            label: 'Ruimte en dagdeel'
+            label: Ruimte
             providesThumbs: false
             required: false
             tip: null
@@ -23,7 +23,24 @@ fieldLayouts:
             uid: 690f374f-d369-42ae-947e-0dbc2e15023e
             userCondition: null
             warning: null
-            width: 75
+            width: 50
+          -
+            dateAdded: '2025-10-05T18:40:29+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+            handle: ruimteSlot
+            includeInCards: false
+            instructions: null
+            label: Tijd
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e9a0b2bb-8b34-4c2a-805a-e5cd479820e6
+            userCondition: null
+            warning: null
+            width: 25
           -
             dateAdded: '2025-09-17T18:53:44+00:00'
             editCondition: null

@@ -1,0 +1,23 @@
+{% set tarievenlijst = craft.globalSets.handle('tarievenlijst').one() %}
+<div class="article__tarievenlijst">
+    <div class="card card--color:blue tarievenlijst">
+        <div class="card__header">
+            <span class="compactTitle">{{ tarievenlijst.tarievenlijstHeader }}</span>
+        </div>
+        
+        <div class="card__main">
+            <ol class="tarievenlijst">
+            {% for item in tarievenlijst.priceSlot %}
+                <li class="tarievenlijstItem">
+                    <span class="tarievenlijstItem__name">{{ item.ruimteName }}</span>
+                    <span class="tarievenlijstItem__slot">{{ item.ruimteSlot }}</span>
+                    <span class="tarievenlijstItem__price">{{ item.amount|money }}</span>
+                </li>
+            {% endfor %}
+        </div>
+
+        <div class="card__footer">
+            <span class="card__footer__text">{{ tarievenlijst.tarievenlijstFooter }}</span>
+        </div>
+    </div>
+</div>   

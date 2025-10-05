@@ -218,7 +218,8 @@ li.subNavLink {
             transition: scale 0.25s, background-color 0.25s, color 0.15s;
 
             &:hover,
-            &:focus {
+            &:focus,
+            &.active {
                 background-color: var(--darkBlue);
                 color: var(--lightBlue);
             }

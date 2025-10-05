@@ -1,5 +1,5 @@
 columnSuffix: null
-handle: pricelistx
+handle: pricelist
 instructions: null
 name: Tarievenlijst
 searchable: false
@@ -29,6 +29,9 @@ settings:
                             0:
                               - type
                               - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - tarievenlijstTitle
                             2:
                               - label
                               - Titel

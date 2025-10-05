@@ -1,16 +1,16 @@
 fieldLayouts:
-  bebc2b25-3516-4c67-8d00-7193b3a3985d:
+  4e7953a3-a64f-42c7-a632-6cbf46a69d59:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            dateAdded: '2025-09-17T17:41:05+00:00'
+            dateAdded: '2025-10-05T19:12:21+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
-            handle: bookingTitle
+            handle: tarievenlijstHeader
             includeInCards: false
             instructions: null
             label: Titel
@@ -18,64 +18,64 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4e4105a9-0b46-41d2-b0c9-f6f8a4030bdb
+            uid: 3aba54ad-9467-4ad9-a5c4-ff4fa1ede4ce
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2025-09-17T17:41:05+00:00'
+            dateAdded: '2025-10-05T19:11:21+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: f3fbba55-9047-45a2-9bdd-0013a9b83f23 # Rich Text
-            handle: bookingText
-            includeInCards: false
-            instructions: null
-            label: Tekst
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 124badb9-14e7-409b-a7ca-7c12f436f0dd
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-09-17T17:41:05+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: 86b4bc13-5cc4-482a-ba3d-a1200f77f0c5 # Select Entry
+            fieldUid: 15ccb303-9172-4a05-82fb-a3f2ac94efa1 # Dagdeel en prijs
             handle: null
             includeInCards: false
             instructions: null
-            label: 'Pagina link'
+            label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c4fc4edd-2bed-4a3d-9513-3bfb42ee0526
+            uid: 399773b2-bc6f-41b9-a879-0599ecbfbefc
             userCondition: null
             warning: null
-            width: 50
+            width: 100
           -
-            dateAdded: '2025-09-18T16:20:11+00:00'
+            dateAdded: '2025-10-05T19:11:21+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 85805eae-f505-419b-bfcc-0d9b6e607873 # Assets Global Image
-            handle: bookingImage
+            fieldUid: f3fbba55-9047-45a2-9bdd-0013a9b83f23 # Rich Text
+            handle: tarievenlijstFooter
             includeInCards: false
             instructions: null
-            label: Afbeelding
+            label: 'Footer tekst'
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0443f3ea-049b-4089-a316-e463d6ce0fca
+            uid: 5f5a90da-3fbb-4203-87c3-cb867d4e2a1c
             userCondition: null
             warning: null
-            width: 50
+            width: 75
+          -
+            dateAdded: '2025-10-05T19:11:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b378d7b8-6042-489d-b53d-727c66711509 # Assets Download
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 91151379-da4c-4a98-ba6c-99b38a99b602
+            userCondition: null
+            warning: null
+            width: 25
         name: Content
-        uid: 7c59d5bd-32f1-43ff-9736-e4318b9be355
+        uid: 934e62b7-3b02-4d22-8000-c48d05e3d454
         userCondition: null
-handle: blokReserveren
-name: 'Blok Reserveren'
-sortOrder: 4
+handle: tarievenlijst
+name: Tarievenlijst
+sortOrder: 5

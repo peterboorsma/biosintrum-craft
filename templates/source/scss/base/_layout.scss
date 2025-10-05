@@ -261,39 +261,6 @@ body {
 }
 
 ////////////////////////////////////////////////////
-// TILES zie _block_reserveren.twig
-////////////////////////////////////////////////////
-.tile {
-    display: flex;
-    flex-direction: column;
-
-    &__header {
-        padding: var(--space-2);
-        display: inline-flex;
-    }
-
-    &__image {
-        margin-block-end: var(--space-2);
-    }
-
-    &__main {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-
-        .content {
-            display: inline-flex;
-            padding: var(--space-2) var(--space-2) 0 var(--space-2);
-        }
-    }
-
-    &__footer {
-        padding: var(--space-2);
-    }
-
-}
-
-////////////////////////////////////////////////////
 // ARTICLES
 ////////////////////////////////////////////////////
 
@@ -316,6 +283,7 @@ body {
     &__logoGrid,
     &__relatedNieuws,
     &__partnerlist,
+    &__tarievenlijst,
     &__map,
     &__sidebar,
     &__footer,
@@ -326,6 +294,7 @@ body {
     &__mainImage,
     &__contentBlockFullImage,
     &__contentblockEmbed,
+    &__tarievenlijst,
     &__relatedNieuws {
         margin-block: var(--space-2);
     }
@@ -340,6 +309,7 @@ body {
         &__contentblockEmbed,
         &__contentBlockButtons,
         &__mainImage--inline,
+        &__tarievenlijst,
         &__sidebar,
         &__footer {
             grid-column: 2 / 12;
@@ -523,17 +493,6 @@ body {
     border-top: 0.094rem solid var(--black);
 }
 
-.article__ruimtes {
-
-    .grid__content {
-
-        .card {
-            grid-column: span 4;
-        }
-    }
-
-}
-
 ////////////////////////////////////////////////////
 // LOGO GRID
 ////////////////////////////////////////////////////
@@ -672,3 +631,42 @@ ul.agendaList {
     
 }
 
+////////////////////////////////////////////////////
+// TARIEVENLIJST
+////////////////////////////////////////////////////
+
+ol.tarievenlijst {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    margin: var(--space-1) 0;
+    padding: 0;
+    list-style: none;
+
+    .tarievenlijstItem {
+        display: flex;
+        font-size: clamp(1rem, 0.9167rem + 0.3704vw, 1.25rem);
+        line-height: 1.25;
+        font-weight: 550;
+        
+        
+
+        .tarievenlijstItem:not(:last-child) {
+            padding-block-end: var(--space-1);
+            border-bottom: 0.063rem solid var(--white);
+        }
+
+        &__name {
+            flex: 0 0 calc(35%);
+        }
+
+        &__slot {
+            flex: 1 1 calc(35%);
+        }
+
+    }
+
+
+    @include respond-to(xlarge-screens) { // 1024px
+            }
+}

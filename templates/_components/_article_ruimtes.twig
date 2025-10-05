@@ -3,7 +3,8 @@
         <h2 class="compactTitle">Beschikbare ruimtes</h2>
     </div>
     
-    <div class="grid__content grid">
+    <div class="grid__content">
+        <div class="cardsGrid">
         {% for ruimte in ruimtesChildren %}
             <a class="card card--color:blue" href="{{ ruimte.url }}">
                 <div class="card__header">
@@ -20,11 +21,12 @@
                 <div class="card__main">
                     {% if ruimte.richText is not empty %}
                     <span class="card__main__text">
-                        {{ ruimte.richText }}
+                        {{ ruimte.richText|striptags }}
                     </span>
                     {% endif %}
                 </div>
             </a>
         {% endfor %}
+        </div>
     </div>
 </div>
