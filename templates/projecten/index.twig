@@ -33,7 +33,7 @@
                         
                         {% if entry.intro %}
                         <div class="card__main">
-                            <span class="card__main__text">{{ entry.intro }}</span>
+                            <span class="card__main__text">{{ entry.intro|striptags }}</span>
                         </div>
                         {% endif %}
                         
