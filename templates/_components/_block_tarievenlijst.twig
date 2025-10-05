@@ -18,6 +18,14 @@
 
         <div class="card__footer">
             <span class="card__footer__text">{{ tarievenlijst.tarievenlijstFooter }}</span>
+            <span class="card__footer__download">
+                {% if tarievenlijst.download is defined and tarievenlijst.download %}
+                {% set download = tarievenlijst.download.one() %}
+                    <a href="{{ download.url }}" class="button button--large button--blue button--download">
+                        Uitgebreide info
+                    </a>
+                {% endif %}
+            </span>
         </div>
     </div>
 </div>   
