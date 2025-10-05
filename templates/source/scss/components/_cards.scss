@@ -287,6 +287,10 @@
     font-weight: 550;
 }
 
+.card__footer__text p:not(:last-child) {
+    margin-block-end: var(--space-1);
+}
+
 .card__header__label {
     font-size: clamp(0.75rem, 0.6964rem + 0.2381vw, 0.875rem);
     text-transform: uppercase;
