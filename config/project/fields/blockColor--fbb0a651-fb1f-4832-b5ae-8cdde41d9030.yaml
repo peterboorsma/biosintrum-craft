@@ -1,0 +1,79 @@
+columnSuffix: null
+handle: blockColor
+instructions: null
+name: 'Blok kleur'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Oker
+        -
+          - value
+          - ochre
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#e5d190'
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Groen
+        -
+          - value
+          - green
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#e2f08a'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'KCB groen'
+        -
+          - value
+          - kcbGreen
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#e2f0d4'
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Blauw
+        -
+          - value
+          - blue
+        -
+          - icon
+          - ''
+        -
+          - color
+          - '#cbd9ef'
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

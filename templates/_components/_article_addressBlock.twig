@@ -1,0 +1,21 @@
+{% set emailClean = adresgegevens.email|replace({'mailto:': ''}) %}
+{% set phoneClean = adresgegevens.phone|replace({'mailto:': '', '-': '', '(': '', ')': '', '.': ''}) %}
+{% if phoneClean|slice(0, 1) == '0' %}
+    {% set phoneClean = '+31' ~ phoneClean|slice(1) %}
+{% endif %}
+
+<div class="article__addressBlock">
+    <div class="content">
+        <address class="address">
+            <b>{{ adresgegevens.organisationName }}</b><br>
+            {{ adresgegevens.streetAndNumber }}<br>
+            {{ adresgegevens.postalCode }} {{ adresgegevens.city }}<br>
+            <a href="{{ adresgegevens.email }}">{{ emailClean }}</a><br>
+            <a href="tel:{{ phoneClean }}">{{ adresgegevens.phone }}</a>
+        </address>
+    </div>
+
+    <div class="content">
+        <p>{{ adresgegevens.openingHours|raw }}</p>
+    </div>
+</div>

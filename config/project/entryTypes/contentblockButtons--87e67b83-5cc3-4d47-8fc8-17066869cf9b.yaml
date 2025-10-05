@@ -1,0 +1,42 @@
+color: null
+description: null
+fieldLayouts:
+  74448bff-ed41-4afd-8bcb-4318031d14fe:
+    cardThumbAlignment: end
+    cardView:
+      - parent
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-03T06:47:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 926b61e9-462a-408c-ad86-aed1b332d5b5 # Button Group
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e2abc8b8-2786-4552-a07d-bde8d3922ff2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 87e5de8a-45ae-4da1-b2c5-a798c173a21f
+        userCondition: null
+handle: contentblockButtons
+hasTitleField: false
+icon: arrow-right
+name: 'Blok Knoppen'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

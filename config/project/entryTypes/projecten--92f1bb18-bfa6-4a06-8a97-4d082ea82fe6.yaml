@@ -1,0 +1,150 @@
+color: null
+description: null
+fieldLayouts:
+  1ab273b1-23ce-4b08-a96f-97781cdae089:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-23T18:32:03+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e469c0f6-d2c1-402b-a8f6-fbde7ced8a2f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-23T18:35:18+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3fbba55-9047-45a2-9bdd-0013a9b83f23 # Rich Text
+            handle: intro
+            includeInCards: false
+            instructions: null
+            label: Introductie
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5c346d19-ddc6-4d72-977d-f945ab41e6fb
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-09-23T18:35:18+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Afbeelding
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3cb25237-d5f0-4576-aa4a-95d2c1ede041
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-23T18:35:18+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8b61a538-af28-46cf-b884-bb22dc1821ca # SEO Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4e311e93-9931-48c2-b3f0-e11829de00ee
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d121d487-9f2e-456a-ad00-a40c6bca6b78
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-09-23T18:36:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: bedcd512-47d2-4bf6-b77b-fa82d8d107cf # Content blokken
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ff6196c-337e-481e-ab96-2155826b88c1
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Content blokken'
+        uid: a53de324-19e5-4bec-8546-181e3dae6337
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-09-29T08:15:52+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4dbf591f-220c-49e2-b6ee-63c6a4cf108d # Partner list
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ed3b8b2-e803-40ba-8d8e-cbcb36277403
+            userCondition: null
+            warning: null
+            width: 100
+        name: Partnerlijst
+        uid: edddc103-ea00-4b3a-adf4-d4448e3add8f
+        userCondition: null
+handle: projecten
+hasTitleField: true
+icon: flask
+name: Projecten
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

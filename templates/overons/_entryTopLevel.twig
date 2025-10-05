@@ -1,0 +1,46 @@
+
+{# toon hero op de toplevel pagina #}
+<div class="hero">
+    <div class="hero__header">
+        <div class="container">
+            {% if entry.image is defined and entry.image|length %}
+            {% import '_macros/_image.twig' as img %}
+            <div class="hero__image">
+                {{ img.responsiveImage(entry.image, { maxWidth: 1400 }) }}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="grid">
+        <div class="hero__payoff">
+            <div class="content">
+                <h1>{{ entry.payoff }}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mainContent mainContent--hasHero">
+    <div class="container">
+        <article class="grid grid--compact article">
+            {% include '_components/_nav_breadcrumbs' %}
+
+            <header class="article__header">
+                <div class="article__header__title">
+                    <h1>{{ entry.title }}</h1>
+                </div>
+            </header>
+
+            <div class="article__introduction">
+                <div class="content contentSizeMedium">
+                    {{ entry.intro }}
+                </div>
+            </div>
+            
+            {% include '_macros/_contentstream' %}
+        </article>
+    </div>
+</div>

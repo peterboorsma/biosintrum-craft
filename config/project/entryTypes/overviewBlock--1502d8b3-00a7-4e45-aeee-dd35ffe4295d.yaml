@@ -1,0 +1,168 @@
+color: null
+description: null
+fieldLayouts:
+  3f8755ee-43c9-469a-9a15-5acb31e55f1f:
+    cardThumbAlignment: end
+    cardView:
+      - parent
+      - 'layoutElement:52dab373-d4fd-4899-b09e-cb545c85b5da'
+      - 'layoutElement:61722fd5-2da4-4d65-a58d-a5464c72758c'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-10-04T18:19:03+00:00'
+            dismissible: true
+            elementCondition: null
+            style: tip
+            tip: 'Deze blokken worden getoond op de voorpagina en de pagina "Wat we doen"'
+            type: craft\fieldlayoutelements\Tip
+            uid: c13039bb-48c1-496a-9a4f-822944913c70
+            userCondition: null
+          -
+            dateAdded: '2025-10-04T17:23:47+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+            handle: label
+            includeInCards: false
+            instructions: 'Bijv. "congrescentrum" of "expertisecentrum"'
+            label: Label
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b46f88ff-1ebf-4b00-8324-ab9d1de9d140
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-10-04T17:23:47+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Titel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d293b794-359c-4ca0-b341-140510018afd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-04T18:14:57+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f8fac004-81f8-4a88-8825-0342279070ee # Plain Text Multiline
+            handle: blockText
+            includeInCards: false
+            instructions: Kortkortkort!
+            label: Tekst
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c62d7280-46ea-4473-8ebf-80a26ae7318b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-04T17:32:46+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 2dd9ed81-e1a2-4c3d-8200-9c971bc0a514 # Blok type
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 61722fd5-2da4-4d65-a58d-a5464c72758c
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-10-04T17:32:46+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: fbb0a651-fb1f-4832-b5ae-8cdde41d9030 # Blok kleur
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 52dab373-d4fd-4899-b09e-cb545c85b5da
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-10-04T18:22:10+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+            handle: image
+            includeInCards: false
+            instructions: null
+            label: Afbeelding
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fba16db1-c4e3-4720-b992-d59fd022b08a
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-10-04T18:09:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ff8f529f-79cf-4f8b-af51-dc2679bea708 # Button Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f9e78e71-0189-4329-80fc-e9cccb0a6752
+            userCondition: null
+            warning: null
+            width: 25
+        name: Content
+        uid: 26fb1860-5ccb-4b56-8a30-ad8e19694a52
+        userCondition: null
+handle: overviewBlock
+hasTitleField: true
+icon: grid-round-2-plus
+name: 'Overzicht blok'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

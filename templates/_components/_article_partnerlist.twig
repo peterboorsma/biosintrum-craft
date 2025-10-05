@@ -1,0 +1,41 @@
+{% if entry.partnerList is defined and entry.partnerList|length %}
+
+{% set currentSection = craft.app.request.getSegment(1) %}
+<div class="grid grid--gapless article__partnerlist">
+    {% if currentSection == 'projecten' %}
+    <div class="article__partnerlist__header">
+        <div class="content">
+            <div class="compactTitle">Projectpartners</div>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="article__partnerList__content">
+        <div class="logoGrid">
+        {% for partnerlink in entry.partnerList %}
+        {% import '_macros/_image.twig' as img %}
+        <div>
+            {% set logo = partnerlink.partnerLogo %}
+            {% set url = partnerlink.externalUrl ?? '' %}
+            {% if logo|length %}
+                {% if url %}
+                    <a href="{{ url }}" rel="noopener" target="_blank">
+                        {{ img.responsiveImage(logo, {
+                            maxWidth: 160,
+                            cropMode: 'fit',
+                            quality: 90
+                        }) }}
+                    </a>
+                {% else %}
+                    {{ img.responsiveImage(logo, {
+                        maxWidth: 160,
+                        cropMode: 'fit',
+                        quality: 90
+                    }) }}
+                {% endif %}
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}

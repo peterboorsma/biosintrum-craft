@@ -1,0 +1,38 @@
+columnSuffix: null
+handle: image
+instructions: null
+name: 'Assets Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultPlacement: end
+  defaultUploadLocationSource: 'volume:23469c41-a809-450c-82c2-40780afd23a6' # Images
+  defaultUploadLocationSubpath: '{% if object.owner is defined and object.owner.section is defined %}{{ object.owner.section.handle|kebab }}{% elseif object.section is defined %}{{ object.section.handle|kebab }}{% else %}default{% endif %}'
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:23469c41-a809-450c-82c2-40780afd23a6' # Images
+  restrictedLocationSubpath: '{% if object.owner is defined and object.owner.section is defined %}{{ object.owner.section.handle|kebab }}{% elseif object.section is defined %}{{ object.section.handle|kebab }}{% else %}default{% endif %}'
+  selectionLabel: null
+  showCardsInGrid: false
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:23469c41-a809-450c-82c2-40780afd23a6' # Images
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

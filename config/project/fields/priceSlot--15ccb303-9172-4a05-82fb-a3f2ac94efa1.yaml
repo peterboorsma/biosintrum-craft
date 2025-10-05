@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: priceSlot
+instructions: null
+name: 'Dagdeel en prijs'
+searchable: false
+settings:
+  createButtonLabel: 'Nieuwe tarief entry'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 1cd78da4-b08a-49e9-80a6-9aaa808ecb8a # Tarieven
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

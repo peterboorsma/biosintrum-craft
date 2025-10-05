@@ -1,0 +1,88 @@
+columnSuffix: null
+handle: buttonDownload
+instructions: null
+name: 'Button Download'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - d6e1c186-22b2-40d5-8203-afc34614a9cf
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    1:
+                      - uid
+                      - 38e24366-175e-4eeb-b167-6e9cfcc9c17e
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            2:
+                              - label
+                              - 'Tekst op knop'
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 50
+                            10:
+                              - dateAdded
+                              - '2025-09-17T19:33:05+00:00'
+                            11:
+                              - uid
+                              - 4fb6cb04-0dba-48b9-bf3d-9d1c291dcb9e
+                            14:
+                              - fieldUid
+                              - 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            2:
+                              - label
+                              - 'Bestand '
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 50
+                            10:
+                              - dateAdded
+                              - '2025-09-17T19:33:05+00:00'
+                            11:
+                              - uid
+                              - cc14a083-71a8-4801-89db-63ac9aa2ef35
+                            14:
+                              - fieldUid
+                              - b378d7b8-6042-489d-b53d-727c66711509 # Assets Download
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

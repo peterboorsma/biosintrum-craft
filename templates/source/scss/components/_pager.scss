@@ -1,0 +1,37 @@
+.container.pager {
+    text-align: center;
+}
+
+ul.pagination {
+    display: inline-flex;
+    margin: 0 auto;
+    list-style: none;
+
+    li {
+        font-size: var(--step--2);
+        border: 1px solid var(--black);
+        margin-inline: var(--space-1);
+
+        &[disabled] {
+            opacity: .2;
+            cursor: not-allowed;
+        }
+
+        
+        &:hover {
+            
+        }
+        
+        a {
+            display: block;
+            text-decoration: none;
+            padding: var(--space-1);
+        }
+
+        &.active a {
+            color: var(--white);
+            background-color: var(--black);
+        }
+        
+    }
+}

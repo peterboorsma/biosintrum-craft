@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: selectProjects
+instructions: null
+name: 'Gekoppelde projecten'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: Toevoegen
+  showCardsInGrid: true
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:3c79070d-f645-4fc2-bfd2-c0a46838c559' # Projecten
+  targetSiteId: null
+  validateRelatedElements: true
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

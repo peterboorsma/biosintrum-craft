@@ -1,0 +1,266 @@
+color: null
+description: null
+fieldLayouts:
+  54e17f23-eaec-43a2-a5c3-84c8b38760a6:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-18T08:35:20+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Paginatitel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3c2a9592-8ae8-412a-9495-3f2366d90823
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-01T10:06:57+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 8daadfc7-3603-4a30-86f9-ed6028e25665
+            userCondition: null
+          -
+            dateAdded: '2025-09-25T20:37:36+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\entries\SectionConditionRule
+                  operator: in
+                  uid: 034ca26d-7db1-4a97-9bbb-d06e1bbbde96
+                  values:
+                    - 19eb76be-2b91-4238-b8ff-3654257a1783 # Agenda
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 99308e96-c44c-4639-8d40-4ef316b1e1a1 # Datum
+            handle: dateFrom
+            includeInCards: false
+            instructions: null
+            label: 'Datum van'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 86bcfeec-ba1b-458b-9247-7de80cc466de
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-25T20:37:36+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\entries\SectionConditionRule
+                  operator: in
+                  uid: e565fac9-8847-4448-854f-365e5862779a
+                  values:
+                    - 19eb76be-2b91-4238-b8ff-3654257a1783 # Agenda
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 99308e96-c44c-4639-8d40-4ef316b1e1a1 # Datum
+            handle: dateTo
+            includeInCards: false
+            instructions: 'Alleen invullen bij meerdaagse events'
+            label: 'Datum tot'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 533375b3-796c-4eb0-b97f-d1a490e545b0
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-25T20:37:36+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\entries\SectionConditionRule
+                  operator: in
+                  uid: ff37fb21-1d9a-472e-927a-7f326ddc062b
+                  values:
+                    - 19eb76be-2b91-4238-b8ff-3654257a1783 # Agenda
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+            handle: time
+            includeInCards: false
+            instructions: null
+            label: Tijden
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a732783d-5e46-4dbb-b3c9-cf5649ea03d9
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-29T08:45:25+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: b8a1c119-ebd2-4c87-a8e1-0a0fabb58c7e
+            userCondition: null
+          -
+            dateAdded: '2025-09-18T08:39:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Afbeelding
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 31bcfeaf-be6d-4c91-aa49-81c2a0502791
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-10-01T10:05:47+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f30926c9-bf98-4136-a4d3-fe5d5181a595 # Toon bijschrift
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c1d6e958-4dd8-46cf-8695-0840a511d93f
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-29T08:44:45+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: dc6bde34-ac1d-4ae5-a643-87784759763f # Gekoppelde projecten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c4d65fd1-7f2b-453e-ab6f-f33dc5ed0271
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-29T08:45:25+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 1b959dd7-c90a-4bbe-a2ac-e9a929c46ef4
+            userCondition: null
+          -
+            dateAdded: '2025-09-18T08:39:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3fbba55-9047-45a2-9bdd-0013a9b83f23 # Rich Text
+            handle: intro
+            includeInCards: false
+            instructions: null
+            label: Introductie
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b13f3f49-1818-4e42-bd7a-9c670b38fc4f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-10-01T15:01:36+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: e21d5d22-6eeb-4425-a98d-fd16ace4e497
+            userCondition: null
+          -
+            dateAdded: '2025-09-18T08:39:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8b61a538-af28-46cf-b884-bb22dc1821ca # SEO Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 24f8a643-119c-41b9-b781-5e0336fa4425
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: b52245f9-0373-44b4-a074-151ad40f18bc
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-09-18T08:39:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: bedcd512-47d2-4bf6-b77b-fa82d8d107cf # Content blokken
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 47c67cc0-1b98-42e2-b2e1-88a71caa0c26
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Content blokken'
+        uid: fc74d62a-d17e-4ccc-9f80-0c99c5ba0b6a
+        userCondition: null
+handle: actueel
+hasTitleField: true
+icon: message-pen
+name: Actueel
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,35 @@
+defaultPlacement: end
+enableVersioning: false
+entryTypes:
+  -
+    uid: 5168636d-e73b-40fa-9a36-e1146da0c43d # Wat we doen
+  -
+    uid: d163a572-6de6-4dc1-8c1c-9ebb5a42f8b2 # Verdiepingspagina's
+  -
+    uid: 5d8cb6ad-2d15-4d50-a184-8219793c33d4 # Ruimtes
+handle: watWeDoen
+maxAuthors: 1
+name: 'Wat we doen'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fb0d368d-2fb7-4027-a060-679959808366: # Biosintrum
+    enabledByDefault: true
+    hasUrls: true
+    template: watwedoen/_entry.twig
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: 3
+  uid: a7c4387d-ea8d-4ec2-b12c-40cbf9fc95ce
+type: structure

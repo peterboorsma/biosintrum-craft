@@ -1,0 +1,155 @@
+fieldLayouts:
+  ea86ae04-7630-4a02-a737-3ff73272727b:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-09-17T20:00:24+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+            handle: organisationName
+            includeInCards: false
+            instructions: null
+            label: 'Naam organisatie'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13d90c3c-00de-4312-8a82-fe37508439f0
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-09-17T20:01:31+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+            handle: streetAndNumber
+            includeInCards: false
+            instructions: null
+            label: 'Straat + huisnr.'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5cacef26-4702-4cbd-9bc9-1889d71bb4d5
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-17T20:01:31+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+            handle: postalCode
+            includeInCards: false
+            instructions: null
+            label: Postcode
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: efbc461b-5274-4953-8b77-6f1bde3bc711
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-17T20:01:31+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+            handle: city
+            includeInCards: false
+            instructions: null
+            label: Plaats
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1adfdd5a-417d-496a-94ab-9a3aae79de67
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-10-01T12:33:09+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f8fac004-81f8-4a88-8825-0342279070ee # Plain Text Multiline
+            handle: openingHours
+            includeInCards: false
+            instructions: null
+            label: Openingstijden
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e16ddb7e-acdc-47b7-9128-75e10f5f4088
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-17T20:08:27+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\LineBreak
+            uid: 04a82105-3289-4fe4-b665-f2aab5fe8ee7
+            userCondition: null
+          -
+            dateAdded: '2025-09-17T20:04:19+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ff8f529f-79cf-4f8b-af51-dc2679bea708 # Button Link
+            handle: email
+            includeInCards: false
+            instructions: null
+            label: E-mail
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e6a37041-7618-4fb9-b59d-51ea78471d1b
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-24T08:19:37+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+            handle: phone
+            includeInCards: false
+            instructions: null
+            label: Telefoon
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6431b456-46d8-4f74-8adc-6f585f137416
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-10-01T08:52:16+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f8fac004-81f8-4a88-8825-0342279070ee # Plain Text Multiline
+            handle: map
+            includeInCards: false
+            instructions: null
+            label: 'Google map'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13d3edbd-1983-486f-958a-b1b0e59d1590
+            userCondition: null
+            warning: null
+            width: 100
+        name: Adres
+        uid: c65a96e4-d9ea-4fa7-9dd0-4f01dd990121
+        userCondition: null
+handle: adresgegevens
+name: Adresgegevens
+sortOrder: 2

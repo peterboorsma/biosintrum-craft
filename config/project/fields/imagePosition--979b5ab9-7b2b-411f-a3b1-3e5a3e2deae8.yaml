@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: imagePosition
+instructions: null
+name: 'Image Position'
+searchable: false
+settings:
+  default: true
+  offLabel: 'Afbeelding links'
+  onLabel: 'Afbeelding rechts'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

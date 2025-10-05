@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: false
+entryTypes:
+  -
+    uid: 1dcb2d06-322f-4f10-bc76-728c618a57a6 # Homepage
+handle: homepage
+maxAuthors: 1
+name: Homepage
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fb0d368d-2fb7-4027-a060-679959808366: # Biosintrum
+    enabledByDefault: true
+    hasUrls: true
+    template: homepage/_entry.twig
+    uriFormat: __home__
+type: single

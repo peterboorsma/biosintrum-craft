@@ -1,0 +1,110 @@
+color: null
+description: null
+fieldLayouts:
+  48df8e74-40b1-4b89-8525-98724ec98e1c:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-17T20:26:15+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Paginatitel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c0c1f9fb-ca1e-4012-b958-f66b5346f397
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-17T20:28:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3fbba55-9047-45a2-9bdd-0013a9b83f23 # Rich Text
+            handle: intro
+            includeInCards: false
+            instructions: null
+            label: Introductie
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d71253e2-83b4-40a2-a504-b15a7e5b833c
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-09-18T08:08:50+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8b61a538-af28-46cf-b884-bb22dc1821ca # SEO Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b0bbeece-b932-4c99-bcd8-2782e81c3fdf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d376334c-7e94-4c89-9844-0e71581ec215
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-09-17T20:28:32+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4dbf591f-220c-49e2-b6ee-63c6a4cf108d # Partner list
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: __blank__
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 488227a6-243d-4a0c-a1e6-d87b88bae0f6
+            userCondition: null
+            warning: null
+            width: 75
+        name: Partners
+        uid: 8b688d8b-c766-4069-8250-b4ea959f2901
+        userCondition: null
+handle: partners
+hasTitleField: true
+icon: champagne-glasses
+name: Partners
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

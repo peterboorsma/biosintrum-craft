@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: false
+entryTypes:
+  -
+    uid: 4acbf173-f5b9-48c3-8ffb-906f3a57a3ce # Paginas
+handle: paginas
+maxAuthors: 1
+name: "Pagina's"
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fb0d368d-2fb7-4027-a060-679959808366: # Biosintrum
+    enabledByDefault: true
+    hasUrls: true
+    template: paginas/_entry.twig
+    uriFormat: 'paginas/{slug}'
+type: channel

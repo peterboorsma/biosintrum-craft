@@ -1,0 +1,53 @@
+columnSuffix: null
+handle: contentBlocks
+instructions: null
+name: 'Content blokken'
+searchable: false
+settings:
+  createButtonLabel: 'Blok toevoegen'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 9c2b5efe-b549-4e63-a2f3-8c1ee5ea7704 # Blok
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 87e67b83-5cc3-4d47-8fc8-17066869cf9b # Blok Knoppen
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - 1ca63ceb-4a9f-404b-9924-fbfc2ecc808a # Blok Embed
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
+          - b64307a7-ec4a-46ea-8836-cf6a7de0c856 # Blok Afbeelding
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

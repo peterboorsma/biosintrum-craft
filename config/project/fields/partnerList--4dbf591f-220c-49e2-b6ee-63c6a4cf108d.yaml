@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: partnerList
+instructions: null
+name: 'Partner list'
+searchable: false
+settings:
+  createButtonLabel: 'Partner toevoegen'
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 601fba76-351e-4ee9-b9a9-5b49523baf37 # Partnerlink
+        -
+          - group
+          - General
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

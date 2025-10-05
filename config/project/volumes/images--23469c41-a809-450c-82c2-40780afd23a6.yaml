@@ -1,0 +1,98 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  aed0f288-31b2-4237-945b-b18d6c9e1696:
+    cardThumbAlignment: start
+    cardView:
+      - imageSize
+      - 'layoutElement:ad5616d5-b5f9-4c24-8360-ac66a89312bd'
+      - filename
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-17T15:19:56+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: bd456819-f8a4-48f4-8e41-7dd976e34a2d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2025-09-18T09:04:55+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: 802ac582-4088-4ce5-8f28-74a939125d74
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-17T15:32:08+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ad5616d5-b5f9-4c24-8360-ac66a89312bd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d5a6c6b9-890a-4a98-9b9d-930efc0c7ffa
+        userCondition: null
+fs: localStorage
+handle: images
+name: Images
+sortOrder: 1
+subpath: images
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

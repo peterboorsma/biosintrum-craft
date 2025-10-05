@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: selectEntry
+instructions: null
+name: 'Select Entry'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: 'Selecteer een entry'
+  showCardsInGrid: false
+  showSearchInput: true
+  showSiteMenu: false
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: true
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

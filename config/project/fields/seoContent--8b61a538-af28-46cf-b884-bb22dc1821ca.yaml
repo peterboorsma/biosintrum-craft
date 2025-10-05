@@ -1,0 +1,172 @@
+columnSuffix: null
+handle: seoContent
+instructions: null
+name: 'SEO Content'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - db6a9c4c-5317-4a16-9cfd-ba009c10a0e9
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - ee8f107f-dcd0-4cc5-b406-51304f432e15
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\Tip
+                            1:
+                              - tip
+                              - "Vul in ieder geval de \"pagina beschrijving\". \r\nTitel en afbeelding worden automatisch overgenomen van paginatitel en afbeelding."
+                            2:
+                              - dismissible
+                              - false
+                            3:
+                              - style
+                              - tip
+                            4:
+                              - dateAdded
+                              - '2025-09-17T18:27:38+00:00'
+                            5:
+                              - uid
+                              - 16f0e872-6b94-4786-bad3-b1f223f4abc4
+                            7:
+                              - elementCondition
+                              -
+                                __assoc__:
+                                  -
+                                    - elementType
+                                    - craft\elements\ContentBlock
+                                  -
+                                    - fieldContext
+                                    - global
+                                  -
+                                    - class
+                                    - craft\elements\conditions\ElementCondition
+                                  -
+                                    - conditionRules
+                                    -
+                                      - { __assoc__: [[class, craft\fields\conditions\TextFieldConditionRule], [uid, a82cf256-50f8-4a97-8f97-950d1636c8b4], [operator, empty], [value, ''], [fieldUid, 4865191d-aa39-495d-9ae2-b5f0e62578f1], [layoutElementUid, 5c2e8067-6b0f-4505-bc55-a1bf2033fccf]] } # SEO Description
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            2:
+                              - label
+                              - 'Pagina beschrijving'
+                            3:
+                              - instructions
+                              - 'De "meta description"'
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-09-17T18:19:16+00:00'
+                            11:
+                              - uid
+                              - 5c2e8067-6b0f-4505-bc55-a1bf2033fccf
+                            14:
+                              - fieldUid
+                              - 4865191d-aa39-495d-9ae2-b5f0e62578f1 # SEO Description
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - seoTitle
+                            2:
+                              - label
+                              - Titel
+                            3:
+                              - instructions
+                              - 'Overschrijft de "Paginatitel" veld van deze entry in zoekresultaten'
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 75
+                            10:
+                              - dateAdded
+                              - '2025-09-17T18:19:16+00:00'
+                            11:
+                              - uid
+                              - 89750e99-1b8d-4be4-bcda-db5b56310da8
+                            14:
+                              - fieldUid
+                              - 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            1:
+                              - handle
+                              - seoImage
+                            2:
+                              - label
+                              - Afbeelding
+                            3:
+                              - instructions
+                              - 'Overschrijft de hoofdafbeelding elders in deze entry. Hiermee toon je zoekmachines een andere afbeelding websitebezoekers.'
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 25
+                            10:
+                              - dateAdded
+                              - '2025-09-17T18:19:16+00:00'
+                            11:
+                              - uid
+                              - ad05b323-93e8-448e-84ca-44cafab5ebc3
+                            14:
+                              - fieldUid
+                              - 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: pane
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

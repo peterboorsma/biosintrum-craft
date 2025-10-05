@@ -1,0 +1,105 @@
+color: null
+description: null
+fieldLayouts:
+  49e60c8e-95ad-421d-9357-62f9d6ae5352:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:620a49e3-48cb-4aae-9504-dc3e276a9c6f'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-09-17T16:12:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: Afbeelding
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 620a49e3-48cb-4aae-9504-dc3e276a9c6f
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-29T08:02:32+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\RelationalFieldConditionRule
+                  fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+                  layoutElementUid: 620a49e3-48cb-4aae-9504-dc3e276a9c6f
+                  operator: notempty
+                  uid: f1fb552b-86cc-407d-83b5-67aad7e7b5c5
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 2bce9a53-eac8-45c0-83b9-3cfbf5e709e7 # Afbeelding formaat
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 91d30272-d354-4eb5-84d8-ccf146e8372a
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-29T07:58:31+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\RelationalFieldConditionRule
+                  fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+                  layoutElementUid: 620a49e3-48cb-4aae-9504-dc3e276a9c6f
+                  operator: notempty
+                  uid: d62e89ca-0a67-49f4-a3c5-60f4f266275c
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: ff8f529f-79cf-4f8b-af51-dc2679bea708 # Button Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0fc81ac5-dab0-4373-af09-fd3fe8097eb3
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-29T08:04:38+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: ''
+            type: craft\fieldlayoutelements\Tip
+            uid: bbfcdeba-dc5c-45ab-a29e-ad231233fb01
+            userCondition: null
+        name: Content
+        uid: 57265188-7c15-4627-801a-387030cca915
+        userCondition: null
+handle: contentblockImage
+hasTitleField: false
+icon: image
+name: 'Blok Afbeelding'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

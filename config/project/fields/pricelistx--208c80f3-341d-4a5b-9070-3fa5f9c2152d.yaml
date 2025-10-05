@@ -1,0 +1,143 @@
+columnSuffix: null
+handle: pricelistx
+instructions: null
+name: Tarievenlijst
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - ba315349-5214-4c9a-8296-0a4e0e2dcd02
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - b6d1647f-4137-42a2-95d7-868dcbb79214
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            2:
+                              - label
+                              - Titel
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-09-17T18:56:21+00:00'
+                            11:
+                              - uid
+                              - a34bf5c8-cd6a-4416-aa56-63a7e5336930
+                            14:
+                              - fieldUid
+                              - 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-09-17T18:56:21+00:00'
+                            11:
+                              - uid
+                              - 65542ecc-cf00-43c9-a3a3-3a260d49f679
+                            14:
+                              - fieldUid
+                              - 15ccb303-9172-4a05-82fb-a3f2ac94efa1 # Dagdeel en prijs
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            2:
+                              - label
+                              - Footertekst
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 75
+                            10:
+                              - dateAdded
+                              - '2025-09-17T19:06:16+00:00'
+                            11:
+                              - uid
+                              - b5edc5bf-3ddb-4149-b14d-8a1ab96e8d4c
+                            14:
+                              - fieldUid
+                              - f3fbba55-9047-45a2-9bdd-0013a9b83f23 # Rich Text
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 25
+                            10:
+                              - dateAdded
+                              - '2025-09-17T19:07:27+00:00'
+                            11:
+                              - uid
+                              - 8addef7a-2156-4f37-b037-96a2558556df
+                            14:
+                              - fieldUid
+                              - b378d7b8-6042-489d-b53d-727c66711509 # Assets Download
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: pane
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

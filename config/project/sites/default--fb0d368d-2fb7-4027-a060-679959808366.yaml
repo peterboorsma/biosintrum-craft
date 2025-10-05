@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: nl
+name: Biosintrum
+primary: true
+siteGroup: 7db4c8c9-64ae-4f55-9955-8ec3059fb9d1 # Biosintrum
+sortOrder: 1

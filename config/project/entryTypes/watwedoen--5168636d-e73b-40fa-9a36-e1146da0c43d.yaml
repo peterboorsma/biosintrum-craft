@@ -1,0 +1,187 @@
+color: null
+description: null
+fieldLayouts:
+  aa1675de-816e-424e-9b1f-ed4b547b3bdc:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-18T08:13:47+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Paginatitel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: f0890804-bdc2-47b3-b376-0ead2027a569
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-18T08:33:16+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\LevelConditionRule
+                  maxValue: ''
+                  operator: '='
+                  step: 1
+                  uid: dd222be4-2faf-4534-89e7-1bb89611fced
+                  value: '1'
+                -
+                  class: craft\elements\conditions\HasDescendantsRule
+                  uid: 7fe585fe-8be8-4f2d-bb5f-474a87bb9870
+                  value: true
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+            handle: payoff
+            includeInCards: false
+            instructions: 'Komt in geel kader net als op de voorpagina'
+            label: Payoff
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ae4ea619-e916-46d0-86ec-363e8a4229f1
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-09-18T08:31:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3fbba55-9047-45a2-9bdd-0013a9b83f23 # Rich Text
+            handle: intro
+            includeInCards: false
+            instructions: null
+            label: Introductie
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1b0559ab-584a-4a40-b6c9-8513ea26a703
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-09-18T08:22:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Afbeelding
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3cd696ae-7ebc-49cd-a0f5-826440cd698e
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-10-01T18:35:09+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\LevelConditionRule
+                  maxValue: ''
+                  operator: '='
+                  step: 1
+                  uid: 8eff1afe-c012-4f0e-88a8-7ade9141de5c
+                  value: '2'
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: dc6bde34-ac1d-4ae5-a643-87784759763f # Gekoppelde projecten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d50813e8-acbd-4a70-8ead-36ed4fb19859
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-09-18T08:22:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8b61a538-af28-46cf-b884-bb22dc1821ca # SEO Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 844ad14b-1fb1-4c46-8127-2ac61cf450fe
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: df760155-c04e-4d23-b1fe-c460d27b3c4c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-09-18T08:22:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: bedcd512-47d2-4bf6-b77b-fa82d8d107cf # Content blokken
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 21c8e65a-d31d-4a24-b650-c951aeb7c249
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Content blokken'
+        uid: a8460556-657b-480e-b868-0196a3e17054
+        userCondition: null
+handle: watwedoen
+hasTitleField: true
+icon: bee
+name: 'Wat we doen'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

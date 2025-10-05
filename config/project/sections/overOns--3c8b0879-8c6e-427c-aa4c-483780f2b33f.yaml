@@ -1,0 +1,33 @@
+defaultPlacement: end
+enableVersioning: false
+entryTypes:
+  -
+    uid: 6d8a5491-1714-4fcd-bb76-6783f345f70e # Over ons
+  -
+    uid: aa77c39f-f098-4ed3-bb08-a460a8d3fce3 # Partners
+handle: overOns
+maxAuthors: 1
+name: 'Over ons'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fb0d368d-2fb7-4027-a060-679959808366: # Biosintrum
+    enabledByDefault: true
+    hasUrls: true
+    template: overons/_entry.twig
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: 2
+  uid: 20f496d1-0bcf-4fa6-8973-89df21af2b91
+type: structure

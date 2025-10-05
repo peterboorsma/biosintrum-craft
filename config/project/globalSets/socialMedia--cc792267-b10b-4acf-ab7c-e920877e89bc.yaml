@@ -1,0 +1,61 @@
+fieldLayouts:
+  82bcad89-9d13-4063-ba99-fb6522c289dd:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-09-17T19:58:15+00:00'
+            elementCondition: null
+            heading: LinkedIn
+            type: craft\fieldlayoutelements\Heading
+            uid: 37b04bd5-aa0e-4e4e-bf9b-515ebec40a97
+            userCondition: null
+          -
+            dateAdded: '2025-09-17T19:56:22+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+            handle: urlLinkedIn
+            includeInCards: false
+            instructions: null
+            label: URL
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27782744-d71f-4800-9758-9d385d419695
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-17T19:58:15+00:00'
+            elementCondition: null
+            heading: Instagram
+            type: craft\fieldlayoutelements\Heading
+            uid: c8637b24-72a0-4a65-8200-3ef7e384bc26
+            userCondition: null
+          -
+            dateAdded: '2025-09-17T19:58:15+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+            handle: urlInstagram
+            includeInCards: false
+            instructions: null
+            label: URL
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 591396ee-7ab0-43bd-b27c-9b07922dec28
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Social media'
+        uid: 291db74a-b581-4fd9-81d2-b26dd109ae69
+        userCondition: null
+handle: socialMedia
+name: 'Social media'
+sortOrder: 3

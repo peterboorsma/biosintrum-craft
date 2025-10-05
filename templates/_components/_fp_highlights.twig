@@ -1,0 +1,134 @@
+{% set blocks = craft.entries()
+    .section('overzichtBlokken')
+    .orderBy('postDate desc')
+    .limit(40)
+    .all() %}
+
+<div class="container">
+    <div class="highlights">
+        {% if blocks %}
+        {% for block in blocks %}
+        <div class="card card--color:{{ block.blockColor }} card--{{ block.blockType }}">
+            <div class="card__header">
+                <span class="card__header__label">{{ block.label }}</span>
+                <span class="card__header__title">{{ block.title }}</span>
+            </div>
+
+            <div class="card__image">
+            {% if block.image is defined and block.image|length %}
+                {% import '_macros/_image.twig' as img %}
+
+                {{ img.responsiveImage(block.image, {
+                    maxWidth: 690,
+                    cropMode: 'crop',
+                    aspectRatio: '4:3'
+                }) }}
+                {% endif %}
+            </div>
+
+            <div class="card__main">
+                <span class="card__main__text">{{ block.blockText|raw }}</span>
+            </div>
+
+            {% if block.buttonLink is defined and block.buttonLink  %}
+            <div class="card__footer">
+                <a class="button button--small button--{{ (block.buttonLink.type is defined and block.buttonLink.type is not empty) ? block.buttonLink.type : 'forward' }} button--{{ block.blockColor }}" href="{{ block.buttonLink.url }}" >
+                    {% if block.buttonLink.label is defined and block.buttonLink.label is not empty %}
+                        {{ block.buttonLink.label }}
+                    {% endif %}
+                </a>
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        {# agenda #}
+        <div class="card card--horizontal">
+            <div class="card__header">
+                <div class="compactTitle">Agenda</div>
+            </div>
+
+            <div class="card__main card__main--expanded">
+                {% include "_components/_agendalist" %}
+            </div>
+
+            <div class="card__footer">
+                <div class="content">
+                    <a href="{{ currentSite.baseUrl ~ 'actueel#agenda' }}" class="button button--forward button--small button--black">Volledige agenda</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    {#
+<div class="container">
+    <div class="blocks">
+        {% if blocks %}
+        <div class="blockSizer"></div>
+        <div class="gutterSizer"></div>
+        {% for block in blocks %}
+        <div class="block block--color:{{ block.blockColor }} block--{{ block.blockType }}">
+            <div class="block__header">
+                <div class="block__label">{{ block.label }}</div>
+                {{ block.title }}
+            </div>
+
+            <div class="block__image">
+            {% if block.image is defined and block.image|length %}
+                {% import '_macros/_image.twig' as img %}
+
+                {{ img.responsiveImage(block.image, {
+                    maxWidth: 690,
+                    cropMode: 'crop',
+                    aspectRatio: '4:3'
+                }) }}
+                {% endif %}
+            </div>
+
+            <div class="block__text">
+                {{ block.blockText|raw }}
+            </div>
+
+            {% if block.buttonLink is defined and block.buttonLink  %}
+            <div class="block__footer">
+                <a class="button button--small button--{{ (block.buttonLink.type is defined and block.buttonLink.type is not empty) ? block.buttonLink.type : 'forward' }} button--{{ block.blockColor }}" href="{{ block.buttonLink.url }}" >
+                    {% if block.buttonLink.label is defined and block.buttonLink.label is not empty %}
+                        {{ block.buttonLink.label }}
+                    {% endif %}
+                </a>
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        {% include "_components/_fp_block_agenda" %}
+    </div>
+</div>
+
+{% block scripts %}
+<script src=" https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js "></script>
+<script src=" https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js "></script>
+
+<script>
+var grid = document.querySelector('.blocks');
+
+var msnry = new Masonry( grid, {
+  itemSelector: '.block',
+  columnWidth: '.blockSizer',
+  percentPosition: true,
+
+  gutter: '.gutterSizer'
+});
+
+imagesLoaded( grid ).on( 'progress', function() {
+  msnry.layout();
+});
+</script>
+
+{% endblock %}
+
+#}

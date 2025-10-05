@@ -1,0 +1,119 @@
+    .search {
+        margin-block: 0 var(--space-3);
+
+        @include respond-to(large-screens) {
+            display: none;
+        }
+
+        &.is-visible {
+            position: absolute;
+            z-index: 1;
+            top: 34px; // height of .navbar__top
+            left: 0;
+            width: 100%;
+
+            @include respond-to(large-screens) {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-block: 0;
+                //padding-inline: var(--space-2);
+            }
+
+        }
+
+    }
+
+
+
+// search in navbar
+.search {
+    background-color: var(--blue);
+
+    @include respond-to(large-screens) {
+        .searchform {
+            width: calc(100% - 40px);
+        }
+    }
+
+}
+
+// search on results page
+.search-inline {
+    padding-inline: var(--space-2);
+    padding-block: var(--space-2);
+    background-color: var(--blue);
+
+    .searchform {
+        width: 100%;
+    }
+}
+
+.searchform {
+    display: flex;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+
+    input[type="search"] {
+        all: unset;
+        flex-grow: 1;
+        padding-block: 10px;
+        padding-inline: 7px;
+    }
+
+    input[type="submit"] {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        background-size: 22px 23px;
+        background-position: center;
+        width: 50px;
+        cursor: pointer;
+        color: transparent;
+        background-color: transparent;
+        @include icon-search;
+    }
+
+}
+
+.search-icon-container {
+    display: none;
+    margin-block: auto;
+    height: 100%;
+    width: 34px;
+    cursor: pointer;
+
+    @include respond-to(large-screens) {
+        display: flex;
+    }
+
+    button.search-icon {
+        all: unset;
+        width: 34px;
+        height: 34px;
+        background-position: center;
+        @include icon-search;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.is-checked {
+            @include icon-cross;
+        }
+    }
+
+}
+
+
+
+@mixin icon-search {
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='23' viewBox='0 0 22 23'%3E%3Cg fill='none' fill-rule='evenodd' transform='translate(1 1)'%3E%3Cpolygon fill='%23000' points='11.597 15.995 21.309 15.995 21.309 18.236 11.597 18.236' transform='rotate(45 16.453 17.116)'/%3E%3Ccircle cx='7.845' cy='7.845' r='7.845' stroke='%23000' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+@mixin icon-cross {
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='21' viewBox='0 0 21 21'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='square' stroke-width='2' d='M123.021165,160.021165 L140.301165,177.301165 M123.021165,177.301165 L140.301165,160.021165' transform='translate(-121 -158)'/%3E%3C/svg%3E");
+}

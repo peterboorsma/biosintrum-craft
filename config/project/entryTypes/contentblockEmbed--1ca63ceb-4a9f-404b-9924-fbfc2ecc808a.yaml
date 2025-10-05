@@ -1,0 +1,42 @@
+color: null
+description: null
+fieldLayouts:
+  3a5a7cee-4f6b-48b0-a8b8-e49c1413a94c:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:c9ccbc5d-3091-4d09-b59f-c7f64a8be5b7'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-09-17T16:13:14+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 4f212a46-d489-4335-ae26-73116a6a1228 # Assets Embed
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c9ccbc5d-3091-4d09-b59f-c7f64a8be5b7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 65c13584-0078-46d5-a1c6-e53bb2926038
+        userCondition: null
+handle: contentblockEmbed
+hasTitleField: false
+icon: youtube
+name: 'Blok Embed'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

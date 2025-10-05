@@ -1,0 +1,159 @@
+color: null
+description: null
+fieldLayouts:
+  32f84b0f-fdd3-4fdb-99bd-36b890393c57:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-18T08:13:47+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Paginatitel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 18d4301d-0a62-4d94-a846-ed8b84ee2213
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-18T08:33:16+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\LevelConditionRule
+                  maxValue: ''
+                  operator: '='
+                  step: 1
+                  uid: 8a6baff6-bbda-4609-8258-8ac8088224f2
+                  value: '1'
+                -
+                  class: craft\elements\conditions\HasDescendantsRule
+                  uid: 6bae4ed0-f873-44ed-aa7a-8b267a3fa328
+                  value: true
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+            handle: payoff
+            includeInCards: false
+            instructions: 'Komt in geel kader net als op de voorpagina'
+            label: Payoff
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8cdfadc5-c5c2-4803-91f4-34a1a7f7eb9a
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-09-18T08:31:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3fbba55-9047-45a2-9bdd-0013a9b83f23 # Rich Text
+            handle: intro
+            includeInCards: false
+            instructions: null
+            label: Introductie
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8fb20ca5-c4dd-4bad-a059-3f2e77ac3476
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-09-18T08:22:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Afbeelding
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc6fbc57-4309-4d28-bb7b-948176835603
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-18T08:22:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8b61a538-af28-46cf-b884-bb22dc1821ca # SEO Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 581ab5e7-3670-4427-b6d6-50003392ca7f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 81096999-5597-41fe-b0a1-021dd3cf9975
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-09-18T08:22:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: bedcd512-47d2-4bf6-b77b-fa82d8d107cf # Content blokken
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b9489c1e-18d2-4ab2-91b5-5f0168e45937
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Content blokken'
+        uid: c7cae636-474d-4a8f-b3fe-78c6792a44c8
+        userCondition: null
+handle: overOns
+hasTitleField: true
+icon: ant
+name: 'Over ons'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

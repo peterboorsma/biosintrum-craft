@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: false
+entryTypes:
+  -
+    uid: 5bb3cb31-9529-4f7b-b407-bee0476b98df # Actueel
+handle: actueel
+maxAuthors: 1
+name: Actueel
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fb0d368d-2fb7-4027-a060-679959808366: # Biosintrum
+    enabledByDefault: true
+    hasUrls: true
+    template: actueel/_entry.twig
+    uriFormat: 'actueel/{slug}'
+type: channel

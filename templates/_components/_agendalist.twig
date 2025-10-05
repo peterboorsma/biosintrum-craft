@@ -1,0 +1,46 @@
+{#
+Vergeet niet de 'agenda' items op te halen voor de juiste context (bijv. home of actueel)
+#}
+
+{% set currentPath = craft.app.request.pathInfo %}
+{% set now = date('now') %}
+{# {% if entry is defined and entry.uri == '__home__' %} #}
+
+{% if entry is defined and entry.uri == '__home__' %}
+    {% set agenda = craft.entries()
+    .section('agenda')
+    .orderBy('dateFrom asc')
+    .limit(5)
+    .all() %}
+{% else %}
+    {% set agenda = craft.entries()
+    .section('agenda')
+    .orderBy('dateFrom asc')
+    .limit(50)
+    .all() %}
+{% endif %}
+
+{% set filteredAgenda = agenda|filter(entry => entry.dateFrom > now) %}
+
+{% if filteredAgenda|length %}
+<ul class="agendaList">
+    {% for entry in filteredAgenda %}
+    <li class="agendaListItem">
+        <a href="{{ entry.url }}" class="agendaListItem__link">
+            <time class="agendaListItem__date" datetime="{{ entry.dateFrom|date('c') }}">
+                {{ entry.dateFrom|date('d') }}
+                {% if entry.dateTo %}
+                    {% if entry.dateFrom|date('F') != entry.dateTo|date('F') %}
+                        {{ entry.dateFrom|date(' F') }}
+                    {% endif %}
+                    - {{ entry.dateTo|date('d F Y') }}
+                {% else %}
+                    {{ entry.dateFrom|date(' F Y') }}
+                {% endif %}
+            </time>
+            <div class="agendaListItem__title">{{ entry.title }}</div>
+        </a>
+    </li>
+    {% endfor %}        
+</ul>
+{% endif %}

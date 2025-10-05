@@ -1,0 +1,95 @@
+color: null
+description: null
+fieldLayouts:
+  1345242f-ef2a-4e67-94f1-d56e14cc1261:
+    cardThumbAlignment: end
+    cardView:
+      - parent
+      - 'layoutElement:fe921dd8-32e4-46e3-ac08-43085dd21a47'
+      - 'layoutElement:1ddf2b88-d39e-4114-b272-3e50e0cb337a'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-09-17T16:05:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3fbba55-9047-45a2-9bdd-0013a9b83f23 # Rich Text
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: __blank__
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1ddf2b88-d39e-4114-b272-3e50e0cb337a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-17T19:40:53+00:00'
+            elementCondition: null
+            heading: Afbeelding
+            type: craft\fieldlayoutelements\Heading
+            uid: 0e8bb7f2-0ebc-48c7-8327-1aef27bb038c
+            userCondition: null
+          -
+            dateAdded: '2025-09-17T16:05:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: __blank__
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fe921dd8-32e4-46e3-ac08-43085dd21a47
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-17T16:10:02+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\RelationalFieldConditionRule
+                  fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+                  layoutElementUid: fe921dd8-32e4-46e3-ac08-43085dd21a47
+                  operator: notempty
+                  uid: fa4304e9-7e1e-45ad-99bf-a7b91ba12a50
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 979b5ab9-7b2b-411f-a3b1-3e5a3e2deae8 # Image Position
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Afbeelding positie'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 506d57f0-490a-42e8-844d-af1c03fbeb45
+            userCondition: null
+            warning: null
+            width: 25
+        name: Content
+        uid: 8e42414d-a174-4e42-bc85-011852894f27
+        userCondition: null
+handle: contentblock
+hasTitleField: false
+icon: rectangle-list
+name: Blok
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

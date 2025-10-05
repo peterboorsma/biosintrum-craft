@@ -1,0 +1,111 @@
+{% extends "_layouts/default" %}
+
+{% block bodyclass %}actueel{% endblock %}
+
+{% block content %}
+{% set currentPath = craft.app.request.pathInfo %}
+{% set currentSection = craft.app.request.getSegment(1) %}
+
+<div class="mainContent">
+    <div class="container">
+        <article class="grid grid--compact article">
+            <header class="article__header">
+                <div class="article__header__meta">
+                    {% if currentSection == 'actueel' %}
+                    <a href="{{ currentSite.baseUrl ~ 'actueel' }}" class="label">Nieuws</a> • <time class="label" datetime="{{ entry.postDate|date('c') }}">{{ entry.postDate|date('j F Y') }}</time>
+                    {% else %}
+                    <a href="{{ currentSite.baseUrl ~ 'actueel#agenda' }}" class="label">Agenda</a>
+                    {% endif %}
+                </div>
+
+                {% if currentSection == 'agenda' %}
+                <time class="article__header__title__date" datetime="{{ entry.dateFrom|date('c') }}">
+                    {{ entry.dateFrom|date('d') }}
+                    {% if entry.dateTo %}
+                        {% if entry.dateFrom|date('F') != entry.dateTo|date('F') %}
+                            {{ entry.dateFrom|date(' F') }}
+                        {% endif %}
+                        - {{ entry.dateTo|date('d F Y') }}
+                    {% else %}
+                        {{ entry.dateFrom|date(' F Y') }}
+                    {% endif %}
+                </time>
+                {% endif %}
+
+                <div class="article__header__title">
+                    <h1>{{ entry.title }}</h1>
+                </div>
+            </header>
+            
+    {# Als hoofdafbeelding geen bijschrift heeft, tonen we afbeelding naast intro #}
+    {# article__introduction--inline en --block worden gezet door de imageShowCaption lightswitch #}
+    {# article__mainImage--withCaption en --noCaption worden alleen gebruikt als fallback als images title fields leeg zijn én de imageShowCaption lightswitch aan staat: --block #}
+            {% if entry.imageShowCaption is defined and entry.imageShowCaption == false %}
+                <div class="article__introduction article__introduction--inline">
+                    <div class="content contentSizeMedium">
+                        {{ entry.intro }}
+                    </div>
+                </div>
+                
+                {% if entry.image[0] is defined and entry.image[0] %}
+                <figure class="article__mainImage article__mainImage--inline">
+                    {% import '_macros/_image.twig' as img %}
+                    {{ img.responsiveImage(entry.image, { maxWidth: 940 }) }}
+                </figure>
+                {% endif %}
+            {% else %}
+                <div class="article__introduction article__introduction--wide">
+                    <div class="content contentSizeMedium">
+                        {{ entry.intro }}
+                    </div>
+                </div>
+                
+                {% if entry.image[0] is defined and entry.image[0] %}
+                <figure class="article__mainImage{% if entry.image[0].title %} article__mainImage--withCaption{% else %} article__mainImage--noCaption{% endif %}">
+                    {% import '_macros/_image.twig' as img %}
+                    {{ img.responsiveImage(entry.image, { maxWidth: 940 }) }}
+
+                    {% if entry.image[0].title %}
+                        <figcaption class="caption">{{ entry.image[0].title }}</figcaption>
+                    {% endif %}
+                </figure>
+                {% endif %}
+            {% endif %}
+
+
+            {% include '_macros/_contentstream' %}
+            
+            {% if currentSection == 'agenda' %}
+            <aside class="article__sidebar grid sidebar">
+                <div class="sidebar__title">
+                    <div class="content">
+                        <div class="compactTitle">Volledige agenda</div>
+                    </div>
+                </div>
+
+                <div class="sidebar__content">
+                    {% include '_components/_agendalist.twig' %}
+                </div>
+            </aside>
+            {% endif %}
+
+            <footer class="article__footer">
+                {% set relatedProjecten = craft.entries.section('projecten').relatedTo(entry).limit(10).orderBy('postDate desc').all() %}
+                {% if relatedProjecten|length %}
+                    <div class="article__relatedProjects buttonGroup">
+                        <span class="label">Gerelateerde<br>projecten:</span>
+                    {% for entry in relatedProjecten %}
+                        <a href="{{ entry.url }}" class="button button--tiny button--forward">{{ entry.title }}</a>
+                    {% endfor %}
+                    </div>
+                {% endif %}
+
+                <a href="{{ currentSite.baseUrl ~ 'actueel' }}{% if currentSection == 'agenda' %}#agenda{% endif %}" class="button button--large button--backward">Terug naar overzicht</a>
+            </footer>
+        </article>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

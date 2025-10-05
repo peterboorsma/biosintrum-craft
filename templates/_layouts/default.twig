@@ -1,0 +1,43 @@
+{% set global = craft.entries.section('global').one() %}
+{% set flashes = craft.app.session.getAllFlashes(true) %}
+
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="360" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+
+    {% include "_partials/_trackers" %}
+    
+    <link rel="icon" href="/assets/img/icons/favicon.ico" sizes="32x32">
+    <link rel="icon" href="/assets/img/icons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/img/icons/apple-touch-icon.png">
+    <link rel="manifest" href="/assets/manifest.webmanifest">
+
+
+    {% include "_partials/_tagPB" %}
+    {#{% include "_partials/_seoTags" %}#}
+    
+    <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+
+<body class="{{ entry is defined and entry.uri == '__home__' ? 'homepage' : '' }} {% block bodyclass %}{% endblock %}">
+    <a href="#main" class="visually-hidden">{{ 'Skip to main content'|t }}</a>
+
+    {% include "_partials/_siteHeader" %}
+    
+    <main id="main" tabindex="-1">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include "_partials/_siteFooter" %}
+
+    <script defer src="/assets/js/app.js" type="module"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

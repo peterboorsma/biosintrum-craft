@@ -1,0 +1,68 @@
+{% set currentPath = craft.app.request.pathInfo %}
+{% set currentSite = craft.app.sites.currentSite %}
+{% set currentSection = craft.app.request.getSegment(1) %}
+
+<header class="siteHeader" id="siteHeader" role="banner" aria-label="Site header">
+    <div class="siteHeader__inner">
+        <a class="siteHeader__logo" href="/" aria-label="Biosintrum voorpagina">{% include "_components/svg/logo_tile" %}</a>
+
+        <div class="siteHeader__nav siteHeader__nav--passive" id="navPane">
+            <div class="siteHeader__nav-subNav">
+                <ul>
+                    <li class="subNavLink subNavLink--text"><a href="{{ currentSite.baseUrl ~ 'over-ons' }}" {% if currentPath == 'over-ons' %} class="active" {% endif %}>Over ons</a></li>
+
+                    <li class="subNavLink subNavLink--text"><a href="{{ currentSite.baseUrl ~ 'congrescentrum' }}" {% if currentPath == 'congrescentrum' %} class="active" {% endif %}>Ruimte boeken</a></li>
+
+                    <li class="subNavLink subNavLink--icon"><a href="{{ currentSite.baseUrl ~ '/over-ons/contact' }}" title="Contact, bezoek & routebeschrijving" aria-label="Contact, bezoek & routebeschrijving" {% if currentPath == 'contact' %} class="active" {% endif %}>{% include "_components/svg/icon_map" %}</a></li>
+                </ul>
+            </div>
+
+            <nav class="siteHeader__nav-mainNav" role="navigation" aria-label="Hoofd navigatie">
+                <ul>
+                    <li class="mainNavLink">
+                        <a href="{{ currentSite.baseUrl ~ 'wat-we-doen' }}"{% if currentPath == 'wat-we-doen' %} aria-current="page"{% endif %}>Wat we doen</a>
+                    </li>
+
+                    <li class="mainNavLink">
+                        <a href="{{ currentSite.baseUrl ~ 'projecten' }}"{% if currentPath == 'projecten' or currentSection == 'projecten' %} aria-current="page"{% endif %}>Projecten</a>
+                    </li>
+
+                    <li class="mainNavLink">
+                        <a href="{{ currentSite.baseUrl ~ 'actueel' }}"{% if currentPath == 'actueel' or currentSection == 'actueel' %} aria-current="page"{% endif %}>Actueel</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="siteHeader__actions">
+            <input id="hamburger" type="checkbox">
+            <label class="hamburger__label" for="hamburger">
+                <span class="visually-hidden">Open menu</span>
+                <div id="menuToggle" class="navButton" aria-haspopup="dialog">
+                    <div class="navButton__icon"></div>
+                </div>
+            </label>
+        </div>
+    </div>
+</header>
+
+{#
+oude Bolt search code
+
+        
+        <label class="search-icon-container" for="search-icon">
+            <button aria-expanded="false" aria-label="Open het zoekvenster" class="search-icon" onclick="toggleSearch()"
+                id="search-toggle"></button>
+        </label>
+        
+
+        <input id="menu-toggle" type="checkbox">
+        <label class="menu-button-container" for="menu-toggle">
+            <div id="hamburger" class="menu-button" aria-haspopup="dialog">
+                <div class="menu-button-icon"></div>
+            </div>
+        </label>
+
+
+{{ include('partials/components/_searchbar.twig') }}
+ #}

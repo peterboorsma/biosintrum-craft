@@ -1,0 +1,127 @@
+color: null
+description: null
+fieldLayouts:
+  baba6e90-e6a6-41e2-9ece-fecdc08d44a1:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-18T08:35:20+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Paginatitel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b3286319-8ae3-4fac-9d4a-81d20ddbc1c4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-18T08:39:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f3fbba55-9047-45a2-9bdd-0013a9b83f23 # Rich Text
+            handle: intro
+            includeInCards: false
+            instructions: null
+            label: Introductie
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 02e49b96-32de-413f-ae42-9d3768290637
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            dateAdded: '2025-09-18T08:39:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Afbeelding
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f818b611-11b0-46d3-a4a8-5690a2a2b4cf
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-09-18T08:39:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8b61a538-af28-46cf-b884-bb22dc1821ca # SEO Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a1592abb-9fe2-4183-af34-07813ed22f43
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 134792d1-3734-4450-b454-394e0941c7b7
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-09-18T08:39:21+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: bedcd512-47d2-4bf6-b77b-fa82d8d107cf # Content blokken
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9566d3f7-45c0-4d14-9cca-174fe286b2be
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Content blokken'
+        uid: b7ee6b3c-d277-46b6-b113-32e458640207
+        userCondition: null
+handle: paginas
+hasTitleField: true
+icon: file-lines
+name: Paginas
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

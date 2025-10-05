@@ -1,0 +1,44 @@
+{% set adresgegevens = craft.globalSets.handle('adresgegevens').one() %}
+{% set socialMedia = craft.globalSets.handle('socialMedia').one() %}
+<footer class="sitefooter">
+    <div class="container">
+        <div class="grid grid--compact sitefooterContent">
+            {% set emailClean = adresgegevens.email|replace({'mailto:': ''}) %}
+            {% set phoneClean = adresgegevens.phone|replace({'mailto:': '', '-': '', '(': '', ')': '', '.': ''}) %}
+            {% if phoneClean|slice(0, 1) == '0' %}
+                {% set phoneClean = '+31' ~ phoneClean|slice(1) %}
+            {% endif %}
+
+            <div class="sitefooterContent__partners">
+                <p>Biosintrum is een initiatief van de gemeente Ooststellingwerf.
+                Wij werken samen met een verscheidenheid aan partners.</p>
+
+                <div class="buttonGroup">
+                    <a class="button button--tiny button--forward" href="{{ currentSite.baseUrl ~ 'over-ons/partners' }}">Bekijk het partneroverzicht</a>
+                </div>
+            </div>
+
+            <address class="sitefooterContent__address address">
+                <b>{{ adresgegevens.organisationName }}</b><br>
+                {{ adresgegevens.streetAndNumber }}<br>
+                {{ adresgegevens.postalCode }} {{ adresgegevens.city }}<br>
+                <a href="{{ adresgegevens.email }}">{{ emailClean }}</a><br>
+                <a href="tel:{{ phoneClean }}">{{ adresgegevens.phone }}</a>
+            </address>
+
+            <div class="sitefooterContent__sociallinks">
+                {% if socialMedia.urlLinkedIn is not empty %}
+                <a href="{{ socialMedia.urlLinkedIn }}" title="Biosintrum op LinkedIn" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 29"><path d="M3.375 7c.583 0 1.135-.156 1.656-.469a3.59 3.59 0 0 0 1.25-1.25c.313-.52.469-1.083.469-1.687 0-.604-.156-1.167-.469-1.688A3.34 3.34 0 0 0 5.031.688 3.339 3.339 0 0 0 3.375.25c-.917 0-1.708.333-2.375 1S0 2.708 0 3.625.333 5.333 1 6s1.458 1 2.375 1Zm12.313 21.25V19c0-1.458.24-2.625.718-3.5.48-.875 1.407-1.313 2.782-1.313.708 0 1.28.146 1.718.438.438.292.74.719.907 1.281.166.563.27 1.063.312 1.5.042.438.063 1.01.063 1.719v9.125H28V18c0-1.375-.094-2.563-.281-3.563-.188-1-.521-1.927-1-2.78-.48-.855-1.188-1.5-2.125-1.938-.938-.438-2.115-.656-3.532-.656-1.333 0-2.479.302-3.437.906-.958.604-1.646 1.323-2.063 2.156H15.5V9.562H9.875V28.25h5.813Zm-9.438 0V9.562H.437V28.25H6.25Z"/></svg>
+                </a>
+                {% endif %}
+
+                {% if socialMedia.urlInstagram is not empty %}
+                <a href="{{ socialMedia.urlInstagram }}" title="Biosintrum op Instagram" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 28 27"><defs><path id="a" d="M.498.741h26.264V27H.498z"/></defs><g fill-rule="evenodd" transform="translate(.323)"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path d="M20.641 8.433c-.874 0-1.57-.703-1.57-1.57a1.57 1.57 0 1 1 3.14 0c0 .873-.703 1.57-1.57 1.57m-2.632 5.437a4.38 4.38 0 0 0-4.377-4.376 4.38 4.38 0 0 0-4.376 4.376c0 2.415 1.969 4.377 4.376 4.377s4.377-1.962 4.377-4.377m2.357 0c0 3.727-3.006 6.733-6.734 6.733s-6.731-3.006-6.731-6.733 3.006-6.732 6.731-6.732 6.734 3.006 6.734 6.732m4.03 0c0-1.91.159-6.011-.527-7.74a4.43 4.43 0 0 0-2.496-2.496c-1.723-.68-5.83-.527-7.741-.527s-6.011-.158-7.739.527A4.43 4.43 0 0 0 3.397 6.13c-.681 1.723-.527 5.83-.527 7.74s-.159 6.012.527 7.741a4.43 4.43 0 0 0 2.496 2.496c1.723.68 5.83.527 7.739.527s6.013.158 7.741-.527a4.43 4.43 0 0 0 2.496-2.496c.686-1.723.527-5.83.527-7.741m2.273 5.415c-.105 2.103-.586 3.966-2.12 5.502-1.535 1.541-3.398 2.021-5.502 2.121-2.168.123-8.667.123-10.835 0-2.102-.106-3.96-.586-5.501-2.121S.69 21.388.59 19.285c-.123-2.168-.123-8.666 0-10.834.105-2.104.58-3.967 2.121-5.502S6.115.933 8.212.833C10.38.71 16.879.71 19.047.833c2.104.106 3.967.586 5.502 2.121 1.541 1.536 2.022 3.399 2.12 5.502.124 2.168.124 8.661 0 10.829" mask="url(#b)"/></g></svg>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,54 @@
+{% extends "_layouts/default" %}
+
+{% block bodyclass %}projecten{% endblock %}
+
+{% block content %}
+
+{% set projecten = craft.entries()
+    .section('projecten')
+    .orderBy('title asc')
+    .limit(40)
+    .all() %}
+
+<div class="mainContent">
+    <div class="container">
+        <section class="grid">
+            <header class="grid__header">
+                <h1 class="compactTitle">Projecten</h1>
+            </header>
+
+            <div class="grid__content grid projectenOverzicht">
+                {% for entry in projecten %}
+                    <a class="card card--color:blue" href="{{ entry.url }}">
+                        <div class="card__header">
+                            <span class="card__header__title">{{ entry.title }}</span>
+                        </div>
+
+                        {% if entry.image[0] is defined and entry.image[0] %}
+                        <div class="card__image">
+                            {% import '_macros/_image.twig' as img %}
+                            {{ img.responsiveImage(entry.image, { maxWidth: 600, aspectRatio: '4:3', cropMode: 'crop' }) }}
+                        </div>
+                        {% endif %}
+                        
+                        {% if entry.intro %}
+                        <div class="card__main">
+                            <span class="card__main__text">{{ entry.intro }}</span>
+                        </div>
+                        {% endif %}
+                        
+                        <div class="card__footer">
+                            <span class="button button--small button--blue button--forward">Lees meer</span>
+                        </div>
+                    </a>
+
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

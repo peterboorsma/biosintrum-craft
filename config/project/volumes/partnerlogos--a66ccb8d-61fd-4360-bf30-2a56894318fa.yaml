@@ -1,0 +1,68 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  738deb70-53f2-4097-9dff-8fb1381c8143:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-09-17T20:20:35+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 67d16207-058f-4944-98d5-3317643cc5af
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-09-17T20:22:12+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd8d2b08-ed77-4196-833a-ad1b2148797a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1d98dd00-7e57-4de0-85aa-91f865fb31bf
+        userCondition: null
+fs: localStorage
+handle: partnerlogos
+name: Partnerlogos
+sortOrder: 4
+subpath: partnerlogos
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: imageShowCaption
+instructions: 'Geen bijschrift: toont foto kleiner zonder fotobijschrift'
+name: 'Toon bijschrift'
+searchable: false
+settings:
+  default: false
+  offLabel: 'Geen bijschrift'
+  onLabel: 'Toon bijschrift'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

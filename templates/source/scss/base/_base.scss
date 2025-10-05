@@ -1,0 +1,110 @@
+:root {
+
+    // Basic colors
+    --black: #000;
+    --white: #fff;
+
+    --red: #FF4C51;
+    // Corporate identity colors.  // Use BLACK content on regular colorsc// Use WHITE content on -alt colors
+    --yellow: #feeb18;
+    --darkYellow: #5e5419; // is eigenlijk donker olijfgroen maar och
+
+    --lightGreen: #e2f08a;
+    --green: #c0d345;
+    --darkGreen: #4D5517;
+
+    --lightBlue: #CBD9EF;
+    --blue: #98b3de;
+    --darkBlue: #3f5177;
+
+    --lightOchre: #E5D190;
+    --ochre: #CCA222;
+    --darkOchre: #9f7607;
+
+    --kcbLightgreen: #e2f0d4;
+    --kcbGreen: #80b042;
+    --kcbDarkgreen: #423a1a;
+
+    // units
+    --spaceUnit: 10px;
+     --space-1: var(--spaceUnit);
+     --space-2: calc(2 * var(--spaceUnit));
+     --space-3: calc(3 * var(--spaceUnit));
+     --space-4: calc(4 * var(--spaceUnit));
+     --space-5: calc(5 * var(--spaceUnit));
+     --space-6: calc(6 * var(--spaceUnit));
+
+    //fonts
+    --fontSize-sm: 0.813rem; //13px
+
+}
+
+$break-small: 460; //460px
+$break-medium: 600; //600px
+$break-large: 768; // staande ipad
+$break-xlarge: 1024; // liggende ipad
+$break-wide: 1200; //1200px
+$break-xwide: 1440; //1440px
+$break-xxwide: 1600; //1600px
+
+@mixin respond-to($media) {
+
+    @if $media == small-screens {
+        @media only screen and (min-width: calc($break-small / 16) + 'em') {
+           @content;
+        }
+    }
+    @if $media == medium-screens {
+        @media only screen and (min-width: calc($break-medium / 16) + 'em') {
+           @content;
+        }
+    }
+    @if $media == large-screens {
+        @media only screen and (min-width: calc($break-large / 16) + 'em') {
+           @content;
+        }
+    }
+    @if $media == up-to-large-screens {
+        @media only screen and (max-width: calc(($break-large - 1) / 16) + 'em') {
+           @content;
+        }
+    }
+    @if $media == xlarge-screens {
+        @media only screen and (min-width: calc($break-xlarge / 16) + 'em') {
+           @content;
+        }
+    }
+    @if $media == wide-screens {
+        @media only screen and (min-width: calc($break-wide / 16) + 'em') {
+           @content;
+        }
+    }
+    @if $media == xwide-screens {
+        @media only screen and (min-width: calc($break-xwide / 16) + 'em') {
+           @content;
+        }
+    }
+    @if $media == xxwide-screens {
+        @media only screen and (min-width: calc($break-xxwide / 16) + 'em') {
+           @content;
+        }
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+// Reduced motion preferences
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

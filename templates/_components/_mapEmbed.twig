@@ -1,0 +1,9 @@
+{% set adresgegevens = craft.globalSets.handle('adresgegevens').one() %}
+<div class="article__map">
+{{ adresgegevens.map|raw }}
+<div class="buttonGroup">
+    <a class="button button--small button--outlink" href="https://maps.app.goo.gl/x6NZPdz6L69M4wMP8" target="_blank" rel="noopener">Bekijk op Google Maps</a>
+    <a class="button button--small button--outlink" href="https://maps.apple.com/place?place-id=I74B2CE7BD3AD2E6B&address=Ecomunitypark+5%2C+8431+SM+Oosterwolde%2C+Nederland&coordinate=52.9745186%2C6.3009612&name=Biosintrum&_provider=9902" target="_blank" rel="noopener">Bekijk op Apple Maps</a>
+    <a class="button button--small button--outlink" href="https://www.bing.com/maps?&ty=18&q=biosintrum%20oosterwolde&ss=ypid.YN8000x13321973213602212475&mb=52.983506~6.276509~52.965546~6.325411&description=Ecomunitypark%205%2C%208431%20SM%20Oosterwolde%C2%B7Business-to-business%20diensten&cardbg=%23F98745&dt=1759312800000&tt=Biosintrum&tsts0=%2526ty%253D18%2526q%253Dbiosintrum%252520oosterwolde%2526ss%253Dypid.YN8000x13321973213602212475%2526mb%253D52.983506~6.276509~52.965546~6.325411%2526description%253DEcomunitypark%2525205%25252C%2525208431%252520SM%252520Oosterwolde%2525C2%2525B7Business-to-business%252520diensten%2526cardbg%253D%252523F98745%2526dt%253D1759312800000&tstt0=Biosintrum&cp=52.975431~6.293063&lvl=16&pi=0&ftst=0&ftics=False&v=2&sV=2&form=S00027" target="_blank" rel="noopener">Bekijk op Bing Maps</a>
+</div>
+</div>

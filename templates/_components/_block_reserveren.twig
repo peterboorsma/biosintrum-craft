@@ -1,0 +1,34 @@
+{#
+wordt nog niet gebruikt.
+is ook enig eplek waar .tile wordt gebruikt
+    #}
+{% set reserveren = craft.globalSets.handle('blokReserveren').one() %}
+<section class="tile reserveren">
+    <header class="tile__header">
+        <h2 class="sectionHeader">{{ reserveren.bookingTitle }}</h2>
+    </header>
+
+    <div class="tile__image">
+        {% if reserveren.bookingImage is defined and reserveren.bookingImage|length %}
+        {% import '_macros/_image.twig' as img %}
+
+
+        {{ img.responsiveImage(reserveren.bookingImage, {
+            maxWidth: 690,
+            cropMode: 'crop',
+            aspectRatio: '16:9'
+        }) }}
+        {% endif %}
+    </div>
+
+    <div class="tile__main">
+        <div class="content contentSizeMedium">
+        {{ reserveren.bookingText }}
+        </div>
+    </div>
+
+    <div class="tile__footer">
+        <a href="{{ currentSite.baseUrl ~ 'congrescentrum' }}" class="button button--is-forward button--large">Info & reserveren</a>
+    </div>
+</section>
+

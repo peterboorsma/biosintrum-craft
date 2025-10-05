@@ -1,0 +1,37 @@
+columnSuffix: null
+handle: partnerLogo
+instructions: null
+name: 'Assets Partnerlogo'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds: null
+  branchLimit: null
+  defaultPlacement: end
+  defaultUploadLocationSource: 'volume:a66ccb8d-61fd-4360-bf30-2a56894318fa' # Partnerlogos
+  defaultUploadLocationSubpath: null
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictFiles: false
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:23469c41-a809-450c-82c2-40780afd23a6' # Images
+  restrictedLocationSubpath: null
+  selectionLabel: Toevoegen
+  showCardsInGrid: false
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:a66ccb8d-61fd-4360-bf30-2a56894318fa' # Partnerlogos
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets

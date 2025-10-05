@@ -1,0 +1,45 @@
+columnSuffix: null
+handle: blockType
+instructions: null
+name: 'Blok type'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Verticaal smal'
+        -
+          - value
+          - vertical
+        -
+          - icon
+          - ellipsis-vertical
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Horizontaal breed'
+        -
+          - value
+          - horizontal
+        -
+          - icon
+          - ellipsis
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

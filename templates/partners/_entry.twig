@@ -1,0 +1,59 @@
+{% extends "_layouts/default" %}
+
+{% block bodyclass %}{% endblock %}
+
+{% block content %}
+<div class="mainContent">
+    <div class="container">
+        <article class="grid article">
+            <header class="article__header">
+                <div class="article__header__title">
+                    <h1>{{ entry.title }}</h1>
+                </div>
+            </header>
+
+            <div class="article__introduction">
+                <div class="content contentSizeMedium">
+                    {{ entry.intro }}
+                </div>
+            </div>
+
+            {% if entry.partnerList is defined and entry.partnerList|length %}
+            <div class="article__logoGrid">
+            {% for partnerlink in entry.partnerList %}
+                {% import '_macros/_image.twig' as img %}
+                <div>
+                    {% set logo = partnerlink.partnerLogo %}
+                    {% set url = partnerlink.externalUrl ?? '' %}
+                    {% if logo|length %}
+                        {% if url %}
+                            <a href="{{ url }}" rel="noopener" target="_blank">
+                                {{ img.responsiveImage(logo, {
+                                    maxWidth: 160,
+                                    cropMode: 'fit',
+                                    quality: 90
+                                }) }}
+                            </a>
+                        {% else %}
+                            {{ img.responsiveImage(logo, {
+                                maxWidth: 160,
+                                cropMode: 'fit',
+                                quality: 90
+                            }) }}
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% endfor %}
+            {% endif %}
+        </div>
+        </article>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

@@ -1,0 +1,75 @@
+{#
+    Macro voor responsive afbeeldingen (WebP only, fit crop, hoge kwaliteit)
+    Opties uitbreidbaar via 'options' object:
+        - maxWidth (default 1400)
+        - sizes (default '100vw')
+        - cropMode (default 'fit')
+        - quality (default 90)
+        - class (optioneel)
+
+
+    Voorbeeld voor in templates:
+    {% import '_macros/_image.twig' as img %}
+    {{ img.responsiveImage(entry.headerImage, { maxWidth: 1400 }) }}
+
+    Opmerkingen tijdens dev.:
+    Wil je straks bijvoorbeeld halve breedte, dan kun je eenvoudig { maxWidth: 700, sizes: '50vw' } meegeven. 
+
+#}
+{% macro responsiveImage(images, options) %}
+    {% set opts = {
+        maxWidth: options.maxWidth ?? 1400,
+        sizes: options.sizes ?? '100vw',
+        cropMode: options.cropMode ?? 'fit',
+        quality: options.quality ?? 90,
+        class: options.class ?? null,
+        aspectRatio: options.aspectRatio ?? null
+    } %}
+    {% set breakpoints = [1400, 1200, 1024, 768, 700, 690, 600, 481] %}
+    {% set filteredBreakpoints = breakpoints | filter(w => w <= opts.maxWidth) %}
+    {# Ondersteun zowel array als enkele asset #}
+    {% set image = images[0] is defined ? images[0] : images %}
+    {% if image is defined and image %}
+        {# SVG uitzondering #}
+        {% if image.extension == 'svg' %}
+            <img
+                src="{{ image.url }}"
+                alt="{{ image.alt ?? image.title }}"
+                loading="lazy"
+                class="svg"
+                width="{{ opts.maxWidth }}"
+                style="height:auto;"
+            >
+        {% else %}
+            {# Aspect ratio berekenen voor crop #}
+            {% set cropWidth = opts.maxWidth %}
+            {% if opts.aspectRatio %}
+                {% set cropHeight = (cropWidth / (opts.aspectRatio|split(':')[0] / opts.aspectRatio|split(':')[1]))|round %}
+            {% else %}
+                {% set cropHeight = (image.height / (image.width / cropWidth))|round %}
+            {% endif %}
+
+            {% set srcset = [] %}
+            {% for w in filteredBreakpoints %}
+                {% if opts.aspectRatio %}
+                    {% set h = (w / (opts.aspectRatio|split(':')[0] / opts.aspectRatio|split(':')[1]))|round %}
+                    {% set srcset = srcset | merge([image.getUrl({ width: w, height: h, mode: opts.cropMode, quality: opts.quality }) ~ ' ' ~ w ~ 'w']) %}
+                {% else %}
+                    {% set srcset = srcset | merge([image.getUrl({ width: w, mode: opts.cropMode, quality: opts.quality }) ~ ' ' ~ w ~ 'w']) %}
+                {% endif %}
+            {% endfor %}
+
+            <img
+                src="{% if opts.aspectRatio %}{{ image.getUrl({ width: cropWidth, height: cropHeight, mode: opts.cropMode, quality: opts.quality }) }}{% else %}{{ image.getUrl({ width: cropWidth, mode: opts.cropMode, quality: opts.quality }) }}{% endif %}"
+                srcset="{{ srcset | join(', ') }}"
+                sizes="{{ opts.sizes }}"
+                alt="{{ image.alt ?? image.title }}"
+                width="{{ cropWidth }}"
+                height="{{ cropHeight }}"
+                loading="lazy"
+                {% if opts.class %}class="{{ opts.class }}"{% endif %}
+            >
+        {% endif %}
+    {% endif %}
+{% endmacro %}
+

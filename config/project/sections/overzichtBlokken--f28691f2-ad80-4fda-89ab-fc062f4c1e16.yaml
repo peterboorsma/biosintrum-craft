@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: false
+entryTypes:
+  -
+    uid: 1502d8b3-00a7-4e45-aeee-dd35ffe4295d # Overzicht blok
+handle: overzichtBlokken
+maxAuthors: 1
+name: 'Overzicht blokken'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fb0d368d-2fb7-4027-a060-679959808366: # Biosintrum
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

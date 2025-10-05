@@ -1,0 +1,59 @@
+columnSuffix: null
+handle: diensten
+instructions: null
+name: 'Diensten [TEST]'
+searchable: false
+settings:
+  fieldLayouts:
+    __assoc__:
+      -
+        - fa620f48-461f-45ca-8ffb-e0233ea8cdc0
+        -
+          __assoc__:
+            0:
+              - tabs
+              -
+                -
+                  __assoc__:
+                    0:
+                      - name
+                      - Content
+                    1:
+                      - uid
+                      - 1cf2f9f9-097f-407b-8137-56549dcd2a0b
+                    4:
+                      - elements
+                      -
+                        -
+                          __assoc__:
+                            0:
+                              - type
+                              - craft\fieldlayoutelements\CustomField
+                            6:
+                              - required
+                              - false
+                            7:
+                              - providesThumbs
+                              - false
+                            8:
+                              - includeInCards
+                              - false
+                            9:
+                              - width
+                              - 100
+                            10:
+                              - dateAdded
+                              - '2025-09-17T17:52:02+00:00'
+                            11:
+                              - uid
+                              - 0d0077fc-6263-4779-b731-f1c8ddca4109
+                            14:
+                              - fieldUid
+                              - 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
+            3:
+              - cardThumbAlignment
+              - end
+  viewMode: grouped
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\ContentBlock

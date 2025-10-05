@@ -1,0 +1,78 @@
+{% set relatedNieuws = craft.entries.section('projecten').relatedTo(entry).limit(10).orderBy('postDate desc').all() %}
+{% if relatedNieuws|length %}
+<aside class="grid grid--gapless article__relatedNieuws">
+    <div class="article__relatedNieuws__header">
+        <div class="content">
+            <div class="compactTitle">Gerelateerde projecten</div>
+        </div>
+        <a class="visually-hidden" href="#startContent">Overslaan en door naar de inhoud</a>
+    </div>
+
+    <div class="article__relatedNieuws__content">
+        <div class="swiper relatedNieuws">
+            <div class="swiper-wrapper">
+            {% for entry in relatedNieuws %}
+                <a href="{{ entry.url }}" class="swiper-slide card card--inline card--color:blue">
+                    {% if entry.image[0] is defined and entry.image[0] %}
+                    <div class="card__image">
+                        {% import '_macros/_image.twig' as img %}
+                        {{ img.responsiveImage(entry.image, { maxWidth: 140, aspectRatio: '4:3' }) }}
+                    </div>
+                    {% endif %}
+
+                    <div class="card__header">
+                        <span class="card__header__title">{{ entry.title }}</span>
+                    </div>
+                 
+                </a>
+            {% endfor %}
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</aside>
+
+<div id="startContent" class="visually-hidden"></div>
+
+{% block styles %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+{% endblock styles %}
+
+{% block scripts %}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+        var swiper = new Swiper(".relatedNieuws", {
+            slidesPerView: 1.25,
+            spaceBetween: 20,
+            a11y: {
+            prevSlideMessage: 'Vorige slide',
+            nextSlideMessage: 'Volgende slide',
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                600: {
+                slidesPerView: 1.5,
+                //spaceBetween: 40,
+                },
+                768: {
+                slidesPerView: 2.5,
+                //spaceBetween: 40,
+                },
+                1200: {
+                slidesPerView: 3.5,
+                //spaceBetween: 40,
+                },
+            },
+            loop: true,
+        }
+        );
+    </script>
+{% endblock %}
+
+{% endif %}

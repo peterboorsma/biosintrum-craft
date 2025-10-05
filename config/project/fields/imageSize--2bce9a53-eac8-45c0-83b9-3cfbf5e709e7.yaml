@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: imageSize
+instructions: null
+name: 'Afbeelding formaat'
+searchable: false
+settings:
+  default: true
+  offLabel: 'Klein formaat'
+  onLabel: Kolombreed
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

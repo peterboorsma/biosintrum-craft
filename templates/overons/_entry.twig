@@ -1,0 +1,19 @@
+{% extends "_layouts/default" %}
+
+{% block bodyclass %}{% endblock %}
+
+{% block content %}
+{% set currentPath = craft.app.request.pathInfo %}
+
+{# template voor toplevel pagina (over-ons) #}
+{% if not entry.parent %}
+    {% include '/overons/_entryTopLevel' %}
+{# subpaginas #}
+{% else %}
+    {% include '/overons/_entrySubLevel' %}
+{% endif %}
+
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: false
+entryTypes:
+  -
+    uid: 92f1bb18-bfa6-4a06-8a97-4d082ea82fe6 # Projecten
+handle: projecten
+maxAuthors: 1
+name: Projecten
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  fb0d368d-2fb7-4027-a060-679959808366: # Biosintrum
+    enabledByDefault: true
+    hasUrls: true
+    template: projecten/_entry.twig
+    uriFormat: 'projecten/{slug}'
+type: channel

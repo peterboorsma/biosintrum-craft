@@ -1,0 +1,39 @@
+columnSuffix: null
+handle: download
+instructions: null
+name: 'Assets Download'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - pdf
+    - powerpoint
+  branchLimit: null
+  defaultPlacement: end
+  defaultUploadLocationSource: 'volume:b043b78c-7bde-4b91-9e47-722b106c9106' # Downloads
+  defaultUploadLocationSubpath: null
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:23469c41-a809-450c-82c2-40780afd23a6' # Images
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources:
+    - 'volume:b043b78c-7bde-4b91-9e47-722b106c9106' # Downloads
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Assets
