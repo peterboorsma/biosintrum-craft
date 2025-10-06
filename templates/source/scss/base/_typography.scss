@@ -267,7 +267,6 @@ p, li, .address {
     }
 }
 
-
 ////////////////////////////////////////////////////
 // SWIPER
 ////////////////////////////////////////////////////
@@ -337,7 +336,7 @@ p, li, .address {
         //background-color: var(--lightBlue);
 
         &::after {
-            transform: translateX(10px);
+            transform: translateX(8px);
         }
     }
 

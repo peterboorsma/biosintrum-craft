@@ -276,14 +276,6 @@ li.mainNavLink {
         font-size: 2rem;
 
         a {
-            padding: var(--space-2);
-        }
-
-    }
-
-    @include respond-to(wide-screens) { // 1200px
-
-        a {
             padding: var(--space-2) var(--space-3);
         }
 

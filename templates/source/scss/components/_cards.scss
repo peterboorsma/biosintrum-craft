@@ -327,6 +327,11 @@ a.card {
     &:hover,
     &:focus {
         transform: translateY(-4px);
+
+        .card__header__title::after {
+            transform: translateX(8px);
+        }
+
     }
 
     .card__header__title {
