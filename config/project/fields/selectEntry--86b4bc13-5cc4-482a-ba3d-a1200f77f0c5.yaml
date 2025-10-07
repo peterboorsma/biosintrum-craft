@@ -13,10 +13,17 @@ settings:
   selectionLabel: 'Selecteer een entry'
   showCardsInGrid: false
   showSearchInput: true
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedEntries: false
   showUnpermittedSections: false
-  sources: '*'
+  sources:
+    - 'section:793dad19-c178-4275-b20d-08a0d2653b03' # Actueel
+    - 'section:19eb76be-2b91-4238-b8ff-3654257a1783' # Agenda
+    - 'section:3c8b0879-8c6e-427c-aa4c-483780f2b33f' # Over ons
+    - 'section:060b8f3c-e6c6-421a-823a-5f01fc8641b1' # Pagina's
+    - 'section:3c79070d-f645-4fc2-bfd2-c0a46838c559' # Projecten
+    - singles
+    - 'section:d9c53df5-8662-42be-bec2-bb159387f8bd' # Wat we doen
   targetSiteId: null
   validateRelatedElements: true
   viewMode: list

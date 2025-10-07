@@ -30,9 +30,13 @@
                 {{ entry.aboutText }}
             </div>
         </div>
-
+        
         <div class="overOns__footer">
-            <a href="#" class="button button--large button--forward">Lees meer</a>
+            {% if entry.aboutLink is defined and entry.aboutLink %}
+                <a class="button button--large button--forward" href="{{ entry.aboutLink.one().url }}">
+                    Meer over ons
+                </a>
+            {% endif %}
         </div>
     </div>
 </div>
