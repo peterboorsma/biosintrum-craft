@@ -6,6 +6,14 @@
     align-items: center;
 }
 
+.article__introduction .buttonGroup {
+    margin-block: var(--space-2);
+
+    @include respond-to(large-screens) { // 768px
+        margin-block: var(--space-4);
+    }
+}
+
 .button {
     font-weight: 600;
     text-transform: uppercase;

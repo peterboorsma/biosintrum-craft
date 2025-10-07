@@ -284,6 +284,7 @@ body {
     &__relatedNieuws,
     &__partnerlist,
     &__tarievenlijst,
+    &__nav,
     &__map,
     &__sidebar,
     &__footer,
@@ -311,7 +312,8 @@ body {
         &__mainImage--inline,
         &__tarievenlijst,
         &__sidebar,
-        &__footer {
+        &__footer,
+        &__nav {
             grid-column: 2 / 12;
         }
 
@@ -368,6 +370,10 @@ body {
             &--right {
                 grid-column: 8 / -1;
             }
+        }
+
+        &__nav {
+            grid-column: 8 / -1;
         }
 
     }
@@ -493,6 +499,15 @@ body {
     border-top: 0.094rem solid var(--black);
 }
 
+.article__nav nav {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-block: var(--space-2);
+    padding-block-start: var(--space-2);
+    background-color: var(--lightBlue);
+}
+
 ////////////////////////////////////////////////////
 // LOGO GRID
 ////////////////////////////////////////////////////
@@ -606,10 +621,8 @@ ul.agendaList {
 
         &__link {
             display: flex;
-            //flex-direction: column;
             flex-wrap: wrap;
             flex-grow: 1;
-            text-decoration: none;
             gap: calc( var(--space-1) / 2);
             padding-block: var(--space-2);
             
@@ -632,9 +645,27 @@ ul.agendaList {
 }
 
 ////////////////////////////////////////////////////
+// SUBPAGINA LIST
+////////////////////////////////////////////////////
+ol.subpaginaList {
+    display: flex;
+    flex-direction: column;
+
+    .subpaginaItem__link {
+        display: flex;
+
+        &:not(:last-child) {
+            border-block-end: 0.063rem solid var(--white);
+        }
+
+    }
+
+}
+
+
+////////////////////////////////////////////////////
 // TARIEVENLIJST
 ////////////////////////////////////////////////////
-
 ol.tarievenlijst {
     display: flex;
     flex-direction: column;

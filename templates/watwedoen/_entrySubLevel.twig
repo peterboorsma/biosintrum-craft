@@ -1,3 +1,6 @@
+{% set children = entry.getChildren() %}
+{% set ruimtesChildren = children | filter(child => child.type.handle == 'ruimtes') %}
+
 <div class="mainContent">
     <div class="container">
         <article class="grid grid--compact article">
@@ -14,7 +17,15 @@
                 <div class="content contentSizeMedium">
                     {{ entry.intro }}
                 </div>
-            </div>
+            
+                {# Toon knop als er "ruimtes" onder hangen. AKA de congrescentrum pagina #}
+                {# slordig en niet waaterdicht maar goed... #}
+                {% if ruimtesChildren | length %}
+                <div class="buttonGroup">    
+                    <a class="button button--large button--forward" href="/wat-we-doen/congres-en-vergadercentrum/reserveren">Prijzen en reserveren</a>
+                </div>
+                {% endif %}
+            
             {% endif %}
 
             {% if entry.image[0] is defined and entry.image[0] %}
@@ -32,8 +43,6 @@
             {% include '_components/_article_relatedProjects' %}
 
             {# Toon children met entrytype handle "ruimtes" als die er zijn #}
-            {% set children = entry.getChildren() %}
-            {% set ruimtesChildren = children | filter(child => child.type.handle == 'ruimtes') %}
             {% if ruimtesChildren | length %}
                 {% include '_components/_article_ruimtes' %}
             {% endif %}

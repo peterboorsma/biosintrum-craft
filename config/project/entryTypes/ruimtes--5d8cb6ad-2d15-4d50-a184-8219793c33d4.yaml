@@ -4,7 +4,6 @@ fieldLayouts:
   c151489f-d362-4e4f-9513-0de89b7a3484:
     cardThumbAlignment: end
     cardView:
-      - 'layoutElement:331a2711-b53f-49d4-873c-35ce6bce4ffc'
       - 'layoutElement:490380ab-369b-4dba-9ab7-6d903b59d1af'
     tabs:
       -
@@ -63,7 +62,7 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
             handle: null
-            includeInCards: true
+            includeInCards: false
             instructions: null
             label: Afbeelding
             providesThumbs: false
@@ -81,8 +80,8 @@ handle: ruimtes
 hasTitleField: true
 icon: hotel
 name: Ruimtes
-showSlugField: true
-showStatusField: true
+showSlugField: false
+showStatusField: false
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: null

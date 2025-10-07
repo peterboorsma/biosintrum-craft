@@ -6,7 +6,34 @@
     <div class="grid__content">
         <div class="cardsGrid">
         {% for ruimte in ruimtesChildren %}
-            <a class="card card--color:blue" href="{{ ruimte.url }}">
+            <div class="card card--color:blue">
+                <div class="card__header">
+                    <span class="card__header__title">{{ ruimte.title }}</span>
+                </div>
+
+                {% if ruimte.image[0] is defined and ruimte.image[0] %}
+                {% import '_macros/_image.twig' as img %}
+                <div class="card__image">
+                    {{ img.responsiveImage(ruimte.image, { maxWidth: 400, sizes: '50vw', aspectRatio: '4:3', cropMode: 'crop' }) }}
+                </div>
+                {% endif %}
+                
+                <div class="card__main">
+                    {% if ruimte.richText is not empty %}
+                    <span class="card__main__text">
+                        {{ ruimte.richText|striptags }}
+                    </span>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+{# versie met link 
+
+                <a class="card card--color:blue" href="{{ ruimte.url }}">
                 <div class="card__header">
                     <span class="card__header__title">{{ ruimte.title }}</span>
                 </div>
@@ -26,7 +53,5 @@
                     {% endif %}
                 </div>
             </a>
-        {% endfor %}
-        </div>
-    </div>
-</div>
+
+#}

@@ -216,7 +216,6 @@ p, li, .address {
 }
 
 
-
 ////////////////////////////////////////////////////
 // BREADCRUMBS
 ////////////////////////////////////////////////////
@@ -306,7 +305,59 @@ p, li, .address {
     }
 }
 
+////////////////////////////////////////////////////
+// NAV SUBPAGINA LIST
+////////////////////////////////////////////////////
 
+.article__nav nav h2 {
+    padding-inline: var(--space-1);
+}
+
+ol.subpaginaList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .subpaginaItem__link {
+        font-size: clamp(1rem, 0.9167rem + 0.3704vw, 1.25rem);
+        line-height: 1;
+        font-weight: 650;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            padding-block: var(--space-2);
+            width: 100%;
+            transition: all ease-in-out .2s;
+
+            &::before {
+                content: '→';
+                display: inline-block;
+                font-size: 1.125rem;
+                line-height: 1;
+                font-weight: inherit;
+                width: fit-content;
+                margin-left: var(--space-1);
+                margin-right: var(--space-1);
+                transition: all ease-in-out .2s;
+            }
+
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+                background-color: var(--white);
+
+                &::before {
+                    transform: translateX(8px);
+                }
+            }
+
+        }
+
+    }
+
+}
 
 ////////////////////////////////////////////////////
 // AGENDA
@@ -318,6 +369,7 @@ p, li, .address {
 }
 
 .agendaListItem__link {
+    text-decoration: none;
     transition: transform 0.25s ease-in-out;
 
     &::after {
@@ -325,7 +377,7 @@ p, li, .address {
         display: inline-block;
         font-size: 1.125rem;
         line-height: 1;
-        //height: 100%;
+        
         width: fit-content;
         transition: all ease-in-out .2s;
     }
@@ -336,7 +388,7 @@ p, li, .address {
         //background-color: var(--lightBlue);
 
         &::after {
-            transform: translateX(8px);
+            transform: translateX(5px);
         }
     }
 
