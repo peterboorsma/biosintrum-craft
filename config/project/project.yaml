@@ -1,4 +1,4 @@
-dateModified: 1759691541
+dateModified: 1759853966
 elementSources:
   craft\elements\Entry:
     -
@@ -60,6 +60,7 @@ meta:
     1ca63ceb-4a9f-404b-9924-fbfc2ecc808a: 'Blok Embed' # Blok Embed
     1cd78da4-b08a-49e9-80a6-9aaa808ecb8a: Tarieven # Tarieven
     1dcb2d06-322f-4f10-bc76-728c618a57a6: Homepage # Homepage
+    1f01644c-76d1-44e0-b546-bf3bb10dce78: 'Public Schema' # Public Schema
     2bce9a53-eac8-45c0-83b9-3cfbf5e709e7: 'Afbeelding formaat' # Afbeelding formaat
     2dd9ed81-e1a2-4c3d-8200-9c971bc0a514: 'Blok type' # Blok type
     3c8b0879-8c6e-427c-aa4c-483780f2b33f: 'Over ons' # Over ons
@@ -104,7 +105,6 @@ meta:
     4865191d-aa39-495d-9ae2-b5f0e62578f1: 'SEO Description' # SEO Description
     5168636d-e73b-40fa-9a36-e1146da0c43d: 'Wat we doen' # Wat we doen
     8840259d-eec9-46fc-8674-0207cf7b629d: Adresgegevens # Adresgegevens
-    59312578-08b8-4065-9a1c-240d4a53f977: Congrescentrum # Congrescentrum
     a66ccb8d-61fd-4360-bf30-2a56894318fa: Partnerlogos # Partnerlogos
     aa77c39f-f098-4ed3-bb08-a460a8d3fce3: Partners # Partners
     b043b78c-7bde-4b91-9e47-722b106c9106: Downloads # Downloads
