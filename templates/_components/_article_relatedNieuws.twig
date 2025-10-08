@@ -1,14 +1,15 @@
 {% set relatedNieuws = craft.entries.section('actueel').relatedTo(entry).limit(10).orderBy('postDate desc').all() %}
 {% if relatedNieuws|length %}
-<aside class="grid grid--gapless article__relatedNieuws">
-    <div class="article__relatedNieuws__header">
+<aside class="article__relatedNieuws">
+<div class="flexColumn">
+    <div class="flexColumn__header">
         <div class="content">
             <div class="compactTitle">Nieuws over dit project</div>
         </div>
         <a class="visually-hidden" href="#startContent">Overslaan en door naar de inhoud</a>
     </div>
 
-    <div class="article__relatedNieuws__content">
+    <div class="flexColumn__content">
         <div class="swiper relatedNieuws">
             <div class="swiper-wrapper">
             {% for entry in relatedNieuws %}
@@ -32,6 +33,7 @@
             <div class="swiper-button-prev"></div>
         </div>
     </div>
+    </div>
 </aside>
 
 <div id="startContent" class="visually-hidden"></div>
@@ -42,8 +44,8 @@
 
 {% block scripts %}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script>
+    {% minify %}
+    <script>
         var swiper = new Swiper(".relatedNieuws", {
             slidesPerView: 1.25,
             spaceBetween: 20,
@@ -73,6 +75,7 @@
         }
         );
     </script>
+    {% endminify %}
 {% endblock %}
 
 {% endif %}

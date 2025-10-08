@@ -54,8 +54,8 @@
 
 {% block scripts %}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script>
+    {% minify %}
+    <script>
         var swiper = new Swiper(".projects", {
             slidesPerView: 1.25,
             spaceBetween: 20,
@@ -84,4 +84,5 @@
         }
         );
     </script>
+    {% endminify %}
 {% endblock %}

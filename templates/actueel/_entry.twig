@@ -72,9 +72,13 @@
                 {% endif %}
             {% endif %}
 
-
             {% include '_macros/_contentstream' %}
-            
+
+            {% set relatedItems = craft.entries.section('projecten').relatedTo(entry).limit(10).orderBy('postDate desc').all() %}
+            {% set relatedItemsTitle = 'Gerelateerde projecten:' %}
+            {# Alleen tonen als er gerelateerde items zijn #}
+            {% include '_macros/_nav_relatedItems' with { relatedItems: relatedItems, relatedItemsTitle: relatedItemsTitle } %}
+
             {% if currentSection == 'agenda' %}
             <aside class="article__sidebar grid sidebar">
                 <div class="sidebar__title">
@@ -90,16 +94,6 @@
             {% endif %}
 
             <footer class="article__footer">
-                {% set relatedProjecten = craft.entries.section('projecten').relatedTo(entry).limit(10).orderBy('postDate desc').all() %}
-                {% if relatedProjecten|length %}
-                    <div class="article__relatedProjects buttonGroup">
-                        <span class="label">Gerelateerde<br>projecten:</span>
-                    {% for entry in relatedProjecten %}
-                        <a href="{{ entry.url }}" class="button button--tiny button--forward">{{ entry.title }}</a>
-                    {% endfor %}
-                    </div>
-                {% endif %}
-
                 <a href="{{ currentSite.baseUrl ~ 'actueel' }}{% if currentSection == 'agenda' %}#agenda{% endif %}" class="button button--large button--backward">Terug naar overzicht</a>
             </footer>
         </article>

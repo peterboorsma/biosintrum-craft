@@ -4,7 +4,7 @@
 <div class="mainContent">
     <div class="container">
         <article class="grid grid--compact article">
-            {% include '_components/_nav_breadcrumbs' %}
+            {% include '_macros/_nav_breadcrumbs' %}
 
             <header class="article__header">
                 <div class="article__header__title">
@@ -19,14 +19,15 @@
                 </div>
             
                 {# Toon knop als er "ruimtes" onder hangen. AKA de congrescentrum pagina #}
-                {# slordig en niet waaterdicht maar goed... #}
+                {# slordig en niet waaterdicht maar het werkt... #}
                 {% if ruimtesChildren | length %}
                 <div class="buttonGroup">    
                     <a class="button button--large button--forward" href="/wat-we-doen/congres-en-vergadercentrum/reserveren">Prijzen en reserveren</a>
                 </div>
                 {% endif %}
-            
+            </div>
             {% endif %}
+            
 
             {% if entry.image[0] is defined and entry.image[0] %}
             <figure class="article__mainImage{% if entry.image[0].title %} article__mainImage--withCaption{% else %} article__mainImage--withoutCaption{% endif %}">
@@ -40,7 +41,7 @@
             {% endif %}
 
             {# Toon related projects als die er zijn #}
-            {% include '_components/_article_relatedProjects' %}
+            {% include '_components/_watwedoen_relatedProjects' %}
 
             {# Toon children met entrytype handle "ruimtes" als die er zijn #}
             {% if ruimtesChildren | length %}

@@ -282,6 +282,7 @@ body {
     &__contentBlockButtons,
     &__logoGrid,
     &__relatedNieuws,
+    &__relatedProjects,
     &__partnerlist,
     &__tarievenlijst,
     &__nav,
@@ -313,7 +314,7 @@ body {
         &__tarievenlijst,
         &__sidebar,
         &__footer,
-        &__nav {
+        &__relatedItems {
             grid-column: 2 / 12;
         }
 
@@ -372,8 +373,8 @@ body {
             }
         }
 
-        &__nav {
-            grid-column: 8 / -1;
+        &__relatedItems {
+            grid-column: 1 / 6;
         }
 
     }
@@ -448,20 +449,6 @@ body {
     gap: var(--space-4);
 }
 
-.article__partnerList,
-.article__relatedNieuws {
-    
-    &__header,
-    &__content {
-        grid-column: 1 / -1;
-    }
-
-    &__header {
-        margin-block-end: var(--space-2);
-    }
-
-}
-
 .article__header__meta {
     display: flex;
     align-items: center;
@@ -494,18 +481,24 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--space-4);
-    margin-block: var(--space-4);
+    margin-block-start: var(--space-4);
     padding-block-start: var(--space-4);
     border-top: 0.094rem solid var(--black);
 }
 
-.article__nav nav {
+////////////////////////////////////////////////////
+// FLEX COLUMNS
+// GENERIC CLASS TO MAKE A FLEX COLUMN
+// o.a. partnerlist, related nieuws, relatedItems
+////////////////////////////////////////////////////
+.flexColumn {
     display: flex;
     flex-direction: column;
     gap: var(--space-2);
-    margin-block: var(--space-2);
-    padding-block-start: var(--space-2);
-    background-color: var(--lightBlue);
+
+    //@include respond-to(large-screens) { // 768px
+    //    gap: var(--space-4);
+    //}
 }
 
 ////////////////////////////////////////////////////
@@ -513,25 +506,13 @@ body {
 ////////////////////////////////////////////////////
 .logoGrid {
     display: grid;
-    //width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: var(--space-2);
+    align-items: center;
 
-    @include respond-to(medium-screens) {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    @include respond-to(large-screens) { // 768px
         gap: var(--space-4);
     }
-
-    > * {
-        display: flex;
-        align-items: center;
-
-        a {
-            display: inherit;
-        }
-
-    }
-
 
 }
 
@@ -591,9 +572,9 @@ body {
     .card {
         grid-column: 1 / -1;
 
-        &__image {
+        //&__image {
             //margin-block-end: var(--space-2);
-        }
+        //}
 
          @include respond-to(medium-screens) { // 600px
             grid-column: span 6;
@@ -643,25 +624,6 @@ ul.agendaList {
     }
     
 }
-
-////////////////////////////////////////////////////
-// SUBPAGINA LIST
-////////////////////////////////////////////////////
-ol.subpaginaList {
-    display: flex;
-    flex-direction: column;
-
-    .subpaginaItem__link {
-        display: flex;
-
-        &:not(:last-child) {
-            border-block-end: 0.063rem solid var(--white);
-        }
-
-    }
-
-}
-
 
 ////////////////////////////////////////////////////
 // TARIEVENLIJST

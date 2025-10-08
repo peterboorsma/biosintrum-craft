@@ -4,6 +4,7 @@
   "require": {
     "craftcms/ckeditor": "4.10.1",
     "craftcms/cms": "^5.0.0",
+    "nystudio107/craft-minify": "5.0.0",
     "spicyweb/craft-embedded-assets": "5.4.4",
     "vaersaagod/seomate": "3.2.0",
     "verbb/cloner": "3.0.2",

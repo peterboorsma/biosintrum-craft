@@ -26,7 +26,7 @@
 <div class="mainContent mainContent--hasHero">
     <div class="container">
         <article class="grid grid--compact article">
-            {% include '_components/_nav_breadcrumbs' %}
+            {% include '_macros/_nav_breadcrumbs' %}
 
             <header class="article__header">
                 <div class="article__header__title">
@@ -42,7 +42,10 @@
 
             {% include '_macros/_contentstream' %}
 
-            {% include '_components/_overons_children' %}
+            {% set relatedItems = entry.getChildren() %}
+            {% set relatedItemsTitle = 'Meer over ons:' %}
+            {# Alleen tonen als er gerelateerde items zijn #}
+            {% include '_macros/_nav_relatedItems' with { relatedItems: relatedItems, relatedItemsTitle: relatedItemsTitle } %}
         </article>
     </div>
 

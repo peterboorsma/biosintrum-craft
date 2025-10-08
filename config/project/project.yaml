@@ -1,4 +1,4 @@
-dateModified: 1759860797
+dateModified: 1759919090
 elementSources:
   craft\elements\Entry:
     -
@@ -129,6 +129,10 @@ plugins:
     enabled: true
     schemaVersion: 1.0.0
   embeddedassets:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  minify:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0

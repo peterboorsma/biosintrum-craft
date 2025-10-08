@@ -90,17 +90,6 @@ p, li, .address {
     line-height: 1;
 }
 
-////////////////////////////////////////////////////
-// CARDS & BLOCKS
-////////////////////////////////////////////////////
-// zie _cards.scss
-
-
-
-
-
-
-// label nieuw
 .label {
     font-size: .875rem;
     text-transform: uppercase;
@@ -109,7 +98,6 @@ p, li, .address {
     line-height: 1;
 }
 
-// figcaptions nieuw
 .caption {
     font-family: "FigtreeItalic";
     font-size: .875rem;
@@ -162,7 +150,6 @@ p, li, .address {
 
 }
 
-
 .contentSizeMedium {
 
     p {
@@ -214,7 +201,6 @@ p, li, .address {
         background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21 10H3M16 2V6M8 2V6M7.8 22H16.2C17.8802 22 18.7202 22 19.362 21.673C19.9265 21.3854 20.3854 20.9265 20.673 20.362C21 19.7202 21 18.8802 21 17.2V8.8C21 7.11984 21 6.27976 20.673 5.63803C20.3854 5.07354 19.9265 4.6146 19.362 4.32698C18.7202 4 17.8802 4 16.2 4H7.8C6.11984 4 5.27976 4 4.63803 4.32698C4.07354 4.6146 3.6146 5.07354 3.32698 5.63803C3 6.27976 3 7.11984 3 8.8V17.2C3 18.8802 3 19.7202 3.32698 20.362C3.6146 20.9265 4.07354 21.3854 4.63803 21.673C5.27976 22 6.11984 22 7.8 22Z' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
     }
 }
-
 
 ////////////////////////////////////////////////////
 // BREADCRUMBS
@@ -306,19 +292,28 @@ p, li, .address {
 }
 
 ////////////////////////////////////////////////////
-// NAV SUBPAGINA LIST
+// NAV RELATED ITEMS LIST
 ////////////////////////////////////////////////////
 
-.article__nav nav h2 {
-    padding-inline: var(--space-1);
+.relatedItems {
+
+    margin-block: var(--space-2);
+
+    background-color: var(--lightBlue);
+    border: 1px solid var(--lightBlue);
 }
 
-ol.subpaginaList {
+.relatedItems__title {
+    padding-inline: var(--space-1);
+    padding-block-start: var(--space-2);
+}
+
+ol.relatedItems__list {
     list-style: none;
     padding: 0;
     margin: 0;
 
-    .subpaginaItem__link {
+    li {
         font-size: clamp(1rem, 0.9167rem + 0.3704vw, 1.25rem);
         line-height: 1;
         font-weight: 650;
@@ -330,6 +325,7 @@ ol.subpaginaList {
             padding-block: var(--space-2);
             width: 100%;
             transition: all ease-in-out .2s;
+            border-top: 0.063rem solid var(--white);
 
             &::before {
                 content: '→';
@@ -410,9 +406,10 @@ ol.subpaginaList {
     font-weight: 550;
 }
 
-
-
-
+////////////////////////////////////////////////////
+// CARDS & BLOCKS
+////////////////////////////////////////////////////
+// zie _cards.scss
 
 a.listing-item--searchresult,
 a.listing-item--agendaitem {

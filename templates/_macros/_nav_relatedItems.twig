@@ -1,0 +1,29 @@
+{#
+Gebruik deze macro om een lijst van gerelateerde items weer te geven.
+Verwacht een array van entries en een titel als parameters. Bijv.:
+{% set relatedItems = craft.entries.section('projecten').relatedTo(entry).limit(10).orderBy('postDate desc').all() %}
+{% set relatedItemsTitle = 'Gerelateerde projecten:' %}
+{% include '_macros/_nav_relatedItems' with { relatedItems: relatedItems, relatedItemsTitle: relatedItemsTitle } %}
+#}
+
+{% if relatedItems | length %}
+<aside class="article__relatedItems">
+    <nav class="flexColumn relatedItems">
+        <div class="relatedItems__title">
+            <h2 class="compactTitle">{{ relatedItemsTitle }}</h2>
+        </div>
+        {#<a class="visually-hidden" href="#startContent">Overslaan en door naar de inhoud</a>#}
+
+        <div class="relatedItems__main">
+            <ol class="relatedItems__list">
+                {% for relatedItem in relatedItems %}
+                    <li><a href="{{ relatedItem.url }}">{{ relatedItem.title }}</a></li>
+                {% endfor %}
+            </ol>
+        </div>
+    </nav>
+</aside>
+{#<div id="startContent" class="visually-hidden"></div>#}
+{% endif %}
+
+
