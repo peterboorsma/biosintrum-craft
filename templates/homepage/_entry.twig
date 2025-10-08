@@ -43,10 +43,10 @@
 
 {% include "_components/_fp_highlights.twig" %}
 
-{% include "_components/_fp_block_projecten.twig" %}
-
-{% include "_components/_fp_block_nieuws.twig" %}
-
+<div class="grid bgColor bgColor--lightGreen">
+    {% include "_components/_fp_block_projecten.twig" %}
+    {% include "_components/_fp_block_nieuws.twig" %}
+</div>
 {% endblock %}
 
 {% block scripts %}

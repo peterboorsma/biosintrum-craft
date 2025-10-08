@@ -102,6 +102,46 @@ body {
 }
 
 ////////////////////////////////////////////////////
+// BASCKGROUND COLORED SECTIONS
+////////////////////////////////////////////////////
+
+.grid.bgColor {
+    padding-block: var(--space-4);
+
+    > * {
+        grid-column: 1 / -1;
+        
+
+        &:not(:last-child) {
+            margin-block-end: var(--space-2);
+        }
+
+    }
+
+    @include respond-to(large-screens) { // 768px
+
+        > *:not(:last-child) {
+            margin-block-end: var(--space-4);
+        }
+
+    }
+
+    @include respond-to(xxwide-screens) { //1600px
+        padding-block: var(--space-6);
+    }
+
+}
+
+.bgColor {
+
+    &--lightGreen {
+        background-color: var(--lightGreen);
+    }
+
+}
+
+
+////////////////////////////////////////////////////
 //  HERO
 ////////////////////////////////////////////////////
 .hero {
@@ -218,21 +258,21 @@ body {
 // HOMEPAGE PROJECTEN
 ////////////////////////////////////////////////////
 .blockProjecten {
-    margin-block: var(--space-4) var(--space-6);
+    //margin-block: 0 var(--space-6);
 }
 
 ////////////////////////////////////////////////////
 // HOMEPAGE NIEUWS
 ////////////////////////////////////////////////////
 .blockNieuws {
-    margin-block: var(--space-4) var(--space-6);
+    //margin-block: var(--space-4) var(--space-6);
 
     @include respond-to(xlarge-screens) { // 1024px
-        margin-block: var(--space-6) var(--space-6);
+        //margin-block: var(--space-6) var(--space-6);
     }
 
     @include respond-to(xwide-screens) { //1440px
-        margin-block: calc(var(--space-4) * 2) calc(var(--space-4) * 2);
+        //margin-block: calc(var(--space-4) * 2) calc(var(--space-4) * 2);
     }
 
 }

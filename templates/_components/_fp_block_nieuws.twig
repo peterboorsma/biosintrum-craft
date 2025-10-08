@@ -4,37 +4,39 @@
     .all() %}
 
 <div class="container">
-    <section class="grid blockNieuws">
-        <header class="grid__header">
+    <section class="flexColumn blockNieuws">
+        <header class="flexColumn__header">
             <div class="content">
                 <div class="compactTitle">Nieuws</div>
             </div>
         </header>
         
-        <div class="grid__content grid blockNieuwsItems">
-            {% for entry in actueel %}
-            
-            <a class="card" href="{{ entry.url }}">
-                <div class="card__image">
-                    {% if entry.image is defined and entry.image|length %}
-                    {% import '_macros/_image.twig' as img %}
+        <div class="flexColumn__main">
+            <div class="grid blockNieuwsItems">
+                {% for entry in actueel %}
+                
+                <a class="card" href="{{ entry.url }}">
+                    <div class="card__image">
+                        {% if entry.image is defined and entry.image|length %}
+                        {% import '_macros/_image.twig' as img %}
 
-                    {{ img.responsiveImage(entry.image, {
-                        maxWidth: 690,
-                        cropMode: 'crop',
-                        aspectRatio: '4:3'
-                    }) }}
-                    {% endif %}
-                </div>
+                        {{ img.responsiveImage(entry.image, {
+                            maxWidth: 690,
+                            cropMode: 'crop',
+                            aspectRatio: '4:3'
+                        }) }}
+                        {% endif %}
+                    </div>
 
-                <div class="card__header">
-                    <span class="card__header__title">{{ entry.title }}</span>
-                </div>
-            </a>
-        {% endfor %}
+                    <div class="card__header">
+                        <span class="card__header__title">{{ entry.title }}</span>
+                    </div>
+                </a>
+            {% endfor %}
+            </div>
         </div>
 
-        <div class="grid__footer">
+        <div class="flexColumn__footer">
             <a href="{{ currentSite.baseUrl ~ 'actueel' }}" class="button button--forward button--large">Meer nieuws</a>
         </div>
     </section>

@@ -4,14 +4,14 @@
     .all() %}
 
 <div class="container">
-    <section class="grid blockProjecten">
-        <header class="grid__header">
+    <section class="flexColumn blockProjecten">
+        <header class="flexColumn__header">
             <div class="content">
                 <div class="compactTitle">Projecten</div>
             </div>
         </header>
 
-        <div class="grid__content">
+        <div class="flexColumn__main">
             <div class="swiper projects">
                 <div class="swiper-wrapper">
                     {% for entry in projecten %}
@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <div class="grid__footer">
+        <div class="flexColumn__footer">
             <a href="{{ currentSite.baseUrl ~ 'projecten' }}" class="button button--forward button--large">Projecten</a>
         </div>
     </section>
