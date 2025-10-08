@@ -16,12 +16,12 @@
             margin-inline: auto;
         }
 
-        @include respond-to(xxwide-screens) { // 1600px
-            padding-bottom: var(--space-2);
-        }
+        //@include respond-to(xxwide-screens) { // 1600px
+        //    padding-bottom: var(--space-2);
+        //}
     }
 
-    &__bottom {}
+    //&__bottom {}
 
 }
 
