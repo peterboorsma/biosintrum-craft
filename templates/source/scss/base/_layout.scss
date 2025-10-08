@@ -102,7 +102,7 @@ body {
 }
 
 ////////////////////////////////////////////////////
-// BASCKGROUND COLORED SECTIONS
+// BACKGROUND COLORED SECTIONS
 ////////////////////////////////////////////////////
 
 .grid.bgColor {
@@ -253,30 +253,9 @@ body {
 
 }
 
-
-////////////////////////////////////////////////////
-// HOMEPAGE PROJECTEN
-////////////////////////////////////////////////////
-.blockProjecten {
-    //margin-block: 0 var(--space-6);
-}
-
 ////////////////////////////////////////////////////
 // HOMEPAGE NIEUWS
 ////////////////////////////////////////////////////
-.blockNieuws {
-    //margin-block: var(--space-4) var(--space-6);
-
-    @include respond-to(xlarge-screens) { // 1024px
-        //margin-block: var(--space-6) var(--space-6);
-    }
-
-    @include respond-to(xwide-screens) { //1440px
-        //margin-block: calc(var(--space-4) * 2) calc(var(--space-4) * 2);
-    }
-
-}
-
 .blockNieuwsItems {
 
     .card {
@@ -328,6 +307,7 @@ body {
     &__nav,
     &__map,
     &__sidebar,
+    &__relatedItems,
     &__footer,
     &__ruimtes {
         grid-column: 1 / -1;
@@ -413,9 +393,7 @@ body {
             }
         }
 
-        &__relatedItems {
-            grid-column: 1 / 6;
-        }
+
 
     }
 
@@ -523,7 +501,7 @@ body {
     gap: var(--space-4);
     margin-block-start: var(--space-4);
     padding-block-start: var(--space-4);
-    border-top: 0.094rem solid var(--black);
+    border-top: 0.094rem solid var(--darkBlue);
 }
 
 ////////////////////////////////////////////////////

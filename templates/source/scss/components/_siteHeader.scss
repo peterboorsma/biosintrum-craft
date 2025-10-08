@@ -249,7 +249,7 @@ li.mainNavLink {
 
     a {
         width: 100%;
-        color: var(--black);
+        color: var(--darkBlue);
         text-decoration: none;
         padding: var(--space-2) var(--space-2);
         transition: background-color 0.25s, color 0.15s;
@@ -258,6 +258,7 @@ li.mainNavLink {
         &:focus,
         &[aria-current="page"] {
             background-color: var(--white);
+            color: var(--darkBlue);
         }
 
     }
@@ -286,7 +287,6 @@ li.mainNavLink {
 ////////////////////////////////////////////////////
 // Hamburger
 ////////////////////////////////////////////////////
-
 #hamburger {
     display: none;
 }

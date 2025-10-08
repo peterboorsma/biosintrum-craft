@@ -133,6 +133,17 @@
 
     }
 
+    &--blueOutlined {
+        color: var(--darkBlue);
+        border-color: var(--darkBlue);
+
+        &:hover,
+        &:focus {
+            background-color: var(--darkBlue);
+            color: var(--white);
+        }
+    }
+
 // arrows & icons
 // en {{ block.buttonLink.type}}
     &--entry,

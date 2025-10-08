@@ -171,28 +171,17 @@
 
 }
 
-.card__header {
+//.card__header {
 
-    &__label {
+//    &__label {}
+//    &__title {}
+//}
 
-    }
-
-    &__title {
-
-    }
-}
-
-.card__main {
+//.card__main {
     
-
-    &__title {
-        
-    }
-
-    &__text {
-        
-    }
-}
+//    &__title {}
+//    &__text {}
+//}
 
 ////////////////////////////////////////////////////
 // CARDS GRIDS 
@@ -338,8 +327,7 @@ a.card {
     .card__header__title {
         display: flex;
         justify-content: space-between;
-        word-break: break-all;
-        word-wrap: break-word;
+        overflow-wrap: break-word;
 
         &::after {
             content: "→";
@@ -347,11 +335,6 @@ a.card {
             font-size: 1.125rem;
             width: fit-content;
             transition: all ease-in-out 0.2s;
-        }
-
-        @include respond-to(large-screens) { // 768px
-            word-break: normal;
-            word-wrap: normal;
         }
 
     }
