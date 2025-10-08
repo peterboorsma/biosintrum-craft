@@ -1,0 +1,52 @@
+////////////////////////////////////////////////////
+//  HERO
+////////////////////////////////////////////////////
+.hero {
+    display: flex;
+    flex-direction: column;
+    
+
+    &__top {
+        display: flex;
+
+        background-color: var(--lightBlue);
+
+        &__banner {
+            width: min(1600px, 100vw - 0px);
+            margin-inline: auto;
+        }
+
+        @include respond-to(xxwide-screens) { // 1600px
+            padding-bottom: var(--space-2);
+        }
+    }
+
+    &__bottom {}
+
+}
+
+.heroImage {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.heroTitle {
+    grid-column: 1 / -1;
+    margin-block-start: calc(-1 * var(--space-4));
+    background-color: var(--yellow);
+    padding: var(--space-1) var(--space-1);
+
+    @include respond-to(large-screens) { // 768px
+        padding: var(--space-2) var(--space-2);
+    }
+
+    @include respond-to(xlarge-screens) { // 1024px
+        grid-column: 2 / 12;
+    }
+
+
+}

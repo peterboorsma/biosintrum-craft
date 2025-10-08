@@ -5,26 +5,31 @@
 {% block content %}
 
 <div class="hero">
-    <div class="hero__header">
-        <div class="container">
+    <div class="hero__top">
+        <div class="hero__top__banner">
             {% if entry.headerImage is defined and entry.headerImage|length %}
             {% import '_macros/_image.twig' as img %}
-            <div class="hero__image">
-                {{ img.responsiveImage(entry.headerImage, { maxWidth: 1400 }) }}
+            <div class="heroImage">
+                {{ img.responsiveImage(entry.headerImage, { maxWidth: 1600, aspectRatio: '16:8', cropMode: 'crop' }) }}
             </div>
             {% endif %}
         </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="grid overOns">
-        <div class="overOns__header hero__payoff">
-            <div class="content">
+    <div class="container">
+        <div class="hero__bottom grid grid--compact">
+            <div class="heroTitle">
                 <h1>{{ entry.payoff }}</h1>
             </div>
         </div>
+    </div>
+</div>
 
+
+
+
+<div class="container">
+    <div class="grid overOns">
         <div class="overOns__main">
             <div class="content contentSizeMedium">
                 {{ entry.aboutText }}

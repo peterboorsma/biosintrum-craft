@@ -28,36 +28,14 @@ body {
 }
 
 .container {
-    width: min(1400px, 100vw - 40px);
+    width: min(1440px, 100vw - 40px);
     margin-inline: auto;
 
     @include respond-to(large-screens) {
-        width: min(1400px, 100vw - 80px);
+        width: min(1440px, 100vw - 80px);
     }
 
-    &__header {
-        display: flex;
-        align-items: center;
-        padding-block-end: var(--space-4);
 
-        .header-title {
-            margin: 0; // resets margins in case this (read: always) is a heading
-            text-align: center;
-            padding-inline: var(--space-3);
-        }
-
-        .divider {
-            height: 3px;
-            flex-grow: 1;
-            //margin-inline-start: var(--space-3);
-            background-color: var(--black);
-        }
-
-    }
-
-    &.about {
-        margin-block-end: var(--space-6);
-    }
 
 }
 
@@ -140,72 +118,12 @@ body {
 
 }
 
-
-////////////////////////////////////////////////////
-//  HERO
-////////////////////////////////////////////////////
-.hero {
-    display: flex;
-    flex-direction: column;
-
-    &__header {
-        display: flex;
-        background-color: var(--lightBlue);
-        padding-bottom: var(--space-2);
-    }
-
-
-    &__image {
-        width: 100%;
-        height: auto;
-        max-height: 400px;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-    }
-
-    &__payoff {
-        grid-column: 1 / -1;
-        margin-block-start: calc(-1 * var(--space-4));
-        background-color: var(--yellow);
-        
-        .content {
-            padding-inline:  var(--space-1);
-            padding-block: var(--space-2);
-        }
-
-    }
-
-    @include respond-to(medium-screens) { // 600px
-            
-        &__payoff {
-            grid-column: 2 / 12;
-        }
-
-    }
-
-    @include respond-to(large-screens) { // 768px
-        
-        &__payoff {
-
-            .content {
-                padding-inline:  var(--space-2);
-            }
-
-        }
-    }
-
-}
-
 ////////////////////////////////////////////////////
 // HOMEPAGE OVER ONS
 ////////////////////////////////////////////////////
 .overOns {
-    
+    margin-block-start: var(--space-4);
     margin-block-end: var(--space-6);
-
-    // zie hero__payoff
-    //&__header {}
 
     &__main {
         grid-column: 1 / -1;
@@ -220,10 +138,6 @@ body {
 
     @include respond-to(medium-screens) { // 600px
             
-        &__header {
-            grid-column: 2 / 12;
-        }
-
         &__main {
             grid-column: 2 / 12;
         }
@@ -234,22 +148,9 @@ body {
 
     }
 
-    @include respond-to(large-screens) { // 768px
-        
-        &__header {
-
-            .content {
-                padding-inline:  var(--space-2);
-            }
-
-        }
+    @include respond-to(xxwide-screens) { //1600px
+        margin-block-start: var(--space-6);
     }
-
-    // @include respond-to(xlarge-screens) { // 1024px
-    // }
-
-    // @include respond-to(xwide-screens) { //1440px
-    // }
 
 }
 
