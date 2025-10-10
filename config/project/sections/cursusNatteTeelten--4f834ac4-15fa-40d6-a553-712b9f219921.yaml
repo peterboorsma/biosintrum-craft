@@ -3,9 +3,9 @@ enableVersioning: false
 entryTypes:
   -
     uid: 4acbf173-f5b9-48c3-8ffb-906f3a57a3ce # Paginas
-handle: paginas
+handle: cursusNatteTeelten
 maxAuthors: 1
-name: "Pagina's"
+name: 'Cursus natte teelten'
 previewTargets:
   -
     label: 'Primary entry page'
@@ -16,11 +16,6 @@ siteSettings:
   af50c774-c285-4afd-a496-c976e435b15d: # Cursus natte teelten
     enabledByDefault: true
     hasUrls: true
-    template: cursusNatteTeelten/paginas/_entry.twig
-    uriFormat: '{slug}'
-  fb0d368d-2fb7-4027-a060-679959808366: # Biosintrum
-    enabledByDefault: true
-    hasUrls: true
-    template: paginas/_entry.twig
-    uriFormat: 'paginas/{slug}'
-type: channel
+    template: cursusNatteTeelten/_entry.twig
+    uriFormat: __home__
+type: single

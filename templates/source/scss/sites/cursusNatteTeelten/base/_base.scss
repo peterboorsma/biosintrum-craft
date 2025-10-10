@@ -1,0 +1,88 @@
+:root {
+    // COLORS
+    --white: rgb(255, 255, 255);
+    --white-trans: rgba(255, 255, 255, 0.8);
+    --black: rgb(0, 0, 0);
+    --black-trans: rgba(0, 0, 0, 0.5);
+    --error: rgb(230, 86, 50);
+    --succes: rgb(184, 216, 146);
+
+
+
+    --brown: rgb(76, 29, 4); // #4c1d04
+    --green: rgb(116, 143, 42); // #748f2a
+    --sand: rgb(236, 224, 201); // #ece0c9
+    --green-dark: rgb(65, 83, 14); // #41530e
+    --green-light: rgb(213, 236, 160); // #d5eca0
+
+    // BORDERS
+    --radius-l: 3rem;
+
+    // UNITS
+    --space-2: 0.125rem;
+    --space-4: 0.25rem;
+    --space-8: 0.5rem;
+    --space-12: 0.75rem;
+    --space-16: 1rem;
+    --space-20: 1.25rem;
+    --space-24: 1.5rem;
+    --space-32: 2rem;
+    --space-40: 2.5rem;
+    --space-48: 3rem;
+    --space-56: 3.5rem;
+    --space-64: 4rem;
+    --space-72: 4.5rem;
+    --space-80: 5rem;
+    --space-96: 6rem;
+    --space-128: 8rem;
+    --space-256: 16rem;
+}
+
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    left: 0;
+}
+
+.sr-only {
+    @extend .visually-hidden;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #FFD913;
+    color: #421700;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}

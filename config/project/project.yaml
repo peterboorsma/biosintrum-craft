@@ -1,4 +1,4 @@
-dateModified: 1759919090
+dateModified: 1760100147
 elementSources:
   craft\elements\Entry:
     -
@@ -68,6 +68,7 @@ meta:
     4acbf173-f5b9-48c3-8ffb-906f3a57a3ce: Paginas # Paginas
     4dbf591f-220c-49e2-b6ee-63c6a4cf108d: 'Partner list' # Partner list
     4f212a46-d489-4335-ae26-73116a6a1228: 'Assets Embed' # Assets Embed
+    4f834ac4-15fa-40d6-a553-712b9f219921: 'Cursus natte teelten' # Cursus natte teelten
     5bb3cb31-9529-4f7b-b407-bee0476b98df: Actueel # Actueel
     5d8cb6ad-2d15-4d50-a184-8219793c33d4: Ruimtes # Ruimtes
     6a60fde2-cd48-49ee-aadb-8d8a6bc7a722: 'Button Set' # Button Set
@@ -104,6 +105,7 @@ meta:
     8840259d-eec9-46fc-8674-0207cf7b629d: Adresgegevens # Adresgegevens
     a66ccb8d-61fd-4360-bf30-2a56894318fa: Partnerlogos # Partnerlogos
     aa77c39f-f098-4ed3-bb08-a460a8d3fce3: Partners # Partners
+    af50c774-c285-4afd-a496-c976e435b15d: 'Cursus natte teelten' # Cursus natte teelten
     b043b78c-7bde-4b91-9e47-722b106c9106: Downloads # Downloads
     b378d7b8-6042-489d-b53d-727c66711509: 'Assets Download' # Assets Download
     b64307a7-ec4a-46ea-8836-cf6a7de0c856: 'Blok Afbeelding' # Blok Afbeelding

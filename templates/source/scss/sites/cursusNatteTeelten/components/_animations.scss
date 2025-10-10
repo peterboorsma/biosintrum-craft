@@ -1,0 +1,102 @@
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 0ms;
+    --animate-repeat: 1;
+}
+
+// used in navbar
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -150%, 0);
+    visibility: visible;
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+  
+
+@keyframes slideOutUp {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate3d(0, -150%, 0);
+  }
+}
+
+.slideOutUp {
+  animation-name: slideOutUp;
+}
+
+// used in hero
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate {
+  opacity: 0;
+}
+
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: var(--animate-duration);
+  animation-fill-mode: both;
+  animation-delay: var(--animate-delay);
+  animation-iteration-count: var(--animate-repeat);
+}
+
+.animate__animated {
+  opacity: 1;
+}
+
+
+@media print,
+(prefers-reduced-motion: reduce) {
+    .animate {
+        animation-duration: 1ms !important;
+        transition-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+    .animated[class*='Out'] {
+        opacity: 0;
+    }
+}
+
+
+// MIXINS
+@mixin hoverZoom {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+//[id] {
+//    scroll-margin-top: 3em;
+//}
+
+html {
+    scroll-behavior: smooth;
+}

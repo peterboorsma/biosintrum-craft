@@ -1,17 +1,36 @@
 <?php
 
 return [
+    'cacheEnabled' => false,
     'defaultProfile' => 'standard',
-    'siteName' => 'Biosintrum',
-    
+
+    // Site-namen per site handle
+    'siteName' => [
+        'default' => 'Biosintrum',
+        'cursusNatteTeelten' => 'Cursus natte teelten - Biosintrum',
+    ],
+
+    // Field profiles per site
     'fieldProfiles' => [
         'standard' => [
+            'title' => ['entry:seoTitle', 'title'],
+            'description' => ['seoDescription', 'payoff', 'intro', 'richText', 'body'],
+            'image' => ['seoImage', 'image', 'headerImage']
+        ],
+        'cursusNatteTeelten' => [
             'title' => ['seoTitle', 'title'],
             'description' => ['seoDescription', 'payoff', 'intro', 'richText', 'body'],
             'image' => ['seoImage', 'image', 'headerImage']
         ]
     ],
 
+    // Koppel site handles aan fieldProfiles
+    'profileMap' => [
+        'default' => 'standard',
+        'cursusNatteTeelten' => 'cursusNatteTeelten'
+    ],
+
+    // Sitemap settings
     'sitemapEnabled' => true,
     'sitemapLimit' => 100,
     'sitemapConfig' => [
@@ -25,5 +44,4 @@ return [
             'watWeDoen' => ['changefreq' => 'monthly', 'priority' => 0.6],
         ]
     ]
-
 ];
