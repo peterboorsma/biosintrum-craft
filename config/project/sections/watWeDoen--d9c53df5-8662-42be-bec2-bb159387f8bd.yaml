@@ -2,9 +2,13 @@ defaultPlacement: end
 enableVersioning: false
 entryTypes:
   -
-    uid: 5168636d-e73b-40fa-9a36-e1146da0c43d # Wat we doen
+    uid: 5168636d-e73b-40fa-9a36-e1146da0c43d # Wat we doen - Hoofdpagina
   -
-    uid: d163a572-6de6-4dc1-8c1c-9ebb5a42f8b2 # Verdiepingspagina's
+    uid: ea332f3c-3ce7-4df7-993d-a59dd5f7464c # Wat we doen - Themapagina
+  -
+    uid: d163a572-6de6-4dc1-8c1c-9ebb5a42f8b2 # Wat we doen - Detailpagina
+  -
+    uid: c2b2a36e-09ab-4914-af1d-95b82be1e457 # Cursus
   -
     uid: 5d8cb6ad-2d15-4d50-a184-8219793c33d4 # Ruimtes
 handle: watWeDoen
@@ -12,16 +16,9 @@ maxAuthors: 1
 name: 'Wat we doen'
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   fb0d368d-2fb7-4027-a060-679959808366: # Biosintrum

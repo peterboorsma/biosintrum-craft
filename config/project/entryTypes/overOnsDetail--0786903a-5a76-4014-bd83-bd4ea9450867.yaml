@@ -1,7 +1,7 @@
 color: null
 description: null
 fieldLayouts:
-  539816c8-44cc-4be6-a88f-f8b312df8b00:
+  a597a301-edef-47f8-b819-2e63225164c3:
     cardThumbAlignment: end
     tabs:
       -
@@ -33,7 +33,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: ff3de703-1eeb-4298-96a8-2640a221274e
+            uid: 886f0b12-0e25-4312-ae59-d550e8cb609d
             userCondition: null
             warning: null
             width: 100
@@ -50,7 +50,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 54427e59-1dce-4b19-82bd-7b8dfd73e56d
+            uid: b830717c-48f4-4b25-92e5-a3eac6274008
             userCondition: null
             warning: null
             width: 75
@@ -67,7 +67,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3bfe2994-621f-4ee7-902d-1ae1fa4db99c
+            uid: 20d1794a-f2cc-4e30-858f-6d90a9d58186
             userCondition: null
             warning: null
             width: 25
@@ -84,12 +84,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8ae27f97-85fc-4bf7-8a95-dcb004b2cf3f
+            uid: 4e8de2bb-8632-401f-9c74-2d70726e31c0
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: e1160a99-85d3-44ec-a5c0-3ac16b27da19
+        uid: e1a9d26c-ba8e-4680-95d1-e38d0c6f57df
         userCondition: null
       -
         elementCondition: null
@@ -107,17 +107,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 234b5d83-6211-47de-9ba6-db1b7255cedf
+            uid: ed769a8b-44ff-4dcc-8795-aca362fbe449
             userCondition: null
             warning: null
             width: 100
         name: 'Content blokken'
-        uid: 21c85ba3-61bf-4120-b1d2-36bce57f0c8e
+        uid: 607d2f56-c35d-4b53-93eb-57bbf58b6c78
         userCondition: null
-handle: verdiepingspaginas
+handle: overOnsDetail
 hasTitleField: true
-icon: brain-arrow-curved-right
-name: "Verdiepingspagina's"
+icon: square-info
+name: 'Over ons - Detailpagina'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

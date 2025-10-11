@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="/assets/css/biosintrum.css">
 </head>
 
-<body class="{{ entry is defined and entry.uri == '__home__' ? 'homepage' : '' }} {% block bodyclass %}{% endblock %}">
+<body class="{% block bodyclass %}{% endblock %}">
     <a href="#main" class="visually-hidden">{{ 'Skip to main content'|t }}</a>
 
     {% include "_partials/_siteHeader" %}

@@ -2,24 +2,19 @@ defaultPlacement: end
 enableVersioning: false
 entryTypes:
   -
-    uid: 6d8a5491-1714-4fcd-bb76-6783f345f70e # Over ons
+    uid: 6d8a5491-1714-4fcd-bb76-6783f345f70e # Over ons - Hoofdpagina
   -
-    uid: aa77c39f-f098-4ed3-bb08-a460a8d3fce3 # Partners
+    uid: 0786903a-5a76-4014-bd83-bd4ea9450867 # Over ons - Detailpagina
+  -
+    uid: aa77c39f-f098-4ed3-bb08-a460a8d3fce3 # Over ons - Partners
 handle: overOns
 maxAuthors: 1
 name: 'Over ons'
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   fb0d368d-2fb7-4027-a060-679959808366: # Biosintrum

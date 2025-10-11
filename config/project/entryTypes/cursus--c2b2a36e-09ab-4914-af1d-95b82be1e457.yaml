@@ -1,7 +1,7 @@
 color: null
 description: null
 fieldLayouts:
-  aa1675de-816e-424e-9b1f-ed4b547b3bdc:
+  c9cc4b2a-96b0-4c36-a626-11fda4ccc93e:
     cardThumbAlignment: end
     tabs:
       -
@@ -33,27 +33,61 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: f0890804-bdc2-47b3-b376-0ead2027a569
+            uid: a5f5afa8-1240-4a83-be4a-e467c3ab4335
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2025-09-18T08:33:16+00:00'
+            dateAdded: '2025-10-11T10:47:05+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: 83db36ef-e67b-4f25-971a-ebc7ec0dea3e # Plain Text
             handle: payoff
             includeInCards: false
-            instructions: 'Komt in geel kader net als op de voorpagina'
+            instructions: null
             label: Payoff
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ae4ea619-e916-46d0-86ec-363e8a4229f1
+            uid: ec22e41f-31ac-4959-ab7e-50784b54eb9d
             userCondition: null
             warning: null
             width: 75
+          -
+            dateAdded: '2025-09-18T08:22:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Afbeelding header'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41f13869-f83a-44be-80db-021f477823dd
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-10-11T09:29:53+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: fbb0a651-fb1f-4832-b5ae-8cdde41d9030 # Blok kleur
+            handle: pageTheme
+            includeInCards: false
+            instructions: null
+            label: 'Pagina kleur'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 53601152-1d79-45ca-b462-f1c13db17ca7
+            userCondition: null
+            warning: null
+            width: 25
           -
             dateAdded: '2025-09-18T08:31:35+00:00'
             editCondition: null
@@ -67,27 +101,10 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 1b0559ab-584a-4a40-b6c9-8513ea26a703
+            uid: 89acb030-f509-4c9f-adeb-93b7c4f84eb8
             userCondition: null
             warning: null
             width: 75
-          -
-            dateAdded: '2025-09-18T08:22:43+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: Afbeelding
-            providesThumbs: true
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 3cd696ae-7ebc-49cd-a0f5-826440cd698e
-            userCondition: null
-            warning: null
-            width: 25
           -
             dateAdded: '2025-09-18T08:22:43+00:00'
             editCondition: null
@@ -101,12 +118,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 844ad14b-1fb1-4c46-8127-2ac61cf450fe
+            uid: 40db4703-8e6e-4e12-98e6-de82de4cdf9e
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: df760155-c04e-4d23-b1fe-c460d27b3c4c
+        uid: 67cef168-b53a-4bea-a071-f71da098360a
         userCondition: null
       -
         elementCondition: null
@@ -124,17 +141,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 21c8e65a-d31d-4a24-b650-c951aeb7c249
+            uid: 07ee2dab-fb14-4048-9113-5dd99645c487
             userCondition: null
             warning: null
             width: 100
         name: 'Content blokken'
-        uid: a8460556-657b-480e-b868-0196a3e17054
+        uid: f8ca6420-855b-4f09-888f-121d23ddd629
         userCondition: null
-handle: watwedoen
+handle: cursus
 hasTitleField: true
-icon: stop
-name: 'Wat we doen - Hoofdpagina'
+icon: graduation-cap
+name: Cursus
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

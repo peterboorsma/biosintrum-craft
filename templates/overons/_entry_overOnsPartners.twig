@@ -1,0 +1,34 @@
+{% extends "_layouts/default" %}
+
+{% block bodyclass %}{% endblock %}
+
+{% block content %}
+
+<div class="mainContent">
+    <div class="container">
+        <article class="grid grid--compact article">
+            {% include '_macros/_nav_breadcrumbs' %}
+
+            <header class="article__header">
+                <div class="article__header__title">
+                    <h1>{{ entry.title }}</h1>
+                </div>
+            </header>
+
+            {% if entry.intro %}
+            <div class="article__introduction">
+                <div class="content contentSizeMedium">
+                    {{ entry.intro }}
+                </div>
+            </div>
+            {% endif %}
+
+            {% include '_components/_article_partnerlist' %}
+        </article>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

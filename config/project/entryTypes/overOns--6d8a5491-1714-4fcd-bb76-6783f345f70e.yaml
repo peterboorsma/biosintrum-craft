@@ -149,7 +149,7 @@ fieldLayouts:
 handle: overOns
 hasTitleField: true
 icon: ant
-name: 'Over ons'
+name: 'Over ons - Hoofdpagina'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

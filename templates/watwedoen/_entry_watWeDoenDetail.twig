@@ -1,6 +1,7 @@
-{% set children = entry.getChildren() %}
-{% set ruimtesChildren = children | filter(child => child.type.handle == 'ruimtes') %}
+{% extends "_layouts/default" %}
+{% block bodyclass %}{% endblock %}
 
+{% block content %}
 <div class="mainContent">
     <div class="container">
         <article class="grid grid--compact article">
@@ -17,17 +18,8 @@
                 <div class="content contentSizeMedium">
                     {{ entry.intro }}
                 </div>
-            
-                {# Toon knop als er "ruimtes" onder hangen. AKA de congrescentrum pagina #}
-                {# slordig en niet waaterdicht maar het werkt... #}
-                {% if ruimtesChildren | length %}
-                <div class="buttonGroup">    
-                    <a class="button button--large button--forward" href="/wat-we-doen/congres-en-vergadercentrum/reserveren">Prijzen en reserveren</a>
-                </div>
-                {% endif %}
             </div>
             {% endif %}
-            
 
             {% if entry.image[0] is defined and entry.image[0] %}
             <figure class="article__mainImage{% if entry.image[0].title %} article__mainImage--withCaption{% else %} article__mainImage--withoutCaption{% endif %}">
@@ -40,15 +32,29 @@
             </figure>
             {% endif %}
 
-            {# Toon related projects als die er zijn #}
-            {% include '_components/_watwedoen_relatedProjects' %}
-
             {# Toon children met entrytype handle "ruimtes" als die er zijn #}
+            {% set children = entry.getChildren() %}
+            {% set ruimtesChildren = children | filter(child => child.type.handle == 'ruimtes') %}
             {% if ruimtesChildren | length %}
                 {% include '_components/_article_ruimtes' %}
             {% endif %}
 
             {% include '_macros/_contentstream' %}
+
+            {% if entry.slug == 'reserveren' %}
+            {% include '_components/_article_addressBlock' %}
+
+            {% include '_components/_block_tarievenlijst' %}
+
+            {% set ruimtes = craft.entries.section('watwedoen').type('ruimtes').all() %}
+            {% include '_components/_article_ruimtes' with { ruimtesChildren: ruimtes } %}
+            {% endif %}
+
+            
         </article>
     </div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

@@ -1,0 +1,113 @@
+body.theme--ochre {
+    background-color: var(--lightOchre);
+
+////////////////////////////////////////////////////
+// SITEHEADER & NAVIGATION
+////////////////////////////////////////////////////
+    .siteHeader,
+    .siteHeader__nav {
+        background-color: var(--lightOchre);
+    }
+
+    li.mainNavLink a {
+        color: var(--darkOchre);
+    }
+
+    li.subNavLink--text a {
+        color: var(--darkOchre);
+        border-color: var(--darkOchre);
+
+        &:hover, &:focus {
+            color: var(--lightOchre);
+            background-color: var(--darkOchre);
+            border-color: var(--darkOchre);
+        }
+    }
+
+    li.subNavLink--icon svg {
+        fill: var(--darkOchre);
+    }
+
+
+    .breadcrumbs ol li {
+        color: var(--darkOchre);
+
+        a {
+            color: var(--darkOchre);
+
+            &:hover, &:focus {
+                color: var(--black);
+            }
+        }
+
+    }
+
+////////////////////////////////////////////////////
+// HERO
+////////////////////////////////////////////////////
+    .hero__top {
+        background-color: var(--lightOchre);
+    }
+    .heroTitle {
+        background-color: var(--darkOchre);
+        color: var(--lightOchre);
+    }
+
+}
+
+////////////////////////////////////////////////////
+// SITEFOOTER
+////////////////////////////////////////////////////
+.sitefooter {
+    background-color: var(--darkOchre);
+    color: var(--lightOchre);
+    position: relative;
+}
+
+.sitefooter::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+    width: 32px;
+    height: 205px;
+    background-size: contain;
+    background-image: url("../img/lisdodde_aar.svg");
+    background-repeat: no-repeat;
+
+    @include respond-to(small-screens) { // 460px
+        right: 200px;
+    }
+
+    @include respond-to(large-screens) { // 768px
+        right: 160px;
+    }
+
+    @include respond-to(xxwide-screens) { //1600px
+        right: 32px;
+    }
+
+}
+
+.sitefooterContent {
+    
+    p, li, .address {
+        color: var(--lightOchre);
+    }
+
+    .button--blueOutlined {
+        color: var(--lightOchre);
+        border-color: var(--lightOchre);
+
+        &:hover, &:focus {
+            color: var(--darkOchre);
+            background-color: var(--lightOchre);
+        }
+    }
+
+    .sitefooterContent__sociallinks svg {
+        fill: var(--lightOchre);
+    }
+
+}

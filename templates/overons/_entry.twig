@@ -1,19 +1,10 @@
-{% extends "_layouts/default" %}
-
-{% block bodyclass %}{% endblock %}
-
-{% block content %}
-{% set currentPath = craft.app.request.pathInfo %}
-
-{# template voor toplevel pagina (over-ons) #}
-{% if not entry.parent %}
-    {% include '/overons/_entryTopLevel' %}
-{# subpaginas #}
+{% set entrytype = entry.type.handle %}
+{% if entrytype == 'overOns' %}
+    {% include '/overons/_entry_overOns' %}
+{% elseif entrytype == 'overOnsDetail' %}
+    {% include '/overons/_entry_overOnsDetail' %}
+{% elseif entrytype == 'overOnsPartners' %}
+    {% include '/overons/_entry_overOnsPartners' %}
 {% else %}
-    {% include '/overons/_entrySubLevel' %}
+    {% include '/overons/_entry_overOnsDetail' %}
 {% endif %}
-
-{% endblock %}
-
-{% block scripts %}
-{% endblock %}

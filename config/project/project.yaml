@@ -1,8 +1,19 @@
-dateModified: 1760100147
+dateModified: 1760185305
 elementSources:
   craft\elements\Entry:
     -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
       key: '*'
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - link
       type: native
     -
       heading: Channels
@@ -41,7 +52,26 @@ elementSources:
         - link
       type: native
     -
+      heading: ''
+      key: 'heading:cf25e743-f19a-49cc-9a10-f91731d3d0e5'
+      type: heading
+    -
+      defaultSort:
+        - title
+        - asc
+      defaultViewMode: ''
+      disabled: false
       key: singles
+      tableAttributes:
+        - status
+        - link
+      type: native
+    -
+      heading: ''
+      key: 'heading:02cb746e-4f69-4a3c-99c3-078e8c4628b8'
+      type: heading
+    -
+      key: 'section:f28691f2-ad80-4fda-89ab-fc062f4c1e16' # Overzicht blokken
       type: native
 email:
   fromEmail: peter@peterboorsma.nl
@@ -68,12 +98,11 @@ meta:
     4acbf173-f5b9-48c3-8ffb-906f3a57a3ce: Paginas # Paginas
     4dbf591f-220c-49e2-b6ee-63c6a4cf108d: 'Partner list' # Partner list
     4f212a46-d489-4335-ae26-73116a6a1228: 'Assets Embed' # Assets Embed
-    4f834ac4-15fa-40d6-a553-712b9f219921: 'Cursus natte teelten' # Cursus natte teelten
     5bb3cb31-9529-4f7b-b407-bee0476b98df: Actueel # Actueel
     5d8cb6ad-2d15-4d50-a184-8219793c33d4: Ruimtes # Ruimtes
     6a60fde2-cd48-49ee-aadb-8d8a6bc7a722: 'Button Set' # Button Set
     6bb5c91d-ecfb-4ca7-93ad-9a68ae361e87: Embeds # Embeds
-    6d8a5491-1714-4fcd-bb76-6783f345f70e: 'Over ons' # Over ons
+    6d8a5491-1714-4fcd-bb76-6783f345f70e: 'Over ons - Hoofdpagina' # Over ons - Hoofdpagina
     7db4c8c9-64ae-4f55-9955-8ec3059fb9d1: Biosintrum # Biosintrum
     8b61a538-af28-46cf-b884-bb22dc1821ca: 'SEO Content' # SEO Content
     8c4d9ab3-2305-4b12-b68f-3c1cad72d49a: 'Assets Partnerlogo' # Assets Partnerlogo
@@ -99,21 +128,24 @@ meta:
     99308e96-c44c-4639-8d40-4ef316b1e1a1: Datum # Datum
     0448039b-68a3-4865-a28b-24d17f5f6a5c: 'Button Download' # Button Download
     602693e8-e56b-49d6-97cd-b74f05363a84: Homepage # Homepage
+    0786903a-5a76-4014-bd83-bd4ea9450867: 'Over ons - Detailpagina' # Over ons - Detailpagina
     885762b5-ddee-4206-9942-0082031777e1: Default # Default
     4865191d-aa39-495d-9ae2-b5f0e62578f1: 'SEO Description' # SEO Description
-    5168636d-e73b-40fa-9a36-e1146da0c43d: 'Wat we doen' # Wat we doen
+    5168636d-e73b-40fa-9a36-e1146da0c43d: 'Wat we doen - Hoofdpagina' # Wat we doen - Hoofdpagina
     8840259d-eec9-46fc-8674-0207cf7b629d: Adresgegevens # Adresgegevens
     a66ccb8d-61fd-4360-bf30-2a56894318fa: Partnerlogos # Partnerlogos
-    aa77c39f-f098-4ed3-bb08-a460a8d3fce3: Partners # Partners
-    af50c774-c285-4afd-a496-c976e435b15d: 'Cursus natte teelten' # Cursus natte teelten
+    aa77c39f-f098-4ed3-bb08-a460a8d3fce3: 'Over ons - Partners' # Over ons - Partners
+    af50c774-c285-4afd-a496-c976e435b15d: 'Leer- en kenniscentrum Bodem' # Leer- en kenniscentrum Bodem
     b043b78c-7bde-4b91-9e47-722b106c9106: Downloads # Downloads
     b378d7b8-6042-489d-b53d-727c66711509: 'Assets Download' # Assets Download
     b64307a7-ec4a-46ea-8836-cf6a7de0c856: 'Blok Afbeelding' # Blok Afbeelding
     bedcd512-47d2-4bf6-b77b-fa82d8d107cf: 'Content blokken' # Content blokken
+    c2b2a36e-09ab-4914-af1d-95b82be1e457: Cursus # Cursus
     cc792267-b10b-4acf-ab7c-e920877e89bc: 'Social media' # Social media
     d9c53df5-8662-42be-bec2-bb159387f8bd: 'Wat we doen' # Wat we doen
-    d163a572-6de6-4dc1-8c1c-9ebb5a42f8b2: "Verdiepingspagina's" # Verdiepingspagina's
+    d163a572-6de6-4dc1-8c1c-9ebb5a42f8b2: 'Wat we doen - Detailpagina' # Wat we doen - Detailpagina
     dc6bde34-ac1d-4ae5-a643-87784759763f: 'Gekoppelde projecten' # Gekoppelde projecten
+    ea332f3c-3ce7-4df7-993d-a59dd5f7464c: 'Wat we doen - Themapagina' # Wat we doen - Themapagina
     f3fbba55-9047-45a2-9bdd-0013a9b83f23: 'Rich Text' # Rich Text
     f8fac004-81f8-4a88-8825-0342279070ee: 'Plain Text Multiline' # Plain Text Multiline
     f28691f2-ad80-4fda-89ab-fc062f4c1e16: 'Overzicht blokken' # Overzicht blokken

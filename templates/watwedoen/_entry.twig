@@ -1,22 +1,16 @@
-{% extends "_layouts/default" %}
-
-{% block bodyclass %}{% endblock %}
-
-{% block content %}
-
-{# Structure met 3 levels: TopLevel (geen parent), SubLevel (heeft parent en kinderen), BottomLevel (heeft parent, geen kinderen) #}
-{% if not entry.parent %}
-    {# TopLevel: geen parent #}
-    {% include '/watwedoen/_entryTopLevel' %}
-{% elseif entry.getChildren() | length > 0 %}
-    {# SubLevel: heeft parent en kinderen #}
-    {% include '/watwedoen/_entrySubLevel' %}
+{% set entrytype = entry.type.handle %}
+{% if entrytype == 'watwedoen' %}
+    {% include '/watwedoen/_entry_watwedoen' %}
+{% elseif entrytype == 'watWeDoenThema' %}
+    {% include '/watwedoen/_entry_watWeDoenThema' %}
+{% elseif entrytype == 'watWeDoenDetail' %}
+    {% include '/watwedoen/_entry_watWeDoenDetail' %}
+{% elseif entrytype == 'cursus' %}
+    {% include '/watwedoen/_entry_cursus' %}
 {% else %}
-    {# BottomLevel: heeft parent, geen kinderen #}
-    {% include '/watwedoen/_entryBottomLevel' %}
+    {% include '/watwedoen/_entry_watWeDoenDetail' %}
 {% endif %}
 
-{% endblock %}
-
-{% block scripts %}
-{% endblock %}
+{#
+entrytype 'ruimte' heeft geen eigen template want ruimtes hebben geen eigen url
+#}

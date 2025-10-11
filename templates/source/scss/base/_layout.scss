@@ -291,6 +291,10 @@ body {
             &--right {
                 grid-column: 8 / -1;
             }
+
+            &--centered {
+                grid-column: 4 / 10;
+            }
         }
 
 

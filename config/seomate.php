@@ -13,14 +13,14 @@ return [
     // Field profiles per site
     'fieldProfiles' => [
         'standard' => [
-            'title' => ['entry:seoTitle', 'title'],
-            'description' => ['seoDescription', 'payoff', 'intro', 'richText', 'body'],
-            'image' => ['seoImage', 'image', 'headerImage']
+            'title' => ['seoContent.seoTitle', 'title'],
+            'description' => ['seoContent.seoDescription', 'payoff', 'intro', 'richText', 'body'],
+            'image' => ['seoContent.seoImage', 'image', 'headerImage']
         ],
         'cursusNatteTeelten' => [
-            'title' => ['seoTitle', 'title'],
-            'description' => ['seoDescription', 'payoff', 'intro', 'richText', 'body'],
-            'image' => ['seoImage', 'image', 'headerImage']
+            'title' => ['seoContent.seoTitle', 'title'],
+            'description' => ['seoContent.seoDescription', 'payoff', 'intro', 'richText', 'body'],
+            'image' => ['seoContent.seoImage', 'image', 'headerImage']
         ]
     ],
 

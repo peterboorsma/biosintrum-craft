@@ -1,4 +1,14 @@
-{# toon hero op de toplevel pagina #}
+{% extends "_layouts/default" %}
+
+{% if entry.pageTheme is defined and entry.pageTheme %}
+    {% set pageTheme = 'theme--' ~ entry.pageTheme %}
+{% else %}
+    {% set pageTheme = 'theme--default' %}
+{% endif %}
+
+{% block bodyclass %}{{pageTheme}}{% endblock %}
+
+{% block content %}
 <div class="hero">
     <div class="hero__top">
         <div class="hero__top__banner">
@@ -14,7 +24,7 @@
     <div class="container">
         <div class="hero__bottom grid grid--compact">
             <div class="heroTitle">
-                <h1>{{ entry.payoff }}</h1>
+                <span>{{ entry.payoff }}</span>
             </div>
         </div>
     </div>
@@ -31,15 +41,19 @@
                 </div>
             </header>
 
+            {% if entry.intro %}
             <div class="article__introduction">
-                <div class="content contentSizeMedium">
+                <div class="content cKcontent contentSizeMedium">
                     {{ entry.intro }}
                 </div>
             </div>
-           
-            {% include "_components/_article_highlights.twig" %}
-            
+            {% endif %}
+
             {% include '_macros/_contentstream' %}
         </article>
     </div>
 </div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

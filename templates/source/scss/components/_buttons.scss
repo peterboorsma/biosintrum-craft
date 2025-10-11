@@ -86,7 +86,7 @@
         &:focus {
             background-color: var(--green);
             border-color: var(--green);
-            color: var(--black);
+            color: var(--darkGreen);
             
         }
 
@@ -101,7 +101,6 @@
         &:focus {
             background-color: var(--blue);
             border-color: var(--blue);
-            color: var(--black);
         }
         
     }
@@ -115,7 +114,6 @@
         &:focus {
             background-color: var(--ochre);
             border-color: var(--ochre);
-            color: var(--black);
         }
         
     }

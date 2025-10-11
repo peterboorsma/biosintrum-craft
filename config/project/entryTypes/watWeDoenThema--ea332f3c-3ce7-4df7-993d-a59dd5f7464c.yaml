@@ -1,7 +1,7 @@
 color: null
 description: null
 fieldLayouts:
-  48df8e74-40b1-4b89-8525-98724ec98e1c:
+  304db8f3-af50-4e12-b422-dd8f59179b84:
     cardThumbAlignment: end
     tabs:
       -
@@ -12,7 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2025-09-17T20:26:15+00:00'
+            dateAdded: '2025-09-18T08:13:47+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -33,12 +33,12 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: c0c1f9fb-ca1e-4012-b958-f66b5346f397
+            uid: 9f76f83d-b991-43c9-9954-af321293ccbd
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2025-09-17T20:28:32+00:00'
+            dateAdded: '2025-09-18T08:31:35+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: f3fbba55-9047-45a2-9bdd-0013a9b83f23 # Rich Text
@@ -50,12 +50,57 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: d71253e2-83b4-40a2-a504-b15a7e5b833c
+            uid: bb05655a-6c75-4829-9b81-06c1f92168cf
             userCondition: null
             warning: null
             width: 75
           -
-            dateAdded: '2025-09-18T08:08:50+00:00'
+            dateAdded: '2025-09-18T08:22:43+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Afbeelding
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c08cd5b3-f2ed-41f6-bde9-0ae5ca62c742
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-10-01T18:35:09+00:00'
+            editCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\LevelConditionRule
+                  maxValue: ''
+                  operator: '='
+                  step: 1
+                  uid: 40b01517-c0a3-43d8-884d-70f55d30853e
+                  value: '2'
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: dc6bde34-ac1d-4ae5-a643-87784759763f # Gekoppelde projecten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3df0b7b0-368c-421e-a6f2-385a34aa83b2
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-09-18T08:22:43+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: 8b61a538-af28-46cf-b884-bb22dc1821ca # SEO Content
@@ -67,40 +112,40 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b0bbeece-b932-4c99-bcd8-2782e81c3fdf
+            uid: 55c184c0-45b1-464c-9dd4-69454693450f
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: d376334c-7e94-4c89-9844-0e71581ec215
+        uid: 85cb7baf-54cb-40ff-95c6-260d83b916cf
         userCondition: null
       -
         elementCondition: null
         elements:
           -
-            dateAdded: '2025-09-17T20:28:32+00:00'
+            dateAdded: '2025-09-18T08:22:43+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 4dbf591f-220c-49e2-b6ee-63c6a4cf108d # Partner list
+            fieldUid: bedcd512-47d2-4bf6-b77b-fa82d8d107cf # Content blokken
             handle: null
             includeInCards: false
             instructions: null
-            label: __blank__
+            label: null
             providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 488227a6-243d-4a0c-a1e6-d87b88bae0f6
+            uid: 6ce5da6a-565a-40e2-a6d1-e710715e5ad0
             userCondition: null
             warning: null
-            width: 75
-        name: Partners
-        uid: 8b688d8b-c766-4069-8250-b4ea959f2901
+            width: 100
+        name: 'Content blokken'
+        uid: 777aec43-093a-4765-a3e4-71d793aaa4c5
         userCondition: null
-handle: partners
+handle: watWeDoenThema
 hasTitleField: true
-icon: champagne-glasses
-name: Partners
+icon: grid-2-plus
+name: 'Wat we doen - Themapagina'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

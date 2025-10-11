@@ -1,9 +1,9 @@
-baseUrl: $CURSUS_NATTE_TEELTEN_URL
+baseUrl: $KCB_URL
 enabled: '1'
-handle: cursusNatteTeelten
+handle: lkcb
 hasUrls: true
 language: nl
-name: 'Cursus natte teelten'
+name: 'Leer- en kenniscentrum Bodem'
 primary: false
 siteGroup: 7db4c8c9-64ae-4f55-9955-8ec3059fb9d1 # Biosintrum
 sortOrder: 2
