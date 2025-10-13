@@ -53,61 +53,63 @@ body.theme--ochre {
         color: var(--lightOchre);
     }
 
-}
+
 
 ////////////////////////////////////////////////////
 // SITEFOOTER
 ////////////////////////////////////////////////////
-.sitefooter {
-    background-color: var(--darkOchre);
-    color: var(--lightOchre);
-    position: relative;
-}
-
-.sitefooter::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 16px;
-    width: 32px;
-    height: 205px;
-    background-size: contain;
-    background-image: url("../img/lisdodde_aar.svg");
-    background-repeat: no-repeat;
-
-    @include respond-to(small-screens) { // 460px
-        right: 200px;
-    }
-
-    @include respond-to(large-screens) { // 768px
-        right: 160px;
-    }
-
-    @include respond-to(xxwide-screens) { //1600px
-        right: 32px;
-    }
-
-}
-
-.sitefooterContent {
-    
-    p, li, .address {
+    .sitefooter {
+        background-color: var(--darkOchre);
         color: var(--lightOchre);
+        position: relative;
     }
 
-    .button--blueOutlined {
-        color: var(--lightOchre);
-        border-color: var(--lightOchre);
+    .sitefooter::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 16px;
+        width: 32px;
+        height: 205px;
+        background-size: contain;
+        background-image: url("../img/lisdodde_aar.svg");
+        background-repeat: no-repeat;
 
-        &:hover, &:focus {
-            color: var(--darkOchre);
-            background-color: var(--lightOchre);
+        @include respond-to(small-screens) { // 460px
+            right: 200px;
         }
+
+        @include respond-to(large-screens) { // 768px
+            right: 160px;
+        }
+
+        @include respond-to(xxwide-screens) { //1600px
+            right: 32px;
+        }
+
     }
 
-    .sitefooterContent__sociallinks svg {
-        fill: var(--lightOchre);
+    .sitefooterContent {
+        
+        p, li, .address {
+            color: var(--lightOchre);
+        }
+
+        .button--blueOutlined {
+            color: var(--lightOchre);
+            border-color: var(--lightOchre);
+
+            &:hover, &:focus {
+                color: var(--darkOchre);
+                background-color: var(--lightOchre);
+            }
+        }
+
+        .sitefooterContent__sociallinks svg {
+            fill: var(--lightOchre);
+        }
+
     }
 
 }
