@@ -230,7 +230,7 @@ body {
         &__contentBlockImage,
         &__contentblockEmbed,
         &__contentBlockButtons,
-        &__mainImage--inline,
+        &__mainImage,
         &__tarievenlijst,
         &__sidebar,
         &__footer,
@@ -241,13 +241,7 @@ body {
     }
 
     @include respond-to(xlarge-screens) { // 1024px
-        &__mainImage--block {
-            margin-block: var(--space-2);
-        }
 
-        &__mainImage--noCaption {
-            grid-column: 2 / 12;
-        }
 
         &__contentBlockFullImage {
             margin-block: var(--space-2);
@@ -262,9 +256,6 @@ body {
             grid-column: 2 / 9;
         }
 
-        &__mainImage--inline {
-            grid-column: 9 / 13;
-        }
 
         &__contentBlockText {
 
@@ -297,13 +288,14 @@ body {
             }
         }
 
-
-
     }
 
     @include respond-to(wide-screens) { // 1200px
 
-        &__mainImag,
+        &__mainImage {
+            grid-column: 3 / 11;
+        }   
+
         &__contentBlockFullImage {
 
             &--withoutCaption {
@@ -324,7 +316,6 @@ body {
 
 }
 
-.article__mainImage--withCaption,
 .article__contentBlockFullImage--withCaption {
     display: flex;
     flex-direction: column;
@@ -456,13 +447,13 @@ body {
 }
 
 ////////////////////////////////////////////////////
-// LISTINGS 
+// LISTING ACTUEEL
 ////////////////////////////////////////////////////
 .nieuwsOverzicht {
     grid-column: 1 / -1;
     margin-block-end: var(--space-4);
 
-    @include respond-to(large-screens) { // 768px
+    @include respond-to(xlarge-screens) { // 1024px
         grid-column: 1 / 9;
     }
 
@@ -480,7 +471,7 @@ body {
         margin-block-end: var(--space-4);
     }
 
-    @include respond-to(large-screens) { // 768px
+    @include respond-to(xlarge-screens) { // 1024px
         grid-column: 9 / -1;
     }
 
@@ -489,6 +480,9 @@ body {
     }
 }
 
+////////////////////////////////////////////////////
+// LISTING PROJECTEN
+////////////////////////////////////////////////////
 .projectenOverzicht {
 
     .card {

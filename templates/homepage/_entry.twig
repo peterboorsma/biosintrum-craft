@@ -1,5 +1,10 @@
 {% extends "_layouts/default" %}
 
+{% block preloads %}
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" as="style" type="text/css" crossorigin="anonymous">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" as="script" crossorigin="anonymous">
+{% endblock %}
+
 {% block bodyclass %}homepage{% endblock %}
 
 {% block content %}
@@ -24,9 +29,6 @@
         </div>
     </div>
 </div>
-
-
-
 
 <div class="container">
     <div class="grid overOns">

@@ -36,41 +36,25 @@
                     <h1>{{ entry.title }}</h1>
                 </div>
             </header>
-            
-    {# Als hoofdafbeelding geen bijschrift heeft, tonen we afbeelding naast intro #}
-    {# article__introduction--inline en --block worden gezet door de imageShowCaption lightswitch #}
-    {# article__mainImage--withCaption en --noCaption worden alleen gebruikt als fallback als images title fields leeg zijn én de imageShowCaption lightswitch aan staat: --block #}
-            {% if entry.imageShowCaption is defined and entry.imageShowCaption == false %}
-                <div class="article__introduction article__introduction--inline">
-                    <div class="content contentSizeMedium">
-                        {{ entry.intro }}
-                    </div>
-                </div>
-                
-                {% if entry.image[0] is defined and entry.image[0] %}
-                <figure class="article__mainImage article__mainImage--inline">
-                    {% import '_macros/_image.twig' as img %}
-                    {{ img.responsiveImage(entry.image, { maxWidth: 940 }) }}
-                </figure>
-                {% endif %}
-            {% else %}
-                <div class="article__introduction article__introduction--wide">
-                    <div class="content contentSizeMedium">
-                        {{ entry.intro }}
-                    </div>
-                </div>
-                
-                {% if entry.image[0] is defined and entry.image[0] %}
-                <figure class="article__mainImage{% if entry.image[0].title %} article__mainImage--withCaption{% else %} article__mainImage--noCaption{% endif %}">
-                    {% import '_macros/_image.twig' as img %}
-                    {{ img.responsiveImage(entry.image, { maxWidth: 940 }) }}
 
-                    {% if entry.image[0].title %}
-                        <figcaption class="caption">{{ entry.image[0].title }}</figcaption>
-                    {% endif %}
-                </figure>
+            
+            <div class="article__introduction">
+                <div class="content contentSizeMedium">
+                    {{ entry.intro }}
+                </div>
+            </div>
+            
+            {% if entry.image[0] is defined and entry.image[0] %}
+            <figure class="article__mainImage">
+                {% import '_macros/_image.twig' as img %}
+                {{ img.responsiveImage(entry.image, { maxWidth: 940 }) }}
+
+                {% if entry.image[0].title and entry.imageShowCaption is defined and entry.imageShowCaption == true %}
+                    <figcaption class="caption">{{ entry.image[0].title }}</figcaption>
                 {% endif %}
+            </figure>
             {% endif %}
+            
 
             {% include '_macros/_contentstream' %}
 

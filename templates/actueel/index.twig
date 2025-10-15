@@ -6,9 +6,11 @@
 
 {% set nieuws = craft.entries()
     .section('actueel')
-    .orderBy('postDate desc')
-    .limit(40)
-    .all() %}
+    .orderBy('postDate DESC')
+    .limit(16)
+    %}
+
+{% paginate nieuws as pageInfo, posts %}
 
 <div class="mainContent">
     <div class="container">
@@ -29,45 +31,55 @@
                     </header>
 
                     <div class="cardsGrid">
-                        {% for entry in nieuws %}
-                        {% if loop.first %}
-                            <a class="card card--color:blue card--layered card--double" href="{{ entry.url }}">
-                                <div class="card__header">
-                                    <span class="card__header__title">{{ entry.title }}</span>
-                                </div>
-
-                                {% if entry.image is defined and entry.image|length %}
+                        {% for entry in posts %}
+                            <a class="card{% if loop.first %} card--color:blue card--layered card--double{% endif %}" href="{{ entry.url }}">
+                                {# Set img: use entry.image if available, else check entry.contentBlocks for an image in 'contentblock' or 'contentblockImage' #}
+                                {% set imgAsset = entry.image is defined and entry.image|length
+                                    ? entry.image
+                                    : (entry.contentBlocks is defined
+                                        ? entry.contentBlocks
+                                            |filter(block => (block.type == 'contentblock' or block.type == 'contentblockImage') and block.image is defined and block.image|length)
+                                            |first
+                                            ? entry.contentBlocks
+                                                |filter(block => (block.type == 'contentblock' or block.type == 'contentblockImage') and block.image is defined and block.image|length)
+                                                |first
+                                                .image
+                                            : null
+                                        : null)
+                                %}
+                                
                                 {% import '_macros/_image.twig' as img %}
-                                <div class="card__image">
-                                    {{ img.responsiveImage(entry.image, {
-                                        maxWidth: 800,
-                                        cropMode: 'crop',
-                                        aspectRatio: '4:3'
-                                    }) }}
-                                </div>
-                                {% endif %}
-                            </a>
-                        {% else %}
-                            <a class="card" href="{{ entry.url }}">
-                                {% if entry.image is defined and entry.image|length %}
-                                {% import '_macros/_image.twig' as img %}
-                                <div class="card__image">
-                                    {{ img.responsiveImage(entry.image, {
-                                        maxWidth: 360,
-                                        cropMode: 'crop',
-                                        aspectRatio: '4:3'
-                                    }) }}
-                                </div>
+                                
+                                {% if imgAsset %}
+                                    <div class="card__image">
+                                        {% if loop.first %}
+                                        {{ img.responsiveImage(imgAsset, { maxWidth: 800, cropMode: 'crop', aspectRatio: '4:3' }) }}
+                                        {% else %}
+                                        {{ img.responsiveImage(imgAsset, { maxWidth: 360, cropMode: 'crop', aspectRatio: '4:3' }) }}
+                                        {% endif %}
+                                    </div>
                                 {% endif %}
 
                                 <div class="card__header">
                                     <span class="card__header__title">{{ entry.title }}</span>
                                 </div>
                             </a>
-                        {% endif %}
-
                         {% endfor %}
                     </div>
+
+                    <footer class="pagination">
+                        <span class="label">{{ pageInfo.first }}–{{ pageInfo.last }} van {{ pageInfo.total }} berichten</span>
+
+                        <nav role="navigation" aria-label="Berichten paginering">
+                        {% if pageInfo.getPrevUrl() %}
+                            <a class="button button--tiny button--blueOutlined button--backward" href="{{ pageInfo.getPrevUrl() }}">Vorige pagina</a>
+                        {% endif %}
+                        {% if pageInfo.getNextUrl() %}
+                            <a class="button button--tiny button--blueOutlined button--forward" href="{{ pageInfo.getNextUrl() }}">Volgende pagina</a>
+                        {% endif %}
+                        </nav>
+
+                    </footer>
                 </section>
     {# agenda #}
                 <section class="agendaOverzicht" id="agenda">

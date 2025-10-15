@@ -25,7 +25,7 @@
     padding-block-start: var(--space-1);
 
     @include respond-to(xlarge-screens) { // 1024px
-        padding-block-start: var(--space-2);
+        padding-block: var(--space-2);
     }
 }
 
@@ -266,35 +266,6 @@
 
 }
 
-////////////////////////////////////////////////////
-// CARDS TYPOGRAPHY
-////////////////////////////////////////////////////
-
-.card__footer__text p,
-.card__main__text {
-    font-size: clamp(1rem, 0.8571rem + 0.4286vw, 1.125rem);
-    line-height: 1.25;
-    font-weight: 550;
-}
-
-.card__footer__text p:not(:last-child) {
-    margin-block-end: var(--space-1);
-}
-
-.card__header__label {
-    font-size: clamp(0.75rem, 0.6964rem + 0.2381vw, 0.875rem);
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: .035rem;
-    line-height: 1;
-}
-
-.card__header__title {
-    font-size: clamp(1.25rem, 1.0833rem + 0.7407vw, 1.75rem);
-    font-weight: 700;
-    line-height: 1;
-}
-
 a.card {
     text-decoration: none;
     transition: transform 0.25s ease-in-out, background-color 0.15s ease-in-out;
@@ -335,4 +306,36 @@ a.card {
             background-color: rgba(203, 217, 239, 0.8);
         }
     }
+}
+
+////////////////////////////////////////////////////
+// CARDS TYPOGRAPHY
+////////////////////////////////////////////////////
+.card__footer__text p,
+.card__main__text {
+    font-size: clamp(1rem, 0.8571rem + 0.4286vw, 1.125rem);
+    line-height: 1.25;
+    font-weight: 550;
+}
+
+.card__footer__text p:not(:last-child) {
+    margin-block-end: var(--space-1);
+}
+
+.card__header__label {
+    font-size: clamp(0.75rem, 0.6964rem + 0.2381vw, 0.875rem);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .035rem;
+    line-height: 1;
+}
+
+.card__header__title {
+    font-size: clamp(1rem, 0.8571rem + 0.4286vw, 1.125rem);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.highlights .card__header__title {
+    font-size: clamp(1.25rem, 1.0833rem + 0.7407vw, 1.75rem);
 }

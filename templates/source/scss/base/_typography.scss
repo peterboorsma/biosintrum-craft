@@ -102,7 +102,7 @@ p, li, .address {
     font-family: "FigtreeItalic";
     font-size: .875rem;
     line-height: 1.2;
-    margin-block-start: var(--space-1);
+    margin-block-start: var(--space-2);
     overflow-wrap: break-word;
 }
 
@@ -255,6 +255,32 @@ p, li, .address {
     svg.icon-home {
         width: 14px;
         height: auto;
+    }
+}
+
+////////////////////////////////////////////////////
+// PAGINATION
+////////////////////////////////////////////////////
+
+.pagination {
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-between;
+    //align-items: center;
+    //padding: var(--space-2) 0;
+    gap: var(--space-2);
+    margin-block-start: var(--space-2);
+    padding-block: var(--space-2);
+    border-top: 1px solid var(--darkBlue);
+
+    .label {
+        color: var(--darkBlue);
+    }
+
+    nav {
+        display: flex;
+        gap: var(--space-2);
+        justify-content: space-between;
     }
 }
 

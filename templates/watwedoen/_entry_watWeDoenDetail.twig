@@ -22,11 +22,11 @@
             {% endif %}
 
             {% if entry.image[0] is defined and entry.image[0] %}
-            <figure class="article__mainImage{% if entry.image[0].title %} article__mainImage--withCaption{% else %} article__mainImage--withoutCaption{% endif %}">
+            <figure class="article__mainImage">
                 {% import '_macros/_image.twig' as img %}
                 {{ img.responsiveImage(entry.image, { maxWidth: 940 }) }}
 
-                {% if entry.image[0].title %}
+                {% if entry.image[0].title and entry.imageShowCaption is defined and entry.imageShowCaption == true %}
                     <figcaption class="caption">{{ entry.image[0].title }}</figcaption>
                 {% endif %}
             </figure>

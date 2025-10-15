@@ -53,7 +53,7 @@ fieldLayouts:
             uid: 02e49b96-32de-413f-ae42-9d3768290637
             userCondition: null
             warning: null
-            width: 75
+            width: 100
           -
             dateAdded: '2025-09-18T08:39:21+00:00'
             editCondition: null
@@ -68,6 +68,23 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: f818b611-11b0-46d3-a4a8-5690a2a2b4cf
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            dateAdded: '2025-10-15T16:28:07+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f30926c9-bf98-4136-a4d3-fe5d5181a595 # Toon bijschrift
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 163270d9-e70b-4035-a14c-7011217d9816
             userCondition: null
             warning: null
             width: 25
