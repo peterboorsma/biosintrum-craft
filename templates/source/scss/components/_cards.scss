@@ -8,6 +8,13 @@
 // CARD PADDING
 ////////////////////////////////////////////////////
 
+.card:not(.card--inline) {
+
+    @include respond-to(wide-screens) { // 1200px
+        gap: var(--space-2);
+    }
+}
+
 .card:not(.card--inline).card--color\:blue,
 .card:not(.card--inline).card--color\:ochre,
 .card:not(.card--inline).card--color\:green,
@@ -24,15 +31,15 @@
 .card:not(.card--inline) > :first-child:not(.card__image) {
     padding-block-start: var(--space-1);
 
-    @include respond-to(xlarge-screens) { // 1024px
-        padding-block: var(--space-2);
+    @include respond-to(wide-screens) { // 1200px
+        padding-block-start: var(--space-2);
     }
 }
 
 .card:not(.card--inline)> :last-child:not(.card__image) {
     padding-block-end: var(--space-1);
 
-    @include respond-to(xlarge-screens) { // 1024px
+    @include respond-to(wide-screens) { // 1200px
         padding-block-end: var(--space-2);
     }
 }
@@ -315,7 +322,7 @@ a.card {
 .card__main__text {
     font-size: clamp(1rem, 0.8571rem + 0.4286vw, 1.125rem);
     line-height: 1.25;
-    font-weight: 550;
+    font-weight: 500;
 }
 
 .card__footer__text p:not(:last-child) {
