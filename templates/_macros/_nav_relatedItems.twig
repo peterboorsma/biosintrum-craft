@@ -8,7 +8,7 @@ Verwacht een array van entries en een titel als parameters. Bijv.:
 
 {% if relatedItems | length %}
 <aside class="article__relatedItems">
-    <nav class="flexColumn relatedItems">
+    <nav class="flexColumn relatedItems relatedItems--color:{{ color ?? 'blue' }}">
         <div class="relatedItems__title">
             <h2 class="compactTitle">{{ relatedItemsTitle }}</h2>
         </div>

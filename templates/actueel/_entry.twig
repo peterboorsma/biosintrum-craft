@@ -61,7 +61,7 @@
             {% set relatedItems = craft.entries.section('projecten').relatedTo(entry).limit(10).orderBy('postDate desc').all() %}
             {% set relatedItemsTitle = 'Gerelateerde projecten:' %}
             {# Alleen tonen als er gerelateerde items zijn #}
-            {% include '_macros/_nav_relatedItems' with { relatedItems: relatedItems, relatedItemsTitle: relatedItemsTitle } %}
+            {% include '_macros/_nav_relatedItems' with { relatedItems: relatedItems, relatedItemsTitle: relatedItemsTitle, color: 'green' } %}
 
             {% if currentSection == 'agenda' %}
             <aside class="article__sidebar grid sidebar">

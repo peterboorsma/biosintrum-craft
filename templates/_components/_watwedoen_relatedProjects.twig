@@ -13,7 +13,7 @@
             <div class="swiper relatedProjects">
                 <div class="swiper-wrapper">
                 {% for entry in relatedNieuws %}
-                    <a href="{{ entry.url }}" class="swiper-slide card card--inline card--color:blue">
+                    <a href="{{ entry.url }}" class="swiper-slide card card--inline card--color:green">
                         {% if entry.image[0] is defined and entry.image[0] %}
                         <div class="card__image">
                             {% import '_macros/_image.twig' as img %}

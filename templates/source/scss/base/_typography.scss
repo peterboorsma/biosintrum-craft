@@ -328,11 +328,22 @@ p, li, .address {
 ////////////////////////////////////////////////////
 
 .relatedItems {
-
     margin-block: var(--space-2);
+    //background-color: var(--lightBlue);
+    //border: 1px solid var(--lightBlue);
 
-    background-color: var(--lightBlue);
-    border: 1px solid var(--lightBlue);
+    &--color\:blue {
+        background-color: var(--lightBlue);
+        border: 1px solid var(--lightBlue);
+    }
+    &--color\:green {
+        background-color: var(--lightGreen);
+        border: 1px solid var(--lightGreen);
+    }
+}
+
+.relatedItems--color:green {
+    background-color: red;
 }
 
 .relatedItems__title {
