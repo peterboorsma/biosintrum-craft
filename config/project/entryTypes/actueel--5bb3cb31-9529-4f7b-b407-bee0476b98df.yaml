@@ -150,7 +150,17 @@ fieldLayouts:
           -
             dateAdded: '2025-10-01T10:05:47+00:00'
             editCondition: null
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\RelationalFieldConditionRule
+                  fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
+                  layoutElementUid: 31bcfeaf-be6d-4c91-aa49-81c2a0502791
+                  operator: notempty
+                  uid: 1a5759c3-c57f-468d-8570-1c753eddbb91
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: f30926c9-bf98-4136-a4d3-fe5d5181a595 # Toon bijschrift
             handle: null
             includeInCards: false

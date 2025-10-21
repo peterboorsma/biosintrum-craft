@@ -54,33 +54,6 @@ fieldLayouts:
             warning: null
             width: 25
           -
-            dateAdded: '2025-09-29T07:58:31+00:00'
-            editCondition: null
-            elementCondition:
-              class: craft\elements\conditions\entries\EntryCondition
-              conditionRules:
-                -
-                  class: craft\fields\conditions\RelationalFieldConditionRule
-                  fieldUid: 8235d94d-82ef-4fb0-ae36-807b331b730a # Assets Image
-                  layoutElementUid: 620a49e3-48cb-4aae-9504-dc3e276a9c6f
-                  operator: notempty
-                  uid: d62e89ca-0a67-49f4-a3c5-60f4f266275c
-              elementType: craft\elements\Entry
-              fieldContext: global
-            fieldUid: ff8f529f-79cf-4f8b-af51-dc2679bea708 # Button Link
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 0fc81ac5-dab0-4373-af09-fd3fe8097eb3
-            userCondition: null
-            warning: null
-            width: 25
-          -
             dateAdded: '2025-09-29T08:04:38+00:00'
             dismissible: false
             elementCondition: null
