@@ -292,7 +292,9 @@ body {
 
     @include respond-to(wide-screens) { // 1200px
 
-        &__mainImage {
+        &__mainImage,
+        &__contentBlockButtons,
+        &__contentBlockText--centered {
             grid-column: 3 / 11;
         }   
 
@@ -306,10 +308,6 @@ body {
 
         &__contentblockEmbed {
             grid-column: 2 / 12;
-        }
-
-        &__contentBlockText--centered {
-            grid-column: 3 / 11;
         }
 
     }
