@@ -17,7 +17,7 @@
                     {% if entry.image[0] is defined and entry.image[0] %}
                     <div class="card__image">
                         {% import '_macros/_image.twig' as img %}
-                        {{ img.responsiveImage(entry.image, { maxWidth: 100, aspectRatio: '4:3' }) }}
+                        {{ img.responsiveImage(entry.image, { maxWidth: 100, cropMode: 'crop', aspectRatio: '4:3' }) }}
                     </div>
                     {% endif %}
 
