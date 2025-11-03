@@ -1,7 +1,7 @@
 {% if entry.contentBlocks|length %}
 {% for block in entry.contentBlocks.all() %}
 {% switch block.type %}
-    {# contentblock #}
+{# -- contentblock -- #}
     {% case "contentblock" %}
 {# als er WEL richText is en WEL een afbeelding #}
     {% if block.richText is defined and block.richText and block.image[0] is defined and block.image[0] %}
@@ -37,8 +37,28 @@
         </div>
     </div>
     {% endif %}
+{# -- contentblockKader -- #}
+    {% case "contentblockKader" %}
+    <div class="article__contentBlockText article__contentBlockText--centered">
+        <div class="panel panel--color:{{ block.blockColor }}">
+            {% if block.richText is defined and block.richText %}
+                <div class="content cKcontent">
+                    {{ block.richText }}
+                </div>
+            {% endif %}
 
-    {# contentblockImage #}
+            {% if block.buttonLink is defined and block.buttonLink  %}
+                <div class="buttonGroup">
+                    <a class="button button--large button--{{ (block.buttonLink.type is defined and block.buttonLink.type is not empty) ? block.buttonLink.type : 'forward' }}" href="{{ block.buttonLink.url }}" >
+                        {% if block.buttonLink.label is defined and block.buttonLink.label is not empty %}
+                            {{ block.buttonLink.label }}
+                        {% endif %}
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{# -- contentblockImage -- #}
     {% case "contentblockImage" %}
         {% if block.image[0] is defined and block.image[0] %}
         <figure class="article__contentBlockFullImage{% if block.image[0].title %} article__contentBlockFullImage--withCaption{% else %} article__contentBlockFullImage--withoutCaption{% endif %}">
@@ -51,7 +71,7 @@
         </figure>
         {% endif %}
 
-    {# contentblockEmbed #}
+{# -- contentblockEmbed -- #}
     {% case "contentblockEmbed" %}
     <figure class="article__contentblockEmbed embed">
         {% set embed = craft.embeddedAssets.get(block.embed.one()) %}
@@ -64,7 +84,7 @@
         {% endif %}
     </figure>
 
-    {# contentblockButtons #}
+{# -- contentblockButtons -- #}
     {% case "contentblockButtons" %}
     <div class="article__contentBlockButtons">
         <div class="buttonGroup">

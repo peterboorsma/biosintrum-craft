@@ -1,4 +1,4 @@
-dateModified: 1761069794
+dateModified: 1762178921
 elementSources:
   craft\elements\Entry:
     -
@@ -117,6 +117,7 @@ meta:
     233fda5c-b05d-4f02-99af-20045ba42e31: Prijs # Prijs
     541f273a-fe62-42d9-8ee8-b04fcb32e786: Tarievenlijst # Tarievenlijst
     601fba76-351e-4ee9-b9a9-5b49523baf37: Partnerlink # Partnerlink
+    754fbb27-0657-4cc1-a8d5-707b736f92ce: 'Blok Kader' # Blok Kader
     793dad19-c178-4275-b20d-08a0d2653b03: Actueel # Actueel
     884dd8a2-8ede-4a60-af46-769c69dfa8d4: 'Externe URL' # Externe URL
     926b61e9-462a-408c-ad86-aed1b332d5b5: 'Button Group' # Button Group

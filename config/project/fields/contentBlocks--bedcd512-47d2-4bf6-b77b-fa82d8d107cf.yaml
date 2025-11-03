@@ -28,6 +28,14 @@ settings:
       __assoc__:
         -
           - uid
+          - 754fbb27-0657-4cc1-a8d5-707b736f92ce # Blok Kader
+        -
+          - group
+          - General
+    -
+      __assoc__:
+        -
+          - uid
           - 1ca63ceb-4a9f-404b-9924-fbfc2ecc808a # Blok Embed
         -
           - group
