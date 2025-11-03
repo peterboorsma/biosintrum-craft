@@ -86,4 +86,4 @@ slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: null
 titleTranslationKeyFormat: null
-titleTranslationMethod: site
+titleTranslationMethod: none

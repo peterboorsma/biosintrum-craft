@@ -29,7 +29,7 @@
 }
 
 .card:not(.card--inline) > :first-child:not(.card__image) {
-    padding-block-start: var(--space-1);
+    padding-block-start: var(--space-2);
 
     @include respond-to(wide-screens) { // 1200px
         padding-block-start: var(--space-2);
@@ -37,7 +37,7 @@
 }
 
 .card:not(.card--inline)> :last-child:not(.card__image) {
-    padding-block-end: var(--space-1);
+    padding-block-end: var(--space-2);
 
     @include respond-to(wide-screens) { // 1200px
         padding-block-end: var(--space-2);
@@ -124,6 +124,8 @@
 
 }
 
+//.card--vertial {}
+
 ////////////////////////////////////////////////////
 // CARDS KLEUREN
 ////////////////////////////////////////////////////
@@ -138,7 +140,7 @@
     }
 
     &--color\:green {
-        background-color: var(--kcbLightgreen);
+        background-color: var(--lightGreen);
     }
 
     &--color\:kcbGreen {
