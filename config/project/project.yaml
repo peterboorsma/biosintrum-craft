@@ -1,4 +1,4 @@
-dateModified: 1762180485
+dateModified: 1762262775
 elementSources:
   craft\elements\Entry:
     -
@@ -135,6 +135,7 @@ meta:
     5168636d-e73b-40fa-9a36-e1146da0c43d: 'Wat we doen - Hoofdpagina' # Wat we doen - Hoofdpagina
     8840259d-eec9-46fc-8674-0207cf7b629d: Adresgegevens # Adresgegevens
     a66ccb8d-61fd-4360-bf30-2a56894318fa: Partnerlogos # Partnerlogos
+    a880cdc5-16d6-49d5-bc00-2ad09f3a9a3d: 'Cursus Detailpagina' # Cursus Detailpagina
     aa77c39f-f098-4ed3-bb08-a460a8d3fce3: 'Over ons - Partners' # Over ons - Partners
     af50c774-c285-4afd-a496-c976e435b15d: 'Leer- en kenniscentrum Bodem' # Leer- en kenniscentrum Bodem
     b043b78c-7bde-4b91-9e47-722b106c9106: Downloads # Downloads

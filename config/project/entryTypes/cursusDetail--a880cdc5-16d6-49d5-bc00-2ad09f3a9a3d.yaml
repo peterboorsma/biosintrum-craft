@@ -1,7 +1,7 @@
 color: null
-description: null
+description: 'Subpagina van een cursus'
 fieldLayouts:
-  c9cc4b2a-96b0-4c36-a626-11fda4ccc93e:
+  03e36882-fc0d-411b-ab39-e3f2c58444e7:
     cardThumbAlignment: end
     tabs:
       -
@@ -33,7 +33,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: a5f5afa8-1240-4a83-be4a-e467c3ab4335
+            uid: b992c10d-fe4f-4b7b-b90d-066012d55af3
             userCondition: null
             warning: null
             width: 100
@@ -50,7 +50,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ec22e41f-31ac-4959-ab7e-50784b54eb9d
+            uid: 918ba08b-6912-4115-8393-ff7ea8f94e47
             userCondition: null
             warning: null
             width: 75
@@ -67,15 +67,15 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 89acb030-f509-4c9f-adeb-93b7c4f84eb8
+            uid: 368eaf8e-41c7-49ac-bed9-b6bfbca01c26
             userCondition: null
             warning: null
             width: 75
           -
-            dateAdded: '2025-11-04T13:26:15+00:00'
+            dateAdded: '2025-11-04T13:25:36+00:00'
             elementCondition: null
             type: craft\fieldlayoutelements\HorizontalRule
-            uid: bbe98d03-d233-4ef2-ada9-3851c4ca07d8
+            uid: 5c1eb727-5b5d-41f2-9924-ccb0100aad07
             userCondition: null
           -
             dateAdded: '2025-09-18T08:22:43+00:00'
@@ -90,7 +90,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 41f13869-f83a-44be-80db-021f477823dd
+            uid: c9182373-61f2-433d-bf13-b225290e4192
             userCondition: null
             warning: null
             width: 25
@@ -107,7 +107,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 53601152-1d79-45ca-b462-f1c13db17ca7
+            uid: ce786f3c-cd01-4884-a400-fad423e4f8c3
             userCondition: null
             warning: null
             width: 25
@@ -124,12 +124,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 40db4703-8e6e-4e12-98e6-de82de4cdf9e
+            uid: 58bd752a-9fea-4244-b368-244a38b04d12
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 67cef168-b53a-4bea-a071-f71da098360a
+        uid: 1ef0961a-39d8-4c19-acad-3da150027f90
         userCondition: null
       -
         elementCondition: null
@@ -147,17 +147,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 07ee2dab-fb14-4048-9113-5dd99645c487
+            uid: 0813e4ee-263a-4fd2-bca1-4ba943cfa39f
             userCondition: null
             warning: null
             width: 100
         name: 'Content blokken'
-        uid: f8ca6420-855b-4f09-888f-121d23ddd629
+        uid: 17e4ded7-3358-4184-bd0b-4b1a238808b3
         userCondition: null
-handle: cursus
+handle: cursusDetail
 hasTitleField: true
 icon: graduation-cap
-name: Cursus
+name: 'Cursus Detailpagina'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

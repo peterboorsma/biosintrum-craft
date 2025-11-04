@@ -10,6 +10,8 @@ entryTypes:
   -
     uid: c2b2a36e-09ab-4914-af1d-95b82be1e457 # Cursus
   -
+    uid: a880cdc5-16d6-49d5-bc00-2ad09f3a9a3d # Cursus Detailpagina
+  -
     uid: 5d8cb6ad-2d15-4d50-a184-8219793c33d4 # Ruimtes
 handle: watWeDoen
 maxAuthors: 1
@@ -27,6 +29,6 @@ siteSettings:
     template: watwedoen/_entry.twig
     uriFormat: '{parent.uri}/{slug}'
 structure:
-  maxLevels: 3
+  maxLevels: 4
   uid: a7c4387d-ea8d-4ec2-b12c-40cbf9fc95ce
 type: structure
