@@ -480,6 +480,10 @@ body {
         grid-column: 1 / 9;
     }
 
+@include respond-to(xwide-screens) { //1440px
+        grid-column: 1 / 8;
+    }
+
     header h2 {
         margin-block-end: var(--space-4);
     }

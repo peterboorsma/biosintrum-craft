@@ -32,7 +32,7 @@
 
                     <div class="cardsGrid">
                         {% for entry in posts %}
-                            <a class="card{% if loop.first %} card--color:blue card--layered card--double{% endif %}" href="{{ entry.url }}">
+                            <a class="card{% if loop.first %} card--color:blue card--layered card--fullWidth{% else %} card--smallScreenInline{% endif %}" href="{{ entry.url }}">
                                 {# Set img: use entry.image if available, else check entry.contentBlocks for an image in 'contentblock' or 'contentblockImage' #}
                                 {% set imgAsset = entry.image is defined and entry.image|length
                                     ? entry.image
@@ -53,7 +53,7 @@
                                 {% if imgAsset %}
                                     <div class="card__image">
                                         {% if loop.first %}
-                                        {{ img.responsiveImage(imgAsset, { maxWidth: 800, cropMode: 'crop', aspectRatio: '4:3' }) }}
+                                        {{ img.responsiveImage(imgAsset, { maxWidth: 892, cropMode: 'crop', aspectRatio: '4:3' }) }}
                                         {% else %}
                                         {{ img.responsiveImage(imgAsset, { maxWidth: 360, cropMode: 'crop', aspectRatio: '4:3' }) }}
                                         {% endif %}

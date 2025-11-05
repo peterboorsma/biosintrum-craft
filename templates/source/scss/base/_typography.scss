@@ -306,6 +306,18 @@ p, li, .address {
     svg {
         display: none;
     }
+
+    &::after {
+        font-size: 1.875rem;
+        font-weight: 550;
+        text-shadow: -2px 1px 2px rgba(0,0,0,.75);
+        
+        @include respond-to(large-screens) { // 768px
+            font-size: 3.75rem;
+        }
+
+    }
+
 }
 
 .swiper-button-prev {
@@ -313,10 +325,7 @@ p, li, .address {
     right: auto!important;
 
     &::after {
-    content: '←';
-        font-size: 60px;
-        font-weight: 550;
-        text-shadow: -2px 1px 2px rgba(0,0,0,.75);
+        content: '←';
     }
 }
 
@@ -326,11 +335,9 @@ p, li, .address {
 
     &::after {
         content: '→';
-        font-size: 60px;
-        font-weight: 550;
-        text-shadow: 2px 1px 2px rgba(0,0,0,.75);
     }
 }
+
 
 ////////////////////////////////////////////////////
 // NAV RELATED ITEMS LIST

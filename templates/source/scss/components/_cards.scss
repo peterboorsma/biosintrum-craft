@@ -8,17 +8,17 @@
 // CARD PADDING
 ////////////////////////////////////////////////////
 
-.card:not(.card--inline) {
+.card:not(.card--swiperInline) {
 
     @include respond-to(wide-screens) { // 1200px
         gap: var(--space-2);
     }
 }
 
-.card:not(.card--inline).card--color\:blue,
-.card:not(.card--inline).card--color\:ochre,
-.card:not(.card--inline).card--color\:green,
-.card:not(.card--inline).card--color\:kcbGreen {
+.card:not(.card--swiperInline).card--color\:blue,
+.card:not(.card--swiperInline).card--color\:ochre,
+.card:not(.card--swiperInline).card--color\:green,
+.card:not(.card--swiperInline).card--color\:kcbGreen {
 
     .card__header,
     .card__main,
@@ -28,7 +28,7 @@
 
 }
 
-.card:not(.card--inline) > :first-child:not(.card__image) {
+.card:not(.card--swiperInline) > :first-child:not(.card__image) {
     padding-block-start: var(--space-2);
 
     @include respond-to(wide-screens) { // 1200px
@@ -36,7 +36,7 @@
     }
 }
 
-.card:not(.card--inline)> :last-child:not(.card__image) {
+.card:not(.card--swiperInline)> :last-child:not(.card__image) {
     padding-block-end: var(--space-2);
 
     @include respond-to(wide-screens) { // 1200px
@@ -47,7 +47,7 @@
 ////////////////////////////////////////////////////
 // CARDS TYPES
 ////////////////////////////////////////////////////
-.card--inline {
+.card--swiperInline {
     display: flex!important; // override native swiper display:block
     flex-direction: row;
     padding-inline: var(--space-1);
@@ -67,6 +67,28 @@
 
 }
 
+.card--smallScreenInline { // nieuws op /actueel
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-1);
+
+    .card__image {
+        width: 100px;
+        height: 75px;
+        flex-shrink: 0;
+        aspect-ratio: 4 / 3;
+
+        @include respond-to(small-screens) { // 460px
+            //width: 125px;
+            //height: 93.75px;
+        }
+    }
+
+    .card__header {
+        flex-grow: 1;
+    }
+}
+
 .card--layered {
     position: relative;
 
@@ -75,11 +97,18 @@
         bottom: var(--space-1);
         left: var(--space-1);
         right: var(--space-1);
-        background-color: var(--lightestGreen);
         margin: 0;
         padding: var(--space-1) var(--space-1) var(--space-1) var(--space-1);
     }
 
+}
+
+.projects .card--layered .card__header {
+    background-color: var(--lightGreen);
+}
+
+.nieuwsOverzicht .card--layered .card__header {
+    background-color: var(--lightBlue);
 }
 
 .card--horizontal {
@@ -90,8 +119,6 @@
         display: grid;
         grid-template-columns: 1fr 40%;
         gap: 0 var(--space-2);
-
-
 
         .card__header {
             grid-area: 1 / 1 / 2 / 2;
@@ -255,20 +282,20 @@
 // o.a. nieuwsoverzicht, ruimtes overzicht
 .cardsGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(17rem,1fr));
     gap: var(--space-2);
+
+    @include respond-to(medium-screens) { // 600px
+        gap: var(--space-3);
+    }
 
     @include respond-to(xlarge-screens) { // 1024px
         gap: var(--space-4);
     }
 
     .card {
-        // een dubbele eerste card
-        @include respond-to(large-screens) { // 768px
-            &--double {
-                grid-column: span 2;
-            }
-
+        &--fullWidth {
+            grid-column: 1 / -1;
         }
 
 
@@ -305,17 +332,7 @@ a.card {
 
     }
 
-    &--layered .card__header {
-        transition: background-color 0.15s ease-in-out;
-    }
 
-    &--layered:hover,
-    &--layered:focus {
-
-        .card__header {
-            background-color: rgba(203, 217, 239, 0.8);
-        }
-    }
 }
 
 ////////////////////////////////////////////////////
@@ -346,6 +363,10 @@ a.card {
     line-height: 1;
 }
 
-.highlights .card__header__title {
-    font-size: clamp(1.25rem, 1.0833rem + 0.7407vw, 1.75rem);
+.highlights,
+.card--fullWidth {
+
+    .card__header__title {
+        font-size: clamp(1.25rem, 1.0833rem + 0.7407vw, 1.75rem);
+    }
 }
